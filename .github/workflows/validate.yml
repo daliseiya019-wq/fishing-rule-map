@@ -1,0 +1,25 @@
+# push と Pull Request のたびに、データの書式・スクリプトのテスト・事前書き出しの鮮度を確かめる。
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate data
+        run: python scripts/validate_data.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests
+      - name: Static HTML is up to date
+        run: python scripts/build_static.py --check

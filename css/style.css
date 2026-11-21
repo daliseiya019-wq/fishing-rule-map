@@ -153,6 +153,11 @@ h2 { font-size: 1.25rem; margin: 32px 0 8px; }
 .pref-block li { margin: 4px 0; }
 .pref-block .meta { color: var(--muted); font-size: 0.85rem; }
 
+.updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 12px; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer; }
+.report { font-size: 0.85rem; margin: 6px 0 4px; }
+.about h3 { font-size: 1rem; margin: 16px 0 4px; }
+
 .error { color: var(--warn); font-weight: bold; }
 .about { margin-bottom: 48px; font-size: 0.9rem; }
 .attribution { color: var(--muted); }

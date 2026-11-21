@@ -11,6 +11,27 @@
   };
   const CHECKED_HOW = { page: 'ページ', search: '検索' };
   const TOHOKU_CENTER = [39.3, 140.8];
+  const REPORT_URL = 'https://github.com/daliseiya019-wq/fishing-rule-map/issues/new';
+  // 位置が「目安」の点は、寄りすぎると施設の場所だと誤解されるので、精度に応じて寄せ方と範囲の円を変える
+  const PRECISION = {
+    point: { zoom: 15, radius: 0 },
+    district: { zoom: 12, radius: 1500 },
+    port: { zoom: 11, radius: 3000 },
+  };
+
+  function statusKey(status) {
+    return Object.prototype.hasOwnProperty.call(STATUS, status) ? status : 'unconfirmed';
+  }
+
+  function precisionOf(p) {
+    const key = p.position && p.position.precision;
+    return Object.prototype.hasOwnProperty.call(PRECISION, key) ? PRECISION[key] : PRECISION.port;
+  }
+
+  function reportLink(spotName) {
+    const params = new URLSearchParams({ template: 'report.yml', title: `[誤り報告] ${spotName}` });
+    return safeLink(`${REPORT_URL}?${params}`, 'この場所の誤りを報告');
+  }
 
   // ---- 小さな DOM ヘルパー ----
   function el(tag, attrs, children) {
@@ -85,8 +106,8 @@
   }
 
   function statusBadge(status) {
-    const s = STATUS[status] || STATUS.unconfirmed;
-    return el('span', { class: `badge status-${status in STATUS ? status : 'unconfirmed'}`, text: `${s.mark} ${s.label}` });
+    const key = statusKey(status);
+    return el('span', { class: `badge status-${key}`, text: `${STATUS[key].mark} ${STATUS[key].label}` });
   }
 
   // 一覧のカードと地図のポップアップで同じ中身を使う
@@ -103,6 +124,7 @@
         el('dt', { text: '地図の位置' }), el('dd', { text: p.position.note }),
       ]),
       el('div', { class: 'sources' }, p.sources.map((s) => renderSource(s, sourceStatus, today))),
+      el('p', { class: 'report' }, [reportLink(p.name)]),
     ];
   }
 
@@ -117,16 +139,17 @@
   }
 
   function markerIcon(status) {
-    const key = status in STATUS ? status : 'unconfirmed';
+    const key = statusKey(status);
     const icon = el('div', { class: `spot-marker status-${key}`, text: STATUS[key].mark });
     return L.divIcon({ html: icon.outerHTML, className: '', iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -14] });
   }
 
   // ---- 一覧 ----
-  function renderList(features, markers, map, sourceStatus, today) {
+  function renderList(features, layers, map, sourceStatus, today) {
     const list = document.getElementById('spot-list');
     const prefSelect = document.getElementById('filter-pref');
     const statusSelect = document.getElementById('filter-status');
+    const showUnconfirmed = document.getElementById('show-unconfirmed');
 
     const prefs = [...new Set(features.map((f) => f.properties.prefecture))];
     for (const pref of prefs) prefSelect.append(el('option', { value: pref, text: pref }));
@@ -138,9 +161,12 @@
       const shown = features.filter((f) =>
         (!pref || f.properties.prefecture === pref) && (!status || f.properties.status === status));
 
+      // 「今年の開放を確認できず」は OK の場所と並べると誤解されるので、地図には選んだときだけ出す
       for (const f of features) {
-        const marker = markers.get(f.properties.id);
-        if (shown.includes(f)) marker.addTo(map); else marker.remove();
+        const onMap = shown.includes(f) &&
+          (statusKey(f.properties.status) !== 'unconfirmed' || showUnconfirmed.checked);
+        const layer = layers.get(f.properties.id);
+        if (onMap) layer.addTo(map); else layer.remove();
       }
       if (shown.length === 0) {
         list.append(el('li', { class: 'card', text: 'この条件に合う場所はありません。' }));
@@ -150,8 +176,13 @@
         const p = f.properties;
         const button = el('button', { type: 'button', class: 'show-on-map', text: '地図で見る' });
         button.addEventListener('click', () => {
-          const marker = markers.get(p.id);
-          map.setView(marker.getLatLng(), 13);
+          if (statusKey(p.status) === 'unconfirmed' && !showUnconfirmed.checked) {
+            showUnconfirmed.checked = true;
+            draw();
+          }
+          const layer = layers.get(p.id);
+          const marker = layer.getLayers().find((l) => l instanceof L.Marker);
+          map.setView(marker.getLatLng(), precisionOf(p).zoom);
           marker.openPopup();
           document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
@@ -165,12 +196,14 @@
 
     prefSelect.addEventListener('change', draw);
     statusSelect.addEventListener('change', draw);
+    showUnconfirmed.addEventListener('change', draw);
     draw();
   }
 
   // ---- 県ごとの公式ルール索引 ----
   function renderIndex(index, sourceStatus, today) {
     const root = document.getElementById('rule-index');
+    root.replaceChildren(); // 事前に書き出した HTML を、警告付きの最新表示に置き換える
     for (const pref of index.prefectures) {
       const items = pref.links.map((link) => {
         const alerts = sourceAlerts(link, sourceStatus, today);
@@ -207,21 +240,31 @@
         loadJson('data/source-status.json').catch(() => ({ sources: {} })),
       ]);
       const sourceStatus = status.sources || {};
-      const markers = new Map();
+      // 場所ごとに、マーカーと（位置が目安なら）範囲の点線の円をひとまとめにする
+      const layers = new Map();
       for (const f of spots.features) {
+        const p = f.properties;
         const [lng, lat] = f.geometry.coordinates;
         const marker = L.marker([lat, lng], {
-          icon: markerIcon(f.properties.status),
-          title: f.properties.name,
-          alt: `${f.properties.name}（${(STATUS[f.properties.status] || STATUS.unconfirmed).label}）`,
+          icon: markerIcon(p.status),
+          title: p.name,
+          alt: `${p.name}（${STATUS[statusKey(p.status)].label}）`,
         });
         marker.bindPopup(() => el('div', null, [
-          el('strong', { text: f.properties.name }),
-          ...spotDetails(f.properties, sourceStatus, today),
+          el('strong', { text: p.name }),
+          ...spotDetails(p, sourceStatus, today),
         ]), { maxWidth: 320, maxHeight: 360 });
-        markers.set(f.properties.id, marker);
+        const group = L.featureGroup([marker]);
+        const { radius } = precisionOf(p);
+        if (radius) {
+          group.addLayer(L.circle([lat, lng], {
+            radius, color: '#5a6460', weight: 1, dashArray: '4 4', fill: false, interactive: false,
+          }));
+        }
+        layers.set(p.id, group);
       }
-      renderList(spots.features, markers, map, sourceStatus, today);
+      document.getElementById('static-note').hidden = true;
+      renderList(spots.features, layers, map, sourceStatus, today);
       renderIndex(index, sourceStatus, today);
     } catch (err) {
       const box = document.getElementById('load-error');

@@ -10,8 +10,15 @@
 | `data/spots.geojson` | 釣りができる場所（手入力） |
 | `data/sources.json` | 県ごとの公式ルールへのリンク（手入力） |
 | `data/source-status.json` | 出典ページの変更チェック結果（自動生成。手で編集しない） |
-| `scripts/check_sources.py` | 出典ページを取得してハッシュを比べる（Python 標準ライブラリのみ） |
-| `.github/workflows/check-sources.yml` | 週 1 回チェックし、変更があれば Issue を立てる |
+| `scripts/check_sources.py` | 出典ページを取得してハッシュを比べる。失敗はその場で 1 回取り直し、2 週続けて失敗したときだけ「開けない」と表示 |
+| `scripts/validate_data.py` | `data/` の書式チェック（日付・必須項目・座標・URL・ID の重複など） |
+| `scripts/build_static.py` | 一覧と索引を `index.html` に前もって書き出し、`sitemap.xml` を作る（検索エンジン・SNS 向け） |
+| `tests/` | チェック用スクリプトのテスト（通信なし） |
+| `.github/workflows/check-sources.yml` | 週 1 回チェックし、確認が必要な変化があればコミットして Issue を立てる（変化がなければ何もしない） |
+| `.github/workflows/validate.yml` | push のたびに書式チェック・テスト・書き出しの鮮度を確かめる |
+| `.github/ISSUE_TEMPLATE/report.yml` | サイトからの誤り報告フォーム |
+
+スクリプトはすべて Python 3.9 以上の標準ライブラリだけで動く。
 
 ## ローカルで見る
 ```powershell
@@ -27,10 +34,18 @@ python -m http.server 8765 --bind 127.0.0.1
 5. 位置が施設そのものでない場合は `position.note` にそう書く（例: 地区の代表点）。
 6. 状態 `status`: `open`=常設の釣り場 / `limited`=決まった日だけ開放 / `unconfirmed`=今年の開放を確認できず。
 7. 出典が変わったという Issue が来たら、原文を読み直してデータを直し、`checked` を更新する。
+8. データを直したら、コミットの前に次の 2 つを実行する（GitHub でも自動で確かめ、古いと失敗する）。
+   ```powershell
+   python scripts/validate_data.py
+   ```
+   ```powershell
+   python scripts/build_static.py
+   ```
+9. 週次チェックが結果をコミットすることがあるので、手元で作業する前に `git pull` する。
 
-## 公開前に必要なこと
-- GitHub リポジトリを作り、このフォルダの中身をルートに置く（ワークフローはルートの `.github/workflows/` でないと動かない）
-- GitHub Pages を有効にする
+## 検索エンジンへの登録（任意・手作業）
+`github.io/リポジトリ名/` の下には robots.txt を置けない（ドメイン直下のものしか読まれない）。
+検索に早く載せたいときは、Google Search Console にサイトを登録し、`sitemap.xml` を送信する。
 
 ## 未収録の候補（公式情報を確認できたら追加）
 - 八戸港・宮古港（国の資料に釣り施設ありの港として載るが、施設の公式ページ未確認）

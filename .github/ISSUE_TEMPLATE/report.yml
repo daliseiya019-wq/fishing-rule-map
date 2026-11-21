@@ -1,0 +1,37 @@
+name: 情報の誤りを報告
+description: 掲載している場所やルールの誤り・古い情報を知らせる
+title: "[誤り報告] "
+labels: ["誤り報告"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます。公式の情報（県・市町村・港湾管理者・国など）で確認してから直します。
+        **個人情報（氏名・電話番号・住所など）は書かないでください。** この内容は誰でも見られます。
+  - type: input
+    id: place
+    attributes:
+      label: 場所・項目
+      description: 例「秋田港 外港地区 北防波堤」「宮城県 川・湖のルール」
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 何が違っていますか
+      description: 例「2026 年は開放日が変わった」「このリンクが開けない」
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 根拠となる公式の情報（URL など）
+      description: 分かれば書いてください。現地の掲示で知った場合はその旨を書いてください。
+  - type: dropdown
+    id: reporter
+    attributes:
+      label: あなたの立場（任意）
+      options:
+        - 釣りをする人
+        - 施設・港の管理者や関係機関
+        - その他

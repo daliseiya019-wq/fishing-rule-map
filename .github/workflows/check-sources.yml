@@ -1,6 +1,7 @@
 # 週 1 回、出典ページの変更をチェックする。
-# 変更があれば data/source-status.json をコミットし（サイトに「出典が更新されました」と出る）、
-# 確認作業のための Issue を立てる。
+# 確認が必要な変化（内容の変更・続けて開けない）があれば data/source-status.json をコミットし
+# （サイトに「出典が更新されました」などと出る）、確認作業のための Issue を立てる。
+# 何も変わらない週はコミットしない。
 # ※ このファイルはリポジトリのルートの .github/workflows/ に置く必要がある。
 name: check-sources
 
@@ -20,31 +21,29 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Check sources
-        run: python scripts/check_sources.py --changed-list changed.txt
+        run: python scripts/check_sources.py --issue-body issue.md
       - name: Commit status
         run: |
+          git add data/source-status.json
+          if git diff --cached --quiet; then
+            echo "変化なし"
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/source-status.json
-          git diff --cached --quiet || git commit -m "出典の変更チェック結果を更新"
+          git commit -m "出典の変更チェック結果を更新"
+          # 実行中に別の push があっても失敗しないよう、取り込んでから push する
+          git pull --rebase
           git push
-      - name: Open issue for changed sources
-        if: hashFiles('changed.txt') != ''
+      - name: Open issue
+        if: hashFiles('issue.md') != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          if [ -s changed.txt ]; then
-            {
-              echo "次の出典ページの内容が変わりました。原文を確認し、データを直したら確認日（checked）を更新してください。"
-              echo
-              sed 's/^/- /' changed.txt
-            } > body.md
-            gh issue create --title "出典の再確認が必要です（$(date -u +%Y-%m-%d)）" --body-file body.md
-          fi
+        run: gh issue create --title "出典の再確認が必要です（$(date -u +%Y-%m-%d)）" --body-file issue.md

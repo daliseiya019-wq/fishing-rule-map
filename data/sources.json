@@ -9,9 +9,9 @@
           "kind": "海",
           "url": "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html",
           "publisher": "青森県 水産振興課",
-          "published": null,
+          "published": "2024-01-24",
           "checked": "2026-11-22",
-          "checked_how": "search",
+          "checked_how": "page",
           "valid_until": null
         },
         {
@@ -47,7 +47,7 @@
           "publisher": "岩手県",
           "published": null,
           "checked": "2026-11-22",
-          "checked_how": "search",
+          "checked_how": "page",
           "valid_until": null,
           "memo": "釣り人向けの解説ページは見つからず。規則本文のみ"
         }
@@ -98,7 +98,7 @@
           "publisher": "秋田県",
           "published": null,
           "checked": "2026-11-22",
-          "checked_how": "search",
+          "checked_how": "page",
           "valid_until": null,
           "memo": "海のまき餌の制限は秋田海区漁業調整委員会の指示（2025-06-20 付が最新との情報あり、掲載ページ未確認）"
         }
@@ -114,7 +114,7 @@
           "publisher": "山形県",
           "published": null,
           "checked": "2026-11-22",
-          "checked_how": "search",
+          "checked_how": "page",
           "valid_until": null,
           "memo": "川・湖の遊漁ルール（令和6年版 PDF）は 2026-11-22 時点でリンク切れ。新しい版の掲載先は未確認"
         }
@@ -128,9 +128,9 @@
           "kind": "海",
           "url": "https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html",
           "publisher": "福島県",
-          "published": null,
+          "published": "2024-02-13",
           "checked": "2026-11-22",
-          "checked_how": "search",
+          "checked_how": "page",
           "valid_until": null
         },
         {

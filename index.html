@@ -3,10 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>釣り規制マップ（東北）</title>
-  <meta name="description" content="管理者が公式に「釣りをしてよい」と公表している場所だけを、出典と確認日付きで地図にまとめたページです。">
+  <title>釣り規制マップ（東北）｜公式に釣りOKの場所と県の公式ルール</title>
+  <meta name="description" content="管理者が公式に「釣りをしてよい」と公表している東北の釣り場だけを、出典と確認日付きで地図にまとめたページです。県ごとの公式ルール（禁止期間・禁止区域）への索引もあります。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://cyberjapandata.gsi.go.jp; connect-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://daliseiya019-wq.github.io/fishing-rule-map/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="釣り規制マップ">
+  <meta property="og:title" content="釣り規制マップ（東北）">
+  <meta property="og:description" content="公式に「釣りをしてよい」と公表された場所だけを、出典と確認日付きで地図に。県ごとの公式ルールへの索引つき。">
+  <meta property="og:url" content="https://daliseiya019-wq.github.io/fishing-rule-map/">
+  <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
         integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -15,6 +23,9 @@
   <header class="site-header">
     <h1>釣り規制マップ <span class="region">東北</span></h1>
     <p class="lead">管理者が<strong>公式に「釣りをしてよい」と公表している場所だけ</strong>を、出典と確認日付きで載せています。</p>
+    <!-- BEGIN:updated -->
+<p class="updated">データの最終確認日: 2026年11月22日</p>
+    <!-- END:updated -->
   </header>
 
   <aside class="notice" role="note">
@@ -31,7 +42,9 @@
         <span class="badge status-unconfirmed">？ 今年の開放を確認できず</span>
       </div>
       <div id="map" role="region" aria-label="釣りができる場所の地図"></div>
-      <p class="map-note">地図上の位置の多くは地区の代表点です。釣りをしてよい正確な範囲は、各場所の出典（公式の地図）で確認してください。</p>
+      <p id="static-note" class="map-note">地図の表示には JavaScript が必要です。下の一覧は JavaScript なしでも読めます。</p>
+      <p class="map-note">点線の円は「このあたり」という目安です（地図上の位置の多くは地区の代表点です）。釣りをしてよい正確な範囲は、各場所の出典（公式の地図）で確認してください。</p>
+      <label class="toggle"><input type="checkbox" id="show-unconfirmed"> 今年の開放を確認できない場所も地図に表示する</label>
     </section>
 
     <section aria-labelledby="list-heading">
@@ -50,13 +63,21 @@
         </label>
       </div>
       <p id="load-error" class="error" role="alert" hidden></p>
-      <ul id="spot-list" class="cards"></ul>
+      <ul id="spot-list" class="cards">
+        <!-- BEGIN:spots -->
+<li class="card"><h3>NX仙台港パーク 海の広場</h3><p class="meta">宮城県 ／ 仙台塩釜港（仙台港区）</p><span class="badge status-open">OK 常設の釣り場</span><p>仙台塩釜港の中で釣りができるのはここだけ。港内のほかの場所は全面釣り禁止。</p><ul><li>施設の利用ルール（県が PDF で公開）を守ること</li><li>各ふ頭は関係者以外立入禁止、防波堤・テトラポッドも立入禁止</li></ul><dl><dt>時間</dt><dd>公式ページに記載なし（施設に確認）</dd><dt>料金</dt><dd>公式ページに記載なし</dd><dt>地図の位置</dt><dd>県のページが示す地点</dd></dl><div class="sources"><p>出典: <a href="https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html" target="_blank" rel="noopener noreferrer">仙台塩釜港内における釣りについて</a>（宮城県 仙台塩釜港湾事務所）</p><p>掲載日: 2025年10月20日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li><li class="card"><h3>小名浜港 2号ふ頭 先端部</h3><p class="meta">福島県 ／ 小名浜港</p><span class="badge status-open">OK 常設の釣り場</span><p>小名浜港で釣りができる 2 か所のうちの 1 つ。港内には立入制限・立入禁止・釣り禁止の区域がある。</p><ul><li>釣りをしてよい範囲は県の釣りマップで確認すること</li><li>2号ふ頭周辺の照明は夜 10 時に消える</li></ul><dl><dt>時間</dt><dd>公式ページに時間の記載なし</dd><dt>料金</dt><dd>公式ページに記載なし</dd><dt>地図の位置</dt><dd>地図の位置は地区（いわき市小名浜）の代表点。正確な範囲は県の釣りマップで確認</dd></dl><div class="sources"><p>出典: <a href="https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html" target="_blank" rel="noopener noreferrer">小名浜港の釣りマップ</a>（福島県）</p><p>掲載日: 2026年5月19日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li><li class="card"><h3>いわきサンマリーナ 釣り桟橋</h3><p class="meta">福島県 ／ 小名浜港</p><span class="badge status-open">OK 常設の釣り場</span><p>小名浜港で釣りができる 2 か所のうちの 1 つ。</p><ul><li>夜間は閉鎖（閉鎖時間は季節によって違う）</li><li>釣りをしてよい範囲は県の釣りマップで確認すること</li></ul><dl><dt>時間</dt><dd>夜間閉鎖。時間は季節で変わる（施設に確認）</dd><dt>料金</dt><dd>公式ページに記載なし</dd><dt>地図の位置</dt><dd>地図の位置は地区（いわき市小名浜辰巳町）の代表点。正確な範囲は県の釣りマップで確認</dd></dl><div class="sources"><p>出典: <a href="https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html" target="_blank" rel="noopener noreferrer">小名浜港の釣りマップ</a>（福島県）</p><p>掲載日: 2026年5月19日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li><li class="card"><h3>相馬港 5号ふ頭（新地町海釣り公園）</h3><p class="meta">福島県 ／ 相馬港</p><span class="badge status-open">OK 常設の釣り場</span><p>相馬港の釣り可能エリア。県が「釣り可能エリアマップ」と「釣り場利用のルール」を公開している。</p><ul><li>釣りをしてよい範囲と利用ルールは県のマップ・ルール（PDF・画像）で確認すること</li><li>相馬港・周辺漁港の防波堤には立入禁止の場所がある（県の立入禁止マップ）</li></ul><dl><dt>時間</dt><dd>公式ページの本文に記載なし（ルールの資料で確認）</dd><dt>料金</dt><dd>公式ページの本文に記載なし</dd><dt>地図の位置</dt><dd>地図の位置は地区（新地町今泉）の代表点。正確な範囲は県の釣り可能エリアマップで確認</dd></dl><div class="sources"><p>出典: <a href="https://www.pref.fukushima.lg.jp/sec/41390a/soumakoumatsukawaurafishingarea.html" target="_blank" rel="noopener noreferrer">相馬港・松川浦漁港周辺釣りマップ</a>（福島県 相馬港湾建設事務所）</p><p>掲載日: 2025年6月13日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p><p>出典: <a href="https://www.pref.fukushima.lg.jp/sec/41390a/soumakougaiyou.html" target="_blank" rel="noopener noreferrer">相馬港について（沿革に新地町海釣り公園のオープン・2019年4月の拡張再オープンを記載）</a>（福島県 相馬港湾建設事務所）</p><p>掲載日: 2022年11月28日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p><p>出典: <a href="https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html" target="_blank" rel="noopener noreferrer">福島県海岸危険箇所マップ、港湾・漁港防波堤立入禁止マップ</a>（福島県）</p><p>掲載日: 2025年7月29日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li><li class="card"><h3>秋田港 外港地区 北防波堤</h3><p class="meta">秋田県 ／ 秋田港</p><span class="badge status-limited">日 決まった日だけ開放</span><p>国の「釣り文化振興モデル港」。決まった日だけ、有料で釣りのために開放される。2026 年は 4 月 29 日に釣りが解禁された（海上保安部の広報誌）。運営団体の今年の案内ページは見つかっていないため、料金・時間は 2020 年の発表の内容。</p><ul><li>運営は一般社団法人 秋田港有効利活用協会</li><li>開放日は土曜・日曜・祝日（イベントで平日に開くこともある）。2020 年の開始時の発表による</li><li>荒天で施設閉鎖の基準に達した日は開放しない</li><li>有料。2020 年の発表では大人 1 回 1,000 円。現在の料金・時間は運営団体の案内で確認</li></ul><dl><dt>時間</dt><dd>季節で変わる（2020 年の発表では 11 月は 7〜16 時）。現在の時間は運営団体の案内で確認</dd><dt>料金</dt><dd>有料（2020 年の発表で大人 1,000 円）</dd><dt>地図の位置</dt><dd>地図の位置は地区（秋田市飯島）の代表点。防波堤の場所は公式資料で確認</dd></dl><div class="sources"><p>出典: <a href="https://www.mlit.go.jp/kowan/kowan_tk6_000032.html" target="_blank" rel="noopener noreferrer">釣り文化振興モデル港</a>（国土交通省 港湾局）</p><p>掲載日: 記載なし ／ 確認日: 2026年11月22日（確認方法: ページ）</p><p>出典: <a href="https://www.pa.thr.mlit.go.jp/akita/100/CONT000000000000006267.pdf" target="_blank" rel="noopener noreferrer">記者発表資料「秋田港外港地区北防波堤釣り開放がスタート」（PDF）</a>（一般社団法人 秋田港有効利活用協会（国土交通省 秋田港湾事務所のサイトに掲載））</p><p>掲載日: 2020年7月31日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p><p>出典: <a href="https://www.kaiho.mlit.go.jp/02kanku/akita/2-oshirase/2-3-marinnet/6-3-1marinnet-backnumber/backnumber2026/marinnet393.pdf" target="_blank" rel="noopener noreferrer">マリンネット 令和8年5月号（4月29日が北防波堤の釣り解禁日だったと記載、PDF）</a>（海上保安庁 秋田海上保安部）</p><p>掲載日: 記載なし ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li><li class="card"><h3>青森港 浜町緑地・北防波堤</h3><p class="meta">青森県 ／ 青森港</p><span class="badge status-unconfirmed">？ 今年の開放を確認できず</span><p>国の「釣り文化振興モデル港」。過去に日を限った「釣り限定開放」の実績があるが、2026 年の釣り開放の告知は県のページで確認できなかった。</p><ul><li>青森港では原則として釣りは禁止（県の案内）。開放日以外は釣りをしないこと</li><li>開放日・条件は青森港管理所の告知で確認すること</li></ul><dl><dt>時間</dt><dd>開放日ごとに決まる</dd><dt>料金</dt><dd>公式ページに記載なし</dd><dt>地図の位置</dt><dd>地図の位置は青森港のおおよその場所で、施設の位置ではない。施設の場所は公式資料で確認</dd></dl><div class="sources"><p>出典: <a href="https://www.mlit.go.jp/kowan/kowan_tk6_000032.html" target="_blank" rel="noopener noreferrer">釣り文化振興モデル港</a>（国土交通省 港湾局）</p><p>掲載日: 記載なし ／ 確認日: 2026年11月22日（確認方法: ページ）</p><p>出典: <a href="https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html" target="_blank" rel="noopener noreferrer">青森港内の施設の開放時期について</a>（青森県 東青県土整備事務所 青森港管理所）</p><p>掲載日: 2026年3月18日 ／ 確認日: 2026年11月22日（確認方法: ページ）</p></div></li>
+        <!-- END:spots -->
+      </ul>
     </section>
 
     <section aria-labelledby="index-heading">
       <h2 id="index-heading">県ごとの公式ルール</h2>
       <p class="section-lead">禁止期間・サイズ制限・禁止区域などは、県や委員会、漁協が公表しています。原文へのリンクです。</p>
-      <div id="rule-index"></div>
+      <div id="rule-index">
+        <!-- BEGIN:index -->
+<div class="pref-block"><h3>青森県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html" target="_blank" rel="noopener noreferrer">海での釣り（遊漁）のルール</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2024年1月24日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_makie.html" target="_blank" rel="noopener noreferrer">まき餌釣りを禁止する区域（海区漁業調整委員会の指示）</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2025年4月1日 ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 掲載されている指示の有効期限は 2026-03-31。2026-11-22 時点で新しい年度の掲載なし</div></li><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_kisoku_5yugyok.html" target="_blank" rel="noopener noreferrer">川・湖の漁協ごとの遊漁規則（第5種共同漁業権）</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2026年5月20日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div><div class="pref-block"><h3>岩手県</h3><ul><li><span class="badge status-unconfirmed">海・川</span> <a href="https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/035/462/r7.6.1_iwateken_tyouseikisoku.pdf" target="_blank" rel="noopener noreferrer">岩手県漁業調整規則（海・川共通、PDF）</a><div class="meta">岩手県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 釣り人向けの解説ページは見つからず。規則本文のみ</div></li></ul></div><div class="pref-block"><h3>宮城県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.miyagi.jp/soshiki/suishin/umiduri.html" target="_blank" rel="noopener noreferrer">海釣りのルール（使える釣り方、禁止期間・サイズ、保護区域）</a><div class="meta">宮城県 水産業振興課 ／ 掲載日: 2026年9月28日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.miyagi.jp/soshiki/suishin/naisuikisoku.html" target="_blank" rel="noopener noreferrer">川・湖のルール（魚種ごとの禁止期間・全長制限、禁止区域）</a><div class="meta">宮城県 水産業振興課 ／ 掲載日: 2026年3月30日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">港</span> <a href="https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html" target="_blank" rel="noopener noreferrer">仙台塩釜港内での釣り（釣りができる場所と禁止の範囲）</a><div class="meta">宮城県 仙台塩釜港湾事務所 ／ 掲載日: 2025年10月20日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div><div class="pref-block"><h3>秋田県</h3><ul><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.akita.lg.jp/uploads/public/archive_0000066119_00/秋田川釣りガイド.pdf" target="_blank" rel="noopener noreferrer">秋田川釣りガイド（PDF）</a><div class="meta">秋田県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 海のまき餌の制限は秋田海区漁業調整委員会の指示（2025-06-20 付が最新との情報あり、掲載ページ未確認）</div></li></ul></div><div class="pref-block"><h3>山形県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.yamagata.jp/documents/4892/yuugyonoru-rutomana-.pdf" target="_blank" rel="noopener noreferrer">海での釣りのルールとマナー（PDF）</a><div class="meta">山形県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 川・湖の遊漁ルール（令和6年版 PDF）は 2026-11-22 時点でリンク切れ。新しい版の掲載先は未確認</div></li></ul></div><div class="pref-block"><h3>福島県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html" target="_blank" rel="noopener noreferrer">海での釣り（遊漁）のルール</a><div class="meta">福島県 ／ 掲載日: 2024年2月13日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">港</span> <a href="https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html" target="_blank" rel="noopener noreferrer">港湾・漁港の防波堤 立入禁止マップ、海岸危険箇所マップ</a><div class="meta">福島県 ／ 掲載日: 2025年7月29日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div>
+        <!-- END:index -->
+      </div>
     </section>
 
     <section aria-labelledby="about-heading" class="about">
@@ -67,6 +88,8 @@
         <li>出典ページは週に 1 回自動で確認し、内容が変わったら「出典が更新されました」と表示します。</li>
         <li>確認方法の「ページ」は公式ページを開いて確認したもの、「検索」は検索結果で存在を確認したものです。</li>
       </ul>
+      <h3>誤りを見つけたら</h3>
+      <p>情報の誤りや古い内容に気づいたら、<a href="https://github.com/daliseiya019-wq/fishing-rule-map/issues/new?template=report.yml" target="_blank" rel="noopener noreferrer">誤り報告フォーム</a>から知らせてください（GitHub のアカウントが必要です）。各場所の「この場所の誤りを報告」からも送れます。</p>
       <p class="attribution">背景地図: <a href="https://maps.gsi.go.jp/development/ichiran.html" rel="noopener noreferrer" target="_blank">国土地理院</a></p>
     </section>
   </main>
