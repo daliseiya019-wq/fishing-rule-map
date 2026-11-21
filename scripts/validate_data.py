@@ -7,7 +7,7 @@
 """
 import json
 import sys
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SPOTS = ROOT / "data" / "spots.geojson"
 INDEX = ROOT / "data" / "sources.json"
 
+JST = timezone(timedelta(hours=9))
 STATUSES = {"open", "limited", "unconfirmed"}
 CHECKED_HOW = {"page", "search"}
 PRECISIONS = {"point", "district", "port"}
@@ -52,7 +53,8 @@ class Checker:
         except (TypeError, ValueError):
             self.error(where, f"{name} は YYYY-MM-DD 形式の日付にしてください（今: {value!r}）")
             return
-        if name == "checked" and parsed > date.today():
+        # データの日付は日本時間で書く。GitHub Actions は UTC で動くので、日本時間の今日と比べる
+        if name == "checked" and parsed > datetime.now(JST).date():
             self.error(where, f"checked が未来の日付です（{value}）")
 
     def url(self, where, value):
