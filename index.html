@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>釣り規制マップ（東北）</title>
+  <meta name="description" content="管理者が公式に「釣りをしてよい」と公表している場所だけを、出典と確認日付きで地図にまとめたページです。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://cyberjapandata.gsi.go.jp; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+        integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>釣り規制マップ <span class="region">東北</span></h1>
+    <p class="lead">管理者が<strong>公式に「釣りをしてよい」と公表している場所だけ</strong>を、出典と確認日付きで載せています。</p>
+  </header>
+
+  <aside class="notice" role="note">
+    <p><strong>地図に載っていない場所は「禁止」でも「OK」でもありません。</strong>釣りをする前に、下の「県ごとの公式ルール」と現地の掲示を確認してください。</p>
+    <p>この情報は参考です。規則や開放日は変わります。最新の情報は必ず各機関で確認してください。</p>
+  </aside>
+
+  <main>
+    <section aria-labelledby="map-heading">
+      <h2 id="map-heading" class="visually-hidden">地図</h2>
+      <div class="legend" aria-label="凡例">
+        <span class="badge status-open">OK 常設の釣り場</span>
+        <span class="badge status-limited">日 決まった日だけ開放</span>
+        <span class="badge status-unconfirmed">？ 今年の開放を確認できず</span>
+      </div>
+      <div id="map" role="region" aria-label="釣りができる場所の地図"></div>
+      <p class="map-note">地図上の位置の多くは地区の代表点です。釣りをしてよい正確な範囲は、各場所の出典（公式の地図）で確認してください。</p>
+    </section>
+
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading">釣りができる場所の一覧</h2>
+      <div class="filters">
+        <label>県
+          <select id="filter-pref"><option value="">すべて</option></select>
+        </label>
+        <label>状態
+          <select id="filter-status">
+            <option value="">すべて</option>
+            <option value="open">常設の釣り場</option>
+            <option value="limited">決まった日だけ開放</option>
+            <option value="unconfirmed">今年の開放を確認できず</option>
+          </select>
+        </label>
+      </div>
+      <p id="load-error" class="error" role="alert" hidden></p>
+      <ul id="spot-list" class="cards"></ul>
+    </section>
+
+    <section aria-labelledby="index-heading">
+      <h2 id="index-heading">県ごとの公式ルール</h2>
+      <p class="section-lead">禁止期間・サイズ制限・禁止区域などは、県や委員会、漁協が公表しています。原文へのリンクです。</p>
+      <div id="rule-index"></div>
+    </section>
+
+    <section aria-labelledby="about-heading" class="about">
+      <h2 id="about-heading">このページについて</h2>
+      <ul>
+        <li>載せるのは、港湾管理者・自治体・国が公表している「釣りをしてよい場所」だけです。個人のブログや投稿、AI が作った情報は使いません。</li>
+        <li>内容は公式ページを人が読んで、自分の言葉でまとめています。公式の地図や文章は転載していません。</li>
+        <li>出典ページは週に 1 回自動で確認し、内容が変わったら「出典が更新されました」と表示します。</li>
+        <li>確認方法の「ページ」は公式ページを開いて確認したもの、「検索」は検索結果で存在を確認したものです。</li>
+      </ul>
+      <p class="attribution">背景地図: <a href="https://maps.gsi.go.jp/development/ichiran.html" rel="noopener noreferrer" target="_blank">国土地理院</a></p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+          integrity="sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

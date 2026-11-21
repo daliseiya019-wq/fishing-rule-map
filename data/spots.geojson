@@ -1,0 +1,219 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.99857, 38.27158] },
+      "properties": {
+        "id": "miyagi-sendaishiogama-uminohiroba",
+        "name": "NX仙台港パーク 海の広場",
+        "port": "仙台塩釜港（仙台港区）",
+        "prefecture": "宮城県",
+        "status": "open",
+        "summary": "仙台塩釜港の中で釣りができるのはここだけ。港内のほかの場所は全面釣り禁止。",
+        "conditions": [
+          "施設の利用ルール（県が PDF で公開）を守ること",
+          "各ふ頭は関係者以外立入禁止、防波堤・テトラポッドも立入禁止"
+        ],
+        "hours": "公式ページに記載なし（施設に確認）",
+        "fee": "公式ページに記載なし",
+        "position": { "precision": "point", "note": "県のページが示す地点" },
+        "sources": [
+          {
+            "title": "仙台塩釜港内における釣りについて",
+            "publisher": "宮城県 仙台塩釜港湾事務所",
+            "url": "https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html",
+            "published": "2025-10-20",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.887344, 36.944984] },
+      "properties": {
+        "id": "fukushima-onahama-2gou",
+        "name": "小名浜港 2号ふ頭 先端部",
+        "port": "小名浜港",
+        "prefecture": "福島県",
+        "status": "open",
+        "summary": "小名浜港で釣りができる 2 か所のうちの 1 つ。港内には立入制限・立入禁止・釣り禁止の区域がある。",
+        "conditions": [
+          "釣りをしてよい範囲は県の釣りマップで確認すること",
+          "2号ふ頭周辺の照明は夜 10 時に消える"
+        ],
+        "hours": "公式ページに時間の記載なし",
+        "fee": "公式ページに記載なし",
+        "position": { "precision": "district", "note": "地図の位置は地区（いわき市小名浜）の代表点。正確な範囲は県の釣りマップで確認" },
+        "sources": [
+          {
+            "title": "小名浜港の釣りマップ",
+            "publisher": "福島県",
+            "url": "https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html",
+            "published": "2026-05-19",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.90213, 36.945366] },
+      "properties": {
+        "id": "fukushima-onahama-sunmarina",
+        "name": "いわきサンマリーナ 釣り桟橋",
+        "port": "小名浜港",
+        "prefecture": "福島県",
+        "status": "open",
+        "summary": "小名浜港で釣りができる 2 か所のうちの 1 つ。",
+        "conditions": [
+          "夜間は閉鎖（閉鎖時間は季節によって違う）",
+          "釣りをしてよい範囲は県の釣りマップで確認すること"
+        ],
+        "hours": "夜間閉鎖。時間は季節で変わる（施設に確認）",
+        "fee": "公式ページに記載なし",
+        "position": { "precision": "district", "note": "地図の位置は地区（いわき市小名浜辰巳町）の代表点。正確な範囲は県の釣りマップで確認" },
+        "sources": [
+          {
+            "title": "小名浜港の釣りマップ",
+            "publisher": "福島県",
+            "url": "https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html",
+            "published": "2026-05-19",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.933273, 37.854523] },
+      "properties": {
+        "id": "fukushima-soma-5gou",
+        "name": "相馬港 5号ふ頭（新地町海釣り公園）",
+        "port": "相馬港",
+        "prefecture": "福島県",
+        "status": "open",
+        "summary": "相馬港の釣り可能エリア。県が「釣り可能エリアマップ」と「釣り場利用のルール」を公開している。",
+        "conditions": [
+          "釣りをしてよい範囲と利用ルールは県のマップ・ルール（PDF・画像）で確認すること",
+          "相馬港・周辺漁港の防波堤には立入禁止の場所がある（県の立入禁止マップ）"
+        ],
+        "hours": "公式ページの本文に記載なし（ルールの資料で確認）",
+        "fee": "公式ページの本文に記載なし",
+        "position": { "precision": "district", "note": "地図の位置は地区（新地町今泉）の代表点。正確な範囲は県の釣り可能エリアマップで確認" },
+        "sources": [
+          {
+            "title": "相馬港・松川浦漁港周辺釣りマップ",
+            "publisher": "福島県 相馬港湾建設事務所",
+            "url": "https://www.pref.fukushima.lg.jp/sec/41390a/soumakoumatsukawaurafishingarea.html",
+            "published": "2025-06-13",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "福島県海岸危険箇所マップ、港湾・漁港防波堤立入禁止マップ",
+            "publisher": "福島県",
+            "url": "https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html",
+            "published": "2025-07-29",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.047119, 39.778214] },
+      "properties": {
+        "id": "akita-port-kitabouhatei",
+        "name": "秋田港 外港地区 北防波堤",
+        "port": "秋田港",
+        "prefecture": "秋田県",
+        "status": "limited",
+        "summary": "国の「釣り文化振興モデル港」。決まった日だけ、有料で釣りのために開放される。2026 年は 4 月 29 日に釣りが解禁された（海上保安部の広報誌）。",
+        "conditions": [
+          "運営は一般社団法人 秋田港有効利活用協会",
+          "開放日は土曜・日曜・祝日（イベントで平日に開くこともある）。2020 年の開始時の発表による",
+          "荒天で施設閉鎖の基準に達した日は開放しない",
+          "有料。2020 年の発表では大人 1 回 1,000 円。現在の料金・時間は運営団体の案内で確認"
+        ],
+        "hours": "季節で変わる（2020 年の発表では 11 月は 7〜16 時）。現在の時間は運営団体の案内で確認",
+        "fee": "有料（2020 年の発表で大人 1,000 円）",
+        "position": { "precision": "district", "note": "地図の位置は地区（秋田市飯島）の代表点。防波堤の場所は公式資料で確認" },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "記者発表資料「秋田港外港地区北防波堤釣り開放がスタート」（PDF）",
+            "publisher": "一般社団法人 秋田港有効利活用協会（国土交通省 秋田港湾事務所のサイトに掲載）",
+            "url": "https://www.pa.thr.mlit.go.jp/akita/100/CONT000000000000006267.pdf",
+            "published": "2020-07-31",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "マリンネット 令和8年5月号（4月29日が北防波堤の釣り解禁日だったと記載、PDF）",
+            "publisher": "海上保安庁 秋田海上保安部",
+            "url": "https://www.kaiho.mlit.go.jp/02kanku/akita/2-oshirase/2-3-marinnet/6-3-1marinnet-backnumber/backnumber2026/marinnet393.pdf",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.733459, 40.828243] },
+      "properties": {
+        "id": "aomori-port-hamamachi",
+        "name": "青森港 浜町緑地・北防波堤",
+        "port": "青森港",
+        "prefecture": "青森県",
+        "status": "unconfirmed",
+        "summary": "国の「釣り文化振興モデル港」。過去に日を限った「釣り限定開放」の実績があるが、2026 年の釣り開放の告知は県のページで確認できなかった。",
+        "conditions": [
+          "青森港では原則として釣りは禁止（県の案内）。開放日以外は釣りをしないこと",
+          "開放日・条件は青森港管理所の告知で確認すること"
+        ],
+        "hours": "開放日ごとに決まる",
+        "fee": "公式ページに記載なし",
+        "position": { "precision": "district", "note": "地図の位置は青森港のおおよその場所で、施設の位置ではない。施設の場所は公式資料で確認" },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "青森港内の施設の開放時期について",
+            "publisher": "青森県 東青県土整備事務所 青森港管理所",
+            "url": "https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html",
+            "published": "2026-03-18",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    }
+  ]
+}

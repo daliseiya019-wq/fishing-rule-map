@@ -1,0 +1,149 @@
+{
+  "note": "県ごとの公式ルールへの索引。要点は自分の言葉で書き、原文は転載しない。checked_how: page=ページを開いて確認 / search=検索結果で存在を確認",
+  "prefectures": [
+    {
+      "name": "青森県",
+      "links": [
+        {
+          "label": "海での釣り（遊漁）のルール",
+          "kind": "海",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html",
+          "publisher": "青森県 水産振興課",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "search",
+          "valid_until": null
+        },
+        {
+          "label": "まき餌釣りを禁止する区域（海区漁業調整委員会の指示）",
+          "kind": "海",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_makie.html",
+          "publisher": "青森県 水産振興課",
+          "published": "2025-04-01",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": "2026-03-31",
+          "memo": "掲載されている指示の有効期限は 2026-03-31。2026-11-22 時点で新しい年度の掲載なし"
+        },
+        {
+          "label": "川・湖の漁協ごとの遊漁規則（第5種共同漁業権）",
+          "kind": "川・湖",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_kisoku_5yugyok.html",
+          "publisher": "青森県 水産振興課",
+          "published": "2026-05-20",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "岩手県",
+      "links": [
+        {
+          "label": "岩手県漁業調整規則（海・川共通、PDF）",
+          "kind": "海・川",
+          "url": "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/035/462/r7.6.1_iwateken_tyouseikisoku.pdf",
+          "publisher": "岩手県",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "search",
+          "valid_until": null,
+          "memo": "釣り人向けの解説ページは見つからず。規則本文のみ"
+        }
+      ]
+    },
+    {
+      "name": "宮城県",
+      "links": [
+        {
+          "label": "海釣りのルール（使える釣り方、禁止期間・サイズ、保護区域）",
+          "kind": "海",
+          "url": "https://www.pref.miyagi.jp/soshiki/suishin/umiduri.html",
+          "publisher": "宮城県 水産業振興課",
+          "published": "2026-09-28",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖のルール（魚種ごとの禁止期間・全長制限、禁止区域）",
+          "kind": "川・湖",
+          "url": "https://www.pref.miyagi.jp/soshiki/suishin/naisuikisoku.html",
+          "publisher": "宮城県 水産業振興課",
+          "published": "2026-03-30",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "仙台塩釜港内での釣り（釣りができる場所と禁止の範囲）",
+          "kind": "港",
+          "url": "https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html",
+          "publisher": "宮城県 仙台塩釜港湾事務所",
+          "published": "2025-10-20",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "秋田県",
+      "links": [
+        {
+          "label": "秋田川釣りガイド（PDF）",
+          "kind": "川・湖",
+          "url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000066119_00/秋田川釣りガイド.pdf",
+          "publisher": "秋田県",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "search",
+          "valid_until": null,
+          "memo": "海のまき餌の制限は秋田海区漁業調整委員会の指示（2025-06-20 付が最新との情報あり、掲載ページ未確認）"
+        }
+      ]
+    },
+    {
+      "name": "山形県",
+      "links": [
+        {
+          "label": "海での釣りのルールとマナー（PDF）",
+          "kind": "海",
+          "url": "https://www.pref.yamagata.jp/documents/4892/yuugyonoru-rutomana-.pdf",
+          "publisher": "山形県",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "search",
+          "valid_until": null,
+          "memo": "川・湖の遊漁ルール（令和6年版 PDF）は 2026-11-22 時点でリンク切れ。新しい版の掲載先は未確認"
+        }
+      ]
+    },
+    {
+      "name": "福島県",
+      "links": [
+        {
+          "label": "海での釣り（遊漁）のルール",
+          "kind": "海",
+          "url": "https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html",
+          "publisher": "福島県",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "search",
+          "valid_until": null
+        },
+        {
+          "label": "港湾・漁港の防波堤 立入禁止マップ、海岸危険箇所マップ",
+          "kind": "港",
+          "url": "https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html",
+          "publisher": "福島県",
+          "published": "2025-07-29",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    }
+  ]
+}
