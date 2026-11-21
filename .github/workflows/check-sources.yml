@@ -21,7 +21,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90 # 全国で数百件になっても終わるように（1 件 3 秒間隔）
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,6 +32,7 @@ jobs:
       - name: Commit status
         run: |
           git add data/source-status.json
+          if [ -d data/snapshots ]; then git add data/snapshots; fi
           if git diff --cached --quiet; then
             echo "変化なし"
             exit 0

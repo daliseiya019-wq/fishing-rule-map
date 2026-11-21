@@ -10,7 +10,7 @@
     unconfirmed: { label: '今年の開放を確認できず', mark: '？' },
   };
   const CHECKED_HOW = { page: 'ページ', search: '検索' };
-  const TOHOKU_CENTER = [39.3, 140.8];
+  const JAPAN_VIEW = { center: [37.5, 137.5], zoom: 5 };
   const REPORT_URL = 'https://github.com/daliseiya019-wq/fishing-rule-map/issues/new';
   // 位置が「目安」の点は、寄りすぎると施設の場所だと誤解されるので、精度に応じて寄せ方と範囲の円を変える
   const PRECISION = {
@@ -18,19 +18,16 @@
     district: { zoom: 12, radius: 1500 },
     port: { zoom: 11, radius: 3000 },
   };
+  // 範囲の円は、ある程度寄ったときだけ出す（全国表示で円が重なって見づらくならないように）
+  const CIRCLE_MIN_ZOOM = 10;
+  const CLUSTER_OFF_ZOOM = Math.min(...Object.values(PRECISION).map((p) => p.zoom));
 
-  function statusKey(status) {
-    return Object.prototype.hasOwnProperty.call(STATUS, status) ? status : 'unconfirmed';
-  }
+  const hasOwn = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
+  const statusKey = (status) => (hasOwn(STATUS, status) ? status : 'unconfirmed');
 
   function precisionOf(p) {
     const key = p.position && p.position.precision;
-    return Object.prototype.hasOwnProperty.call(PRECISION, key) ? PRECISION[key] : PRECISION.port;
-  }
-
-  function reportLink(spotName) {
-    const params = new URLSearchParams({ template: 'report.yml', title: `[誤り報告] ${spotName}` });
-    return safeLink(`${REPORT_URL}?${params}`, 'この場所の誤りを報告');
+    return hasOwn(PRECISION, key) ? PRECISION[key] : PRECISION.port;
   }
 
   // ---- 小さな DOM ヘルパー ----
@@ -59,6 +56,11 @@
     } catch (e) { /* 不正な URL はリンクにしない */ }
     if (!href) return el('span', { text: text });
     return el('a', { href: href, target: '_blank', rel: 'noopener noreferrer', text: text });
+  }
+
+  function reportLink(spotName) {
+    const params = new URLSearchParams({ template: 'report.yml', title: `[誤り報告] ${spotName}` });
+    return safeLink(`${REPORT_URL}?${params}`, 'この場所の誤りを報告');
   }
 
   // 日本時間の日付（YYYY-MM-DD）。データの日付は日本時間で書いているので、比較も日本時間でそろえる
@@ -130,7 +132,7 @@
 
   // ---- 地図 ----
   function createMap() {
-    const map = L.map('map', { scrollWheelZoom: false }).setView(TOHOKU_CENTER, 7);
+    const map = L.map('map', { scrollWheelZoom: false }).setView(JAPAN_VIEW.center, JAPAN_VIEW.zoom);
     L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener noreferrer">国土地理院</a>',
@@ -144,32 +146,94 @@
     return L.divIcon({ html: icon.outerHTML, className: '', iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -14] });
   }
 
-  // ---- 一覧 ----
-  function renderList(features, layers, map, sourceStatus, today) {
+  // 場所ごとのマーカーと（位置が目安なら）範囲の点線の円を作る
+  function createSpotLayers(features, sourceStatus, today) {
+    const spots = new Map();
+    for (const f of features) {
+      const p = f.properties;
+      const [lng, lat] = f.geometry.coordinates;
+      const marker = L.marker([lat, lng], {
+        icon: markerIcon(p.status),
+        title: p.name,
+        alt: `${p.name}（${STATUS[statusKey(p.status)].label}）`,
+      });
+      marker.bindPopup(() => el('div', null, [
+        el('strong', { text: p.name }),
+        ...spotDetails(p, sourceStatus, today),
+      ]), { maxWidth: 320, maxHeight: 360 });
+      const { radius } = precisionOf(p);
+      const circle = radius
+        ? L.circle([lat, lng], { radius, color: '#5a6460', weight: 1, dashArray: '4 4', fill: false, interactive: false })
+        : null;
+      spots.set(p.id, { feature: f, marker, circle });
+    }
+    return spots;
+  }
+
+  // ---- 一覧と地図の連動 ----
+  function setupListAndMap(features, spots, map, prefs, sourceStatus, today) {
     const list = document.getElementById('spot-list');
     const prefSelect = document.getElementById('filter-pref');
     const statusSelect = document.getElementById('filter-status');
     const showUnconfirmed = document.getElementById('show-unconfirmed');
+    // 大量の点は近いものをまとめて数字で表示する（全国表示で点が重なって押せなくなるのを防ぐ）
+    // 「地図で見る」で寄る倍率（11 以上）ではまとめず、1 つずつの印にする
+    const cluster = L.markerClusterGroup({
+      showCoverageOnHover: false, maxClusterRadius: 40, disableClusteringAtZoom: CLUSTER_OFF_ZOOM,
+    });
+    const circles = L.layerGroup();
+    map.addLayer(cluster);
 
-    const prefs = [...new Set(features.map((f) => f.properties.prefecture))];
-    for (const pref of prefs) prefSelect.append(el('option', { value: pref, text: pref }));
+    // 釣り場のある都道府県だけを JIS コード順で選択肢に出す
+    const prefsWithSpots = prefs.filter((pref) => features.some((f) => f.properties.prefecture === pref.name));
+    for (const pref of prefsWithSpots) prefSelect.append(el('option', { value: pref.name, text: pref.name }));
 
-    function draw() {
+    // ?pref=<slug> で開いたときはその都道府県を選んだ状態にする（都道府県ページからのリンク用）
+    const requested = new URLSearchParams(location.search).get('pref');
+    const requestedPref = prefsWithSpots.find((p) => p.slug === requested);
+    if (requestedPref) prefSelect.value = requestedPref.name;
+
+    function updateCircles() {
+      if (map.getZoom() >= CIRCLE_MIN_ZOOM) map.addLayer(circles); else map.removeLayer(circles);
+    }
+    map.on('zoomend', updateCircles);
+
+    function fitTo(shown, animate) {
+      // 読み込み直後はレイアウトが固まっておらず地図の大きさを誤ることがあるので、測り直してから合わせる
+      map.invalidateSize();
+      const prefName = prefSelect.value;
+      const pref = prefs.find((p) => p.name === prefName);
+      const points = shown.map((f) => spots.get(f.properties.id).marker.getLatLng());
+      if (points.length) {
+        map.fitBounds(L.latLngBounds(points), { padding: [30, 30], maxZoom: pref ? 10 : 7, animate });
+      } else if (pref) {
+        map.setView(pref.center, pref.zoom, { animate });
+      } else {
+        map.setView(JAPAN_VIEW.center, JAPAN_VIEW.zoom, { animate });
+      }
+    }
+
+    function draw({ moveMap, animate = true }) {
       const pref = prefSelect.value;
       const status = statusSelect.value;
-      list.replaceChildren();
       const shown = features.filter((f) =>
         (!pref || f.properties.prefecture === pref) && (!status || f.properties.status === status));
 
       // 「今年の開放を確認できず」は OK の場所と並べると誤解されるので、地図には選んだときだけ出す
-      for (const f of features) {
-        const onMap = shown.includes(f) &&
-          (statusKey(f.properties.status) !== 'unconfirmed' || showUnconfirmed.checked);
-        const layer = layers.get(f.properties.id);
-        if (onMap) layer.addTo(map); else layer.remove();
+      const onMap = shown.filter((f) => statusKey(f.properties.status) !== 'unconfirmed' || showUnconfirmed.checked);
+      cluster.clearLayers();
+      circles.clearLayers();
+      cluster.addLayers(onMap.map((f) => spots.get(f.properties.id).marker));
+      for (const f of onMap) {
+        const { circle } = spots.get(f.properties.id);
+        if (circle) circles.addLayer(circle);
       }
+      updateCircles();
+      if (moveMap) fitTo(onMap, animate);
+
+      list.replaceChildren();
       if (shown.length === 0) {
-        list.append(el('li', { class: 'card', text: 'この条件に合う場所はありません。' }));
+        list.append(el('li', { class: 'card', text: 'この条件に合う場所はまだ収録していません。' }));
         return;
       }
       for (const f of shown) {
@@ -178,11 +242,11 @@
         button.addEventListener('click', () => {
           if (statusKey(p.status) === 'unconfirmed' && !showUnconfirmed.checked) {
             showUnconfirmed.checked = true;
-            draw();
+            draw({ moveMap: false });
           }
-          const layer = layers.get(p.id);
-          const marker = layer.getLayers().find((l) => l instanceof L.Marker);
-          map.setView(marker.getLatLng(), precisionOf(p).zoom);
+          const { marker } = spots.get(p.id);
+          // この倍率ではまとめ表示が解除されるので、アニメーションなしで移動してすぐ開ける
+          map.setView(marker.getLatLng(), precisionOf(p).zoom, { animate: false });
           marker.openPopup();
           document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
@@ -194,17 +258,20 @@
       }
     }
 
-    prefSelect.addEventListener('change', draw);
-    statusSelect.addEventListener('change', draw);
-    showUnconfirmed.addEventListener('change', draw);
-    draw();
+    prefSelect.addEventListener('change', () => draw({ moveMap: true }));
+    statusSelect.addEventListener('change', () => draw({ moveMap: false }));
+    showUnconfirmed.addEventListener('change', () => draw({ moveMap: false }));
+    // 最初の表示はアニメーションなしで合わせる（裏のタブで開かれるとアニメーションが止まり、範囲が合わないため）
+    draw({ moveMap: true, animate: false });
   }
 
-  // ---- 県ごとの公式ルール索引 ----
-  function renderIndex(index, sourceStatus, today) {
+  // ---- 都道府県ごとの公式ルール索引 ----
+  function renderIndex(index, prefs, sourceStatus, today) {
     const root = document.getElementById('rule-index');
     root.replaceChildren(); // 事前に書き出した HTML を、警告付きの最新表示に置き換える
-    for (const pref of index.prefectures) {
+    const order = new Map(prefs.map((p, i) => [p.name, i]));
+    const sorted = [...index.prefectures].sort((a, b) => (order.get(a.name) ?? 99) - (order.get(b.name) ?? 99));
+    for (const pref of sorted) {
       const items = pref.links.map((link) => {
         const alerts = sourceAlerts(link, sourceStatus, today);
         return el('li', null, [
@@ -233,39 +300,19 @@
     const today = jstDate(new Date());
     const map = createMap();
     try {
-      const [spots, index, status] = await Promise.all([
+      const [spotsData, index, prefData, status] = await Promise.all([
         loadJson('data/spots.geojson'),
         loadJson('data/sources.json'),
+        loadJson('data/prefectures.json'),
         // 変更チェックの結果は無くても表示できるようにする
         loadJson('data/source-status.json').catch(() => ({ sources: {} })),
       ]);
       const sourceStatus = status.sources || {};
-      // 場所ごとに、マーカーと（位置が目安なら）範囲の点線の円をひとまとめにする
-      const layers = new Map();
-      for (const f of spots.features) {
-        const p = f.properties;
-        const [lng, lat] = f.geometry.coordinates;
-        const marker = L.marker([lat, lng], {
-          icon: markerIcon(p.status),
-          title: p.name,
-          alt: `${p.name}（${STATUS[statusKey(p.status)].label}）`,
-        });
-        marker.bindPopup(() => el('div', null, [
-          el('strong', { text: p.name }),
-          ...spotDetails(p, sourceStatus, today),
-        ]), { maxWidth: 320, maxHeight: 360 });
-        const group = L.featureGroup([marker]);
-        const { radius } = precisionOf(p);
-        if (radius) {
-          group.addLayer(L.circle([lat, lng], {
-            radius, color: '#5a6460', weight: 1, dashArray: '4 4', fill: false, interactive: false,
-          }));
-        }
-        layers.set(p.id, group);
-      }
+      const prefs = prefData.prefectures;
+      const spots = createSpotLayers(spotsData.features, sourceStatus, today);
       document.getElementById('static-note').hidden = true;
-      renderList(spots.features, layers, map, sourceStatus, today);
-      renderIndex(index, sourceStatus, today);
+      setupListAndMap(spotsData.features, spots, map, prefs, sourceStatus, today);
+      renderIndex(index, prefs, sourceStatus, today);
     } catch (err) {
       const box = document.getElementById('load-error');
       box.textContent = 'データを読み込めませんでした。時間をおいてページを再読み込みしてください。';

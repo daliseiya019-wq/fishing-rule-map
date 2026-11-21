@@ -1,23 +1,28 @@
 {
-  "hash_version": 2,
+  "hash_version": 3,
   "sources": {
     "https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html": {
-      "hash": "ad1b038edc4a221a291811794f354aca9e6bfbfc59b0c44656dad123ce21ed1f"
+      "hash": "79b6dd36cf5a74e285e5e9db637a107b329c730be1b5c633ab12b56fdbbba711",
+      "page_date": "2025-10-20"
     },
     "https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html": {
-      "hash": "9bde609f0ad88ef860e9071981b7a85098cf0a5b5d09b6ef8451080255bdd695"
+      "hash": "34d74dd4b320e678ad07ef8eb9a43f2e24f981cde7942efa5815cc543a9bde04",
+      "page_date": "2026-05-19"
     },
     "https://www.pref.fukushima.lg.jp/sec/41390a/soumakoumatsukawaurafishingarea.html": {
-      "hash": "58c72745b9f9c8fc8b6c2cce0b5b1c3e03f9b4773636489dc9c2ddba6258274d"
+      "hash": "13da6849d993d80d3d99ccf241ead7a7180ca9ce4ddcbf9d9d14fac8ff10d49b",
+      "page_date": "2025-06-13"
     },
     "https://www.pref.fukushima.lg.jp/sec/41390a/soumakougaiyou.html": {
-      "hash": "4b8e507fde128049f12aa46f0e5cc17ce346992e17f3e9234bc5296a364ff9ba"
+      "hash": "d18f76914b589028cc225113df22f28a0250a72723a1243c765a848fa741dc6a",
+      "page_date": "2022-11-28"
     },
     "https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html": {
-      "hash": "4de93731abe90c1fd761095c2872554dccddcfaf35da91452d9104f36e01e813"
+      "hash": "3101f336e16e00e20b1c15f6d9ffcbfd355718dc8994b8e3da7e4732c2ff86f5",
+      "page_date": "2025-07-29"
     },
     "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html": {
-      "hash": "b6613534860b1c43a53f37b80c521df94576e839b52f74a94fc496051c61b221"
+      "hash": "429e8e18f28639b53e10e37fe677cf99e4fec512b5b5f7ce44bac55e264015a9"
     },
     "https://www.pa.thr.mlit.go.jp/akita/100/CONT000000000000006267.pdf": {
       "hash": "17d0aeeaed955f37be67f300ea09e02ca5befb95586fb59bf2c0421fb7138cc9"
@@ -26,25 +31,31 @@
       "hash": "2965579aa14fb5dbcc8b949f099343c0db457c876a619d246753220be747b2b6"
     },
     "https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html": {
-      "hash": "d0826ce93cc2925cb3765e7a66959a5c518a0f46c5bd8df39c0632d81a13fd5a"
+      "hash": "9f5948b30526d2d72438df9f48b1d86aaa1ac16ff6c9a7e550fb557f3939e0aa",
+      "page_date": "2026-03-18"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html": {
-      "hash": "c80cf0ce5d45da9e3bd0861e75ef0118fc86f3fc42ffa3a97a3b07c241941b1b"
+      "hash": "507e2989f93a94527b2f93ae56f38ad91df4a43e4c93fdf723de801ed6401733",
+      "page_date": "2024-01-24"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_makie.html": {
-      "hash": "fbeec842cb37fa106c679a72efd5d7e22ed39c5f4b51a2c1eb0b1f0adaa59a17"
+      "hash": "78220f70daa2bd37302f8db4395cddde2f2a27ee3768d7dd8e253877ca0ecfed",
+      "page_date": "2025-04-01"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_kisoku_5yugyok.html": {
-      "hash": "59ccb9f2b7ea57e778d74f06e4fec4ecc1ff8c45fee5756e3efacda70558d9c9"
+      "hash": "9a70c73df207e47ddbe24aaf691b77d7116d8ec74031422876e241dd38542db3",
+      "page_date": "2026-05-20"
     },
     "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/035/462/r7.6.1_iwateken_tyouseikisoku.pdf": {
       "hash": "131e938c5450ae2a9c1916856ad36d693f029643b3b1d9c9d8e5f8428996a8ad"
     },
     "https://www.pref.miyagi.jp/soshiki/suishin/umiduri.html": {
-      "hash": "5e4ab6cfddb43778c3a34aba4951efa24d5ae3b55ea1896bfc58ee7db7a5c2e7"
+      "hash": "3074012fe6792c378ee1dd710def5467df153fa737bc567677702993394dcd69",
+      "page_date": "2026-09-28"
     },
     "https://www.pref.miyagi.jp/soshiki/suishin/naisuikisoku.html": {
-      "hash": "f518ac2aca87f48d92f70d35abe7408569746c7fc6acef28ea2a25db66f3e38b"
+      "hash": "38eb9711dd36593dd2bf0af0db0241ad7958e78c699b46d37df0d2cc59426b8e",
+      "page_date": "2026-03-30"
     },
     "https://www.pref.akita.lg.jp/uploads/public/archive_0000066119_00/秋田川釣りガイド.pdf": {
       "hash": "c2b34fdff1d9dd33f706cb90ff33878d485db33b6913b31f9423e9f07ad09093"
@@ -53,7 +64,8 @@
       "hash": "8e9ffa06d6df17319928f5c5f3ba909985abdb85528c542374469a2169b3f0d2"
     },
     "https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html": {
-      "hash": "c026632e5d7edd66af99094abe6cd680bc75943e30bd7306b9a18562a197cff4"
+      "hash": "c543c43e30ccaf633ef18f120f763e492346482b2d3855f6863c8be8e1eb4428",
+      "page_date": "2024-02-13"
     }
   }
 }

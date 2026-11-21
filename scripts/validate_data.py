@@ -20,13 +20,9 @@ STATUSES = {"open", "limited", "unconfirmed"}
 CHECKED_HOW = {"page", "search"}
 PRECISIONS = {"point", "district", "port"}
 KINDS = {"海", "川・湖", "海・川", "港"}
-PREFECTURES = {
-    "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県", "栃木県", "群馬県",
-    "埼玉県", "千葉県", "東京都", "神奈川県", "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県",
-    "岐阜県", "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県",
-    "鳥取県", "島根県", "岡山県", "広島県", "山口県", "徳島県", "香川県", "愛媛県", "高知県", "福岡県",
-    "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
-}
+PREF_FILE = ROOT / "data" / "prefectures.json"
+PREF_LIST = json.loads(PREF_FILE.read_text(encoding="utf-8"))["prefectures"]
+PREFECTURES = {p["name"] for p in PREF_LIST}
 # 日本の範囲（離島を含むおおよその外枠）
 LNG_RANGE = (122.0, 154.0)
 LAT_RANGE = (20.0, 46.0)
@@ -146,10 +142,28 @@ def check_index(c):
             c.text(lw, link.get("memo"), "memo", required=False)
 
 
+def check_prefectures(c):
+    where = "prefectures.json"
+    if len(PREF_LIST) != 47:
+        c.error(where, f"都道府県は 47 件のはずです（今: {len(PREF_LIST)} 件）")
+    for key in ("code", "name", "slug"):
+        values = [p.get(key) for p in PREF_LIST]
+        if len(set(values)) != len(values):
+            c.error(where, f"{key} が重複しています")
+    for p in PREF_LIST:
+        slug = p.get("slug", "")
+        if not (isinstance(slug, str) and slug.isascii() and slug.isalpha() and slug.islower()):
+            c.error(where, f"{p.get('name')}: slug は半角英小文字だけにしてください（今: {slug!r}）")
+        center = p.get("center")
+        if not (isinstance(center, list) and len(center) == 2 and
+                LAT_RANGE[0] <= center[0] <= LAT_RANGE[1] and LNG_RANGE[0] <= center[1] <= LNG_RANGE[1]):
+            c.error(where, f"{p.get('name')}: center は [緯度, 経度] で日本の範囲内にしてください")
+
+
 def main():
     sys.stdout.reconfigure(encoding="utf-8")  # Windows のコンソールでも日本語を出せるようにする
     c = Checker()
-    for check in (check_spots, check_index):
+    for check in (check_prefectures, check_spots, check_index):
         try:
             check(c)
         except (OSError, json.JSONDecodeError) as exc:

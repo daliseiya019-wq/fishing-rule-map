@@ -3,25 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>釣り規制マップ（東北）｜公式に釣りOKの場所と県の公式ルール</title>
-  <meta name="description" content="管理者が公式に「釣りをしてよい」と公表している東北の釣り場だけを、出典と確認日付きで地図にまとめたページです。県ごとの公式ルール（禁止期間・禁止区域）への索引もあります。">
+  <title>釣り規制マップ｜公式に釣りOKの場所と都道府県の公式ルール</title>
+  <meta name="description" content="管理者が公式に「釣りをしてよい」と公表している釣り場だけを、出典と確認日付きで地図にまとめたページです。都道府県ごとの公式ルール（禁止期間・禁止区域）への索引もあります。収録地域は順次拡大中です。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://cyberjapandata.gsi.go.jp; connect-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <link rel="canonical" href="https://daliseiya019-wq.github.io/fishing-rule-map/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="釣り規制マップ">
-  <meta property="og:title" content="釣り規制マップ（東北）">
-  <meta property="og:description" content="公式に「釣りをしてよい」と公表された場所だけを、出典と確認日付きで地図に。県ごとの公式ルールへの索引つき。">
+  <meta property="og:title" content="釣り規制マップ">
+  <meta property="og:description" content="公式に「釣りをしてよい」と公表された場所だけを、出典と確認日付きで地図に。都道府県ごとの公式ルールへの索引つき。">
   <meta property="og:url" content="https://daliseiya019-wq.github.io/fishing-rule-map/">
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
         integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
+        integrity="sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
+        integrity="sha384-wgw+aLYNQ7dlhK47ZPK7FRACiq7ROZwgFNg0m04avm4CaXS+Z9Y7nMu8yNjBKYC+" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <h1>釣り規制マップ <span class="region">東北</span></h1>
+    <h1>釣り規制マップ <span class="region">全国（収録地域を順次拡大中）</span></h1>
     <p class="lead">管理者が<strong>公式に「釣りをしてよい」と公表している場所だけ</strong>を、出典と確認日付きで載せています。</p>
     <!-- BEGIN:updated -->
 <p class="updated">データの最終確認日: 2026年11月22日</p>
@@ -29,7 +33,7 @@
   </header>
 
   <aside class="notice" role="note">
-    <p><strong>地図に載っていない場所は「禁止」でも「OK」でもありません。</strong>釣りをする前に、下の「県ごとの公式ルール」と現地の掲示を確認してください。</p>
+    <p><strong>地図に載っていない場所は「禁止」でも「OK」でもありません。</strong>釣りをする前に、下の「都道府県ごとの公式ルール」と現地の掲示を確認してください。</p>
     <p>この情報は参考です。規則や開放日は変わります。最新の情報は必ず各機関で確認してください。</p>
   </aside>
 
@@ -50,7 +54,7 @@
     <section aria-labelledby="list-heading">
       <h2 id="list-heading">釣りができる場所の一覧</h2>
       <div class="filters">
-        <label>県
+        <label>都道府県
           <select id="filter-pref"><option value="">すべて</option></select>
         </label>
         <label>状態
@@ -71,12 +75,22 @@
     </section>
 
     <section aria-labelledby="index-heading">
-      <h2 id="index-heading">県ごとの公式ルール</h2>
+      <h2 id="index-heading">都道府県ごとの公式ルール</h2>
       <p class="section-lead">禁止期間・サイズ制限・禁止区域などは、県や委員会、漁協が公表しています。原文へのリンクです。</p>
       <div id="rule-index">
         <!-- BEGIN:index -->
 <div class="pref-block"><h3>青森県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html" target="_blank" rel="noopener noreferrer">海での釣り（遊漁）のルール</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2024年1月24日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_makie.html" target="_blank" rel="noopener noreferrer">まき餌釣りを禁止する区域（海区漁業調整委員会の指示）</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2025年4月1日 ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 掲載されている指示の有効期限は 2026-03-31。2026-11-22 時点で新しい年度の掲載なし</div></li><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_kisoku_5yugyok.html" target="_blank" rel="noopener noreferrer">川・湖の漁協ごとの遊漁規則（第5種共同漁業権）</a><div class="meta">青森県 水産振興課 ／ 掲載日: 2026年5月20日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div><div class="pref-block"><h3>岩手県</h3><ul><li><span class="badge status-unconfirmed">海・川</span> <a href="https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/035/462/r7.6.1_iwateken_tyouseikisoku.pdf" target="_blank" rel="noopener noreferrer">岩手県漁業調整規則（海・川共通、PDF）</a><div class="meta">岩手県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 釣り人向けの解説ページは見つからず。規則本文のみ</div></li></ul></div><div class="pref-block"><h3>宮城県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.miyagi.jp/soshiki/suishin/umiduri.html" target="_blank" rel="noopener noreferrer">海釣りのルール（使える釣り方、禁止期間・サイズ、保護区域）</a><div class="meta">宮城県 水産業振興課 ／ 掲載日: 2026年9月28日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.miyagi.jp/soshiki/suishin/naisuikisoku.html" target="_blank" rel="noopener noreferrer">川・湖のルール（魚種ごとの禁止期間・全長制限、禁止区域）</a><div class="meta">宮城県 水産業振興課 ／ 掲載日: 2026年3月30日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">港</span> <a href="https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html" target="_blank" rel="noopener noreferrer">仙台塩釜港内での釣り（釣りができる場所と禁止の範囲）</a><div class="meta">宮城県 仙台塩釜港湾事務所 ／ 掲載日: 2025年10月20日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div><div class="pref-block"><h3>秋田県</h3><ul><li><span class="badge status-unconfirmed">川・湖</span> <a href="https://www.pref.akita.lg.jp/uploads/public/archive_0000066119_00/秋田川釣りガイド.pdf" target="_blank" rel="noopener noreferrer">秋田川釣りガイド（PDF）</a><div class="meta">秋田県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 海のまき餌の制限は秋田海区漁業調整委員会の指示（2025-06-20 付が最新との情報あり、掲載ページ未確認）</div></li></ul></div><div class="pref-block"><h3>山形県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.yamagata.jp/documents/4892/yuugyonoru-rutomana-.pdf" target="_blank" rel="noopener noreferrer">海での釣りのルールとマナー（PDF）</a><div class="meta">山形県 ／ 掲載日: 記載なし ／ 確認日: 2026年11月22日（ページ）</div><div class="meta">メモ: 川・湖の遊漁ルール（令和6年版 PDF）は 2026-11-22 時点でリンク切れ。新しい版の掲載先は未確認</div></li></ul></div><div class="pref-block"><h3>福島県</h3><ul><li><span class="badge status-unconfirmed">海</span> <a href="https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html" target="_blank" rel="noopener noreferrer">海での釣り（遊漁）のルール</a><div class="meta">福島県 ／ 掲載日: 2024年2月13日 ／ 確認日: 2026年11月22日（ページ）</div></li><li><span class="badge status-unconfirmed">港</span> <a href="https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html" target="_blank" rel="noopener noreferrer">港湾・漁港の防波堤 立入禁止マップ、海岸危険箇所マップ</a><div class="meta">福島県 ／ 掲載日: 2025年7月29日 ／ 確認日: 2026年11月22日（ページ）</div></li></ul></div>
         <!-- END:index -->
+      </div>
+    </section>
+
+    <section aria-labelledby="coverage-heading">
+      <h2 id="coverage-heading">収録状況</h2>
+      <p class="section-lead">釣り場と公式ルールの索引は、都道府県ごとに公式情報を確認しながら追加しています。「未収録」の地域は、まだ調べていないという意味です。</p>
+      <div id="coverage">
+        <!-- BEGIN:coverage -->
+<p>収録済み: 6 / 47 都道府県</p><ul class="coverage-list"><li><a href="pref/aomori.html">青森県</a><span class="meta">釣り場 1 か所 ／ 公式ルール 3 件</span></li><li><a href="pref/iwate.html">岩手県</a><span class="meta">釣り場 0 か所 ／ 公式ルール 1 件</span></li><li><a href="pref/miyagi.html">宮城県</a><span class="meta">釣り場 1 か所 ／ 公式ルール 3 件</span></li><li><a href="pref/akita.html">秋田県</a><span class="meta">釣り場 1 か所 ／ 公式ルール 1 件</span></li><li><a href="pref/yamagata.html">山形県</a><span class="meta">釣り場 0 か所 ／ 公式ルール 1 件</span></li><li><a href="pref/fukushima.html">福島県</a><span class="meta">釣り場 3 か所 ／ 公式ルール 2 件</span></li></ul><p class="meta">未収録: 北海道、茨城県、栃木県、群馬県、埼玉県、千葉県、東京都、神奈川県、新潟県、富山県、石川県、福井県、山梨県、長野県、岐阜県、静岡県、愛知県、三重県、滋賀県、京都府、大阪府、兵庫県、奈良県、和歌山県、鳥取県、島根県、岡山県、広島県、山口県、徳島県、香川県、愛媛県、高知県、福岡県、佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県、沖縄県</p>
+        <!-- END:coverage -->
       </div>
     </section>
 
@@ -96,6 +110,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
           integrity="sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"
+          integrity="sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

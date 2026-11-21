@@ -154,6 +154,10 @@ h2 { font-size: 1.25rem; margin: 32px 0 8px; }
 .pref-block .meta { color: var(--muted); font-size: 0.85rem; }
 
 .updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 12px; }
+.breadcrumb { font-size: 0.85rem; margin: 0 0 4px; }
+.coverage-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 16px; }
+.coverage-list li { display: flex; flex-direction: column; }
+.coverage-list .meta { color: var(--muted); font-size: 0.85rem; }
 .toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer; }
 .report { font-size: 0.85rem; margin: 6px 0 4px; }
 .about h3 { font-size: 1rem; margin: 16px 0 4px; }
