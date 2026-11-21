@@ -1,73 +1,73 @@
 {
-  "generated_at": "2026-11-21T15:58:21+00:00",
+  "generated_at": "2026-11-21T16:03:19+00:00",
   "sources": {
     "https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html": {
       "hash": "ad1b038edc4a221a291811794f354aca9e6bfbfc59b0c44656dad123ce21ed1f",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.fukushima.lg.jp/sec/41400a/turieriamap.html": {
       "hash": "9bde609f0ad88ef860e9071981b7a85098cf0a5b5d09b6ef8451080255bdd695",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.fukushima.lg.jp/sec/41390a/soumakoumatsukawaurafishingarea.html": {
       "hash": "58c72745b9f9c8fc8b6c2cce0b5b1c3e03f9b4773636489dc9c2ddba6258274d",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.fukushima.lg.jp/sec/41045b/kaigankikenmap.html": {
       "hash": "4de93731abe90c1fd761095c2872554dccddcfaf35da91452d9104f36e01e813",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html": {
       "hash": "b6613534860b1c43a53f37b80c521df94576e839b52f74a94fc496051c61b221",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pa.thr.mlit.go.jp/akita/100/CONT000000000000006267.pdf": {
       "hash": "780a458b80453016cfe849c1c7ec953ae2b95cb010906697164b4432e8f4357e",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.kaiho.mlit.go.jp/02kanku/akita/2-oshirase/2-3-marinnet/6-3-1marinnet-backnumber/backnumber2026/marinnet393.pdf": {
       "hash": "de2a4322a28c07386471efbda40d1dbe39981fe59cf3cf36c2171b3d0af68c0c",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html": {
       "hash": "d0826ce93cc2925cb3765e7a66959a5c518a0f46c5bd8df39c0632d81a13fd5a",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_umituri.html": {
       "hash": "c80cf0ce5d45da9e3bd0861e75ef0118fc86f3fc42ffa3a97a3b07c241941b1b",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_yugyo_makie.html": {
       "hash": "fbeec842cb37fa106c679a72efd5d7e22ed39c5f4b51a2c1eb0b1f0adaa59a17",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.aomori.lg.jp/soshiki/nourin/sshinko/suisan_kisoku_5yugyok.html": {
       "hash": "59ccb9f2b7ea57e778d74f06e4fec4ecc1ff8c45fee5756e3efacda70558d9c9",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.iwate.jp/_res/projects/default_project/_page_/001/035/462/r7.6.1_iwateken_tyouseikisoku.pdf": {
       "hash": "c17154ee40082787e46c1b234a7dd9fc54d247c163ef09a744505d531a3114bc",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.miyagi.jp/soshiki/suishin/umiduri.html": {
       "hash": "5e4ab6cfddb43778c3a34aba4951efa24d5ae3b55ea1896bfc58ee7db7a5c2e7",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.miyagi.jp/soshiki/suishin/naisuikisoku.html": {
       "hash": "f518ac2aca87f48d92f70d35abe7408569746c7fc6acef28ea2a25db66f3e38b",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.akita.lg.jp/uploads/public/archive_0000066119_00/秋田川釣りガイド.pdf": {
       "hash": "0f18c8c33d9d27ff0b88977910785c6fb24aaad14aa0728a419280a196585c1a",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.yamagata.jp/documents/4892/yuugyonoru-rutomana-.pdf": {
       "hash": "1909dc4cc46493fd1621a381070fa2996ca0bf369e21996b3e6c921abd5b4ac5",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     },
     "https://www.pref.fukushima.lg.jp/sec/36490a/suisanjouhou10.html": {
       "hash": "c026632e5d7edd66af99094abe6cd680bc75943e30bd7306b9a18562a197cff4",
-      "last_fetched": "2026-11-21T15:58:21+00:00"
+      "last_fetched": "2026-11-21T16:03:19+00:00"
     }
   }
 }
