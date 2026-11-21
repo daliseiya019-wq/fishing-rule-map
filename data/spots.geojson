@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.99857, 38.27158] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.99857,
+          38.27158
+        ]
+      },
       "properties": {
         "id": "miyagi-sendaishiogama-uminohiroba",
         "name": "NX仙台港パーク 海の広場",
@@ -17,7 +23,10 @@
         ],
         "hours": "公式ページに記載なし（施設に確認）",
         "fee": "公式ページに記載なし",
-        "position": { "precision": "point", "note": "県のページが示す地点" },
+        "position": {
+          "precision": "point",
+          "note": "県のページが示す地点"
+        },
         "sources": [
           {
             "title": "仙台塩釜港内における釣りについて",
@@ -33,7 +42,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.887344, 36.944984] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.887344,
+          36.944984
+        ]
+      },
       "properties": {
         "id": "fukushima-onahama-2gou",
         "name": "小名浜港 2号ふ頭 先端部",
@@ -47,7 +62,10 @@
         ],
         "hours": "公式ページに時間の記載なし",
         "fee": "公式ページに記載なし",
-        "position": { "precision": "district", "note": "地図の位置は地区（いわき市小名浜）の代表点。正確な範囲は県の釣りマップで確認" },
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（いわき市小名浜）の代表点。正確な範囲は県の釣りマップで確認"
+        },
         "sources": [
           {
             "title": "小名浜港の釣りマップ",
@@ -63,7 +81,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.90213, 36.945366] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.90213,
+          36.945366
+        ]
+      },
       "properties": {
         "id": "fukushima-onahama-sunmarina",
         "name": "いわきサンマリーナ 釣り桟橋",
@@ -77,7 +101,10 @@
         ],
         "hours": "夜間閉鎖。時間は季節で変わる（施設に確認）",
         "fee": "公式ページに記載なし",
-        "position": { "precision": "district", "note": "地図の位置は地区（いわき市小名浜辰巳町）の代表点。正確な範囲は県の釣りマップで確認" },
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（いわき市小名浜辰巳町）の代表点。正確な範囲は県の釣りマップで確認"
+        },
         "sources": [
           {
             "title": "小名浜港の釣りマップ",
@@ -93,7 +120,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.933273, 37.854523] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.933273,
+          37.854523
+        ]
+      },
       "properties": {
         "id": "fukushima-soma-5gou",
         "name": "相馬港 5号ふ頭（新地町海釣り公園）",
@@ -107,7 +140,10 @@
         ],
         "hours": "公式ページの本文に記載なし（ルールの資料で確認）",
         "fee": "公式ページの本文に記載なし",
-        "position": { "precision": "district", "note": "地図の位置は地区（新地町今泉）の代表点。正確な範囲は県の釣り可能エリアマップで確認" },
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（新地町今泉）の代表点。正確な範囲は県の釣り可能エリアマップで確認"
+        },
         "sources": [
           {
             "title": "相馬港・松川浦漁港周辺釣りマップ",
@@ -139,7 +175,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.047119, 39.778214] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.047119,
+          39.778214
+        ]
+      },
       "properties": {
         "id": "akita-port-kitabouhatei",
         "name": "秋田港 外港地区 北防波堤",
@@ -155,7 +197,10 @@
         ],
         "hours": "季節で変わる（2020 年の発表では 11 月は 7〜16 時）。現在の時間は運営団体の案内で確認",
         "fee": "有料（2020 年の発表で大人 1,000 円）",
-        "position": { "precision": "district", "note": "地図の位置は地区（秋田市飯島）の代表点。防波堤の場所は公式資料で確認" },
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（秋田市飯島）の代表点。防波堤の場所は公式資料で確認"
+        },
         "sources": [
           {
             "title": "釣り文化振興モデル港",
@@ -187,7 +232,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [140.733459, 40.828243] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.733459,
+          40.828243
+        ]
+      },
       "properties": {
         "id": "aomori-port-hamamachi",
         "name": "青森港 浜町緑地・北防波堤",
@@ -201,7 +252,10 @@
         ],
         "hours": "開放日ごとに決まる",
         "fee": "公式ページに記載なし",
-        "position": { "precision": "port", "note": "地図の位置は青森港のおおよその場所で、施設の位置ではない。施設の場所は公式資料で確認" },
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は青森港のおおよその場所で、施設の位置ではない。施設の場所は公式資料で確認"
+        },
         "sources": [
           {
             "title": "釣り文化振興モデル港",
@@ -216,6 +270,209 @@
             "publisher": "青森県 東青県土整備事務所 青森港管理所",
             "url": "https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html",
             "published": "2026-03-18",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.680527,
+          35.459953
+        ]
+      },
+      "properties": {
+        "id": "kanagawa-yokohama-daikoku",
+        "name": "大黒海づり施設",
+        "port": "横浜港",
+        "prefecture": "神奈川県",
+        "status": "open",
+        "summary": "横浜市の海づり施設（3 か所のうちの 1 つ）。有料。",
+        "conditions": [
+          "横浜港では、海づり施設以外のふ頭・防波堤は釣り禁止（市の案内）",
+          "大黒ふ頭内には関係者以外立入禁止の場所がある。バスで行く場合、途中のバス停では降りない（市の案内）",
+          "年末年始（12/31〜1/1）と施設点検日は休業"
+        ],
+        "hours": "4〜10 月 6:00〜19:00、11〜3 月 7:00〜17:00",
+        "fee": "つり料 1 回 大人 900 円・中学生 450 円・小学生 300 円（個人）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（横浜市鶴見区大黒ふ頭）の代表点。施設の場所は市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "横浜フィッシングピアーズ",
+            "publisher": "横浜市 港湾局",
+            "url": "https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/asobu/spot/umizuri.html",
+            "published": "2025-11-19",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.672699,
+          35.435524
+        ]
+      },
+      "properties": {
+        "id": "kanagawa-yokohama-honmoku",
+        "name": "本牧海づり施設",
+        "port": "横浜港",
+        "prefecture": "神奈川県",
+        "status": "open",
+        "summary": "横浜市の海づり施設（3 か所のうちの 1 つ）。有料。",
+        "conditions": [
+          "横浜港では、海づり施設以外のふ頭・防波堤は釣り禁止（市の案内）",
+          "年末年始（12/31〜1/1）と施設点検日は休業"
+        ],
+        "hours": "4〜10 月 6:00〜19:00、11〜3 月 7:00〜17:00",
+        "fee": "つり料 1 回 大人 900 円・中学生 450 円・小学生 300 円（個人）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（横浜市中区本牧ふ頭）の代表点。施設の場所は市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "横浜フィッシングピアーズ",
+            "publisher": "横浜市 港湾局",
+            "url": "https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/asobu/spot/umizuri.html",
+            "published": "2025-11-19",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63353,
+          35.404591
+        ]
+      },
+      "properties": {
+        "id": "kanagawa-yokohama-isogo",
+        "name": "磯子海づり施設",
+        "port": "横浜港",
+        "prefecture": "神奈川県",
+        "status": "open",
+        "summary": "横浜市の海づり施設（3 か所のうちの 1 つ）。有料。",
+        "conditions": [
+          "横浜港では、海づり施設以外のふ頭・防波堤は釣り禁止（市の案内）",
+          "年末年始（12/31〜1/1）は休業"
+        ],
+        "hours": "3〜6・9・10 月 8:00〜18:00、7・8 月 8:00〜19:00、11〜2 月 8:00〜17:00",
+        "fee": "つり料 1 回 大人 500 円・中学生 300 円・小学生 300 円（個人）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（横浜市磯子区新磯子町）の代表点。施設の場所は市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "横浜フィッシングピアーズ",
+            "publisher": "横浜市 港湾局",
+            "url": "https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/asobu/spot/umizuri.html",
+            "published": "2025-11-19",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.753952,
+          35.497189
+        ]
+      },
+      "properties": {
+        "id": "kanagawa-kawasaki-higashiogishima",
+        "name": "東扇島西公園",
+        "port": "川崎港",
+        "prefecture": "神奈川県",
+        "status": "open",
+        "summary": "川崎市が、川崎港で安全に釣りを楽しめる場所として案内している公園。",
+        "conditions": [
+          "川崎港の防波堤・護岸などの港湾施設は立入禁止。釣り目的でも入らない（市の案内）"
+        ],
+        "hours": "市の資料に記載なし（公園に確認）",
+        "fee": "市の資料に記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（川崎市川崎区東扇島）の代表点。公園の場所は市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "港湾局からのお願い〜川崎港内の港湾施設への立入禁止について〜（PDF）",
+            "publisher": "川崎市 港湾局",
+            "url": "https://www.city.kawasaki.jp/580/cmsfiles/contents/0000022/22140/20250630_onegai.pdf",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.85553,
+          34.984058
+        ]
+      },
+      "properties": {
+        "id": "chiba-tateyama-port",
+        "name": "館山港 多目的桟橋・2号防波堤",
+        "port": "館山港",
+        "prefecture": "千葉県",
+        "status": "unconfirmed",
+        "summary": "2024 年 8 月に国の「釣り文化振興モデル港」に指定され、多目的桟橋と 2 号防波堤が対象施設に登録された。釣りの開放の条件（場所・時間など）は県の発表では確認できなかった。",
+        "conditions": [
+          "釣りをしてよい範囲・条件は千葉県（港湾課）や館山市の案内で確認すること",
+          "2 号防波堤は海側と陸側で管理者が分かれている（県の発表）"
+        ],
+        "hours": "県の発表に記載なし",
+        "fee": "県の発表に記載なし",
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は館山港のおおよその場所で、施設の位置ではない"
+        },
+        "sources": [
+          {
+            "title": "館山港が国土交通省「釣り文化振興モデル港」に指定",
+            "publisher": "千葉県 県土整備部 港湾課",
+            "url": "https://www.pref.chiba.lg.jp/kouwan/press/2024/tsuribunkamoderuko.html",
+            "published": "2024-09-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
             "checked": "2026-11-22",
             "checked_how": "page"
           }

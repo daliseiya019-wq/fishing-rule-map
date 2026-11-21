@@ -144,6 +144,76 @@
           "valid_until": null
         }
       ]
+    },
+    {
+      "name": "千葉県",
+      "links": [
+        {
+          "label": "海での釣り（遊漁）のルール（使える釣り方、漁業権、まき餌の禁止区域・使用量）",
+          "kind": "海",
+          "url": "https://www.pref.chiba.lg.jp/suisan/makiesa.html",
+          "publisher": "千葉県 水産局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖で釣りをする皆さんへ（あゆの禁止期間、漁協の遊漁規則、漁場図）",
+          "kind": "川・湖",
+          "url": "https://www.pref.chiba.lg.jp/suisan/gyogyou/kawazuri/kawazuri.html",
+          "publisher": "千葉県 水産局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "神奈川県",
+      "links": [
+        {
+          "label": "海のルールを守りましょう",
+          "kind": "海",
+          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p8874.html",
+          "publisher": "神奈川県 水産課",
+          "published": "2026-07-16",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖のルールを守りましょう（漁協の遊漁規則の変更のお知らせを含む）",
+          "kind": "川・湖",
+          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p504690.html",
+          "publisher": "神奈川県 水産課",
+          "published": "2026-07-27",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "横浜港の港湾施設への立入制限（海づり施設以外のふ頭・防波堤）",
+          "kind": "港",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/kikikanri/seigen.html",
+          "publisher": "横浜市 港湾局",
+          "published": "2025-12-03",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川崎港内の港湾施設への立入禁止について（PDF）",
+          "kind": "港",
+          "url": "https://www.city.kawasaki.jp/580/cmsfiles/contents/0000022/22140/20250630_onegai.pdf",
+          "publisher": "川崎市 港湾局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
     }
   ]
 }
