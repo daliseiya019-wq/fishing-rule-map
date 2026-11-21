@@ -214,6 +214,137 @@
           "valid_until": null
         }
       ]
+    },
+    {
+      "name": "茨城県",
+      "links": [
+        {
+          "label": "海で釣りをするには（使える釣り方、さけ・ますの採捕禁止区域、サイズ制限）",
+          "kind": "海",
+          "url": "https://www.pref.ibaraki.jp/koho/kurashi-qanda/kyoiku-bunka/yoka-recreation/umituri.html",
+          "publisher": "茨城県 漁政課",
+          "published": "2025-05-29",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川や湖沼（霞ヶ浦北浦を除く）で釣りをするには（遊漁承認証・料金）",
+          "kind": "川・湖",
+          "url": "https://www.pref.ibaraki.jp/koho/kurashi-qanda/kyoiku-bunka/yoka-recreation/kawa_kosyou.html",
+          "publisher": "茨城県 漁政課",
+          "published": "2026-09-01",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "霞ヶ浦北浦の釣りのルールとマナー（保護水面・禁止期間・サイズ）",
+          "kind": "川・湖",
+          "url": "https://www.pref.ibaraki.jp/nourinsuisan/kasui/contents/ruleandmanner.html",
+          "publisher": "茨城県 霞ケ浦北浦水産事務所",
+          "published": "2026-08-18",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "釣りをされる方へ（鹿島港は魚釣園以外釣り禁止）",
+          "kind": "港",
+          "url": "https://www.pref.ibaraki.jp/doboku/kako/tsuri.html",
+          "publisher": "茨城県 鹿島港湾事務所",
+          "published": "2025-11-25",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "栃木県",
+      "links": [
+        {
+          "label": "栃木県内の漁業権について（漁協ごとの遊漁規則の一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.tochigi.lg.jp/g02/suisan/r6gyogyouken.html",
+          "publisher": "栃木県 農村振興課",
+          "published": "2026-10-14",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "栃木県漁業調整規則（本文）",
+          "kind": "川・湖",
+          "url": "https://www.pref.tochigi.lg.jp/reiki/reiki_honbun/e101RG00001905.html",
+          "publisher": "栃木県",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "埼玉県",
+      "links": [
+        {
+          "label": "規則とルール（漁業調整規則、禁漁期間、漁協ごとの遊漁規則）",
+          "kind": "川・湖",
+          "url": "https://www.pref.saitama.lg.jp/a0904/kisoku/index.html",
+          "publisher": "埼玉県 生産振興課",
+          "published": "2026-09-03",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "東京都",
+      "links": [
+        {
+          "label": "東京都漁業調整規則の一部改正（まき餌釣りの解禁と使用量の制限）",
+          "kind": "海",
+          "url": "https://www.sangyo-rodo.metro.tokyo.lg.jp/nourin/suisan/recreation/makietsuri",
+          "publisher": "東京都 産業労働局",
+          "published": "2024-11-26",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "東京海区漁業調整委員会指示（まき餌釣り・ひき縄釣などの制限と有効期間）",
+          "kind": "海",
+          "url": "https://www.sangyo-rodo.metro.tokyo.lg.jp/nourin/suisan/kaiku/shiji",
+          "publisher": "東京都 産業労働局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null,
+          "memo": "指示ごとに有効期間がある（例: まき餌釣りの制限は 2026-11-01〜2027-10-31）。期間はページで確認"
+        },
+        {
+          "label": "内水面遊漁レクリエーション（多摩川・江戸川などの漁業権と遊漁規則）",
+          "kind": "川・湖",
+          "url": "https://www.sangyo-rodo.metro.tokyo.lg.jp/nourin/suisan/yuugyorec/",
+          "publisher": "東京都 産業労働局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "海上公園の目的別検索（釣りができる公園）",
+          "kind": "港",
+          "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+          "publisher": "東京都 港湾局",
+          "published": "2025-09-05",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
     }
   ]
 }

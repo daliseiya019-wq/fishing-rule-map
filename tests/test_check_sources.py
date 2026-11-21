@@ -154,6 +154,15 @@ class PageTextTest(unittest.TestCase):
         changed = self.PAGE.replace("2026年11月21日", "2026年12月1日")
         self.assertEqual(main_text(self.PAGE), main_text(changed))
 
+    def test_main_inside_noise_named_wrapper_is_kept(self):
+        page = ('<body><div class="column_lnavi"><div id="tmp_lnavi">メニュー</div>'
+                '<div id="tmp_contents"><h1>規則とルール</h1><p>本文です</p>'
+                '<div class="breadcrumb">パンくず</div></div></div></body>')
+        text = main_text(page)
+        self.assertIn("本文です", text)
+        self.assertNotIn("メニュー", text)
+        self.assertNotIn("パンくず", text)
+
     def test_without_main_marker_uses_whole_page_minus_noise(self):
         text = main_text("<body><nav>メニュー</nav><p>本文です</p></body>")
         self.assertEqual(text, "本文です")

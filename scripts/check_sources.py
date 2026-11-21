@@ -50,7 +50,7 @@ FAILS_BEFORE_ERROR = 2  # この回数続けて失敗したら「開けない」
 MAX_DIFF_LINES = 20  # Issue に載せる差分の行数の上限（1 出典あたり）
 EXCERPT_CHARS = 30  # Issue に載せる 1 行の抜粋の文字数（場所が分かる程度にとどめ、転載にしない）
 # ハッシュの作り方を変えたら上げる。版が違う前回のハッシュとは比べず、基準として取り直す
-HASH_VERSION = 3
+HASH_VERSION = 4  # 4: 本文の目印より外側の除外を無視するよう変更
 
 FETCH_ERRORS = (urllib.error.URLError, OSError, ValueError)
 

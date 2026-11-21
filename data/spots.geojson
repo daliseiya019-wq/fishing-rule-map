@@ -479,6 +479,513 @@
         ],
         "valid_until": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.690125,
+          35.946201
+        ]
+      },
+      "properties": {
+        "id": "ibaraki-kashima-uotsurien",
+        "name": "鹿島港魚釣園",
+        "port": "鹿島港",
+        "prefecture": "茨城県",
+        "status": "open",
+        "summary": "鹿島港の北防波堤を改良した県営の釣り施設。県は「鹿島港は魚釣園以外は釣り禁止」と案内している。",
+        "conditions": [
+          "鹿島港では魚釣園以外は釣り禁止。防波堤などの港湾施設は関係者以外立入禁止（県の案内）",
+          "ライフジャケットの着用を求めている（施設の案内）"
+        ],
+        "hours": "5〜10 月 7:00〜19:00、11〜4 月 8:00〜17:00。毎週火曜休園（祝日の場合は翌日）、荒天時は休園あり",
+        "fee": "入園料 大人 600 円・小中学生 300 円・小学生未満無料（現金のみ）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（鹿嶋市新浜）の代表点。施設の場所は施設の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣りをされる方へ",
+            "publisher": "茨城県 鹿島港湾事務所",
+            "url": "https://www.pref.ibaraki.jp/doboku/kako/tsuri.html",
+            "published": "2025-11-25",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "ご利用案内",
+            "publisher": "鹿島港魚釣園（県営施設）",
+            "url": "https://kashima-fa.com/infomation/",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.777354,
+          35.631084
+        ]
+      },
+      "properties": {
+        "id": "tokyo-odaiba-kaihin",
+        "name": "お台場海浜公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内。西側の磯浜の区域で釣りができる。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "お台場海浜公園＆台場公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/01_02",
+            "published": "2026-10-21",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.83741,
+          35.623603
+        ]
+      },
+      "properties": {
+        "id": "tokyo-wakasu-kaihin",
+        "name": "若洲海浜公園 海釣り施設",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "防波堤を使った海釣り施設がある（東京都港湾局の案内）。東京ゲートブリッジのそば。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "若洲海浜公園＆江東区立若洲公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/03_07",
+            "published": "2026-11-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771578,
+          35.648079
+        ]
+      },
+      "properties": {
+        "id": "tokyo-harumi-futo",
+        "name": "晴海ふ頭公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内している。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "晴海ふ頭公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/02_01",
+            "published": "2026-03-06",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.823459,
+          35.642032
+        ]
+      },
+      "properties": {
+        "id": "tokyo-shinkiba",
+        "name": "新木場公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内している。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "新木場公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/03_04",
+            "published": "2025-12-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.823578,
+          35.64727
+        ]
+      },
+      "properties": {
+        "id": "tokyo-yumenoshima-ryokudo",
+        "name": "夢の島緑道公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内。海沿いの東側で釣りができる。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "夢の島緑道公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/03_03",
+            "published": "2025-12-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.791453,
+          35.608232
+        ]
+      },
+      "properties": {
+        "id": "tokyo-akatsuki-futo",
+        "name": "暁ふ頭公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内。南側の区域で釣りができる。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "暁ふ頭公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/01_10",
+            "published": "2025-12-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.790542,
+          35.629308
+        ]
+      },
+      "properties": {
+        "id": "tokyo-mizunohiroba",
+        "name": "水の広場公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内している（有明西運河沿い）。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "水の広場公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/02_04",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.794465,
+          35.627164
+        ]
+      },
+      "properties": {
+        "id": "tokyo-ariake-nishi-futo",
+        "name": "有明西ふ頭公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内。運河沿いで釣りができる。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "有明西ふ頭公園",
+            "publisher": "東京港埠頭株式会社（海上公園の指定管理者）",
+            "url": "https://www.tptc.co.jp/park/02_05",
+            "published": "2025-12-10",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770173,
+          35.570514
+        ]
+      },
+      "properties": {
+        "id": "tokyo-keihinjima-tsubasa",
+        "name": "京浜島つばさ公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内している。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "その他公園・緑道",
+            "publisher": "東京都立海上公園 南部地区グループ（指定管理者）",
+            "url": "https://tokyo-south-seaside-parks.com/other-parks/",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.755973,
+          35.577667
+        ]
+      },
+      "properties": {
+        "id": "tokyo-tokai-futo",
+        "name": "東海ふ頭公園",
+        "port": "東京港",
+        "prefecture": "東京都",
+        "status": "open",
+        "summary": "東京都港湾局が「釣りができる海上公園」として案内している（傾斜のある護岸）。",
+        "conditions": [
+          "釣りができるのは公園内の決められた範囲だけ。範囲とルールは公園の案内（釣りのご案内・PDF）で確認すること"
+        ],
+        "hours": "公園の案内に記載なし（公園に確認）",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は公園のおおよその中心。釣りができる範囲は公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "目的別公園検索（釣り）",
+            "publisher": "東京都 港湾局",
+            "url": "https://www.kouwan.metro.tokyo.lg.jp/kanko/park/search",
+            "published": "2025-09-05",
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          },
+          {
+            "title": "その他公園・緑道",
+            "publisher": "東京都立海上公園 南部地区グループ（指定管理者）",
+            "url": "https://tokyo-south-seaside-parks.com/other-parks/",
+            "published": null,
+            "checked": "2026-11-22",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
     }
   ]
 }

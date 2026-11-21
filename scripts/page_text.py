@@ -45,7 +45,13 @@ class _Extractor(HTMLParser):
         self.main_parts = []
 
     def _skipping(self):
-        return any(skip for _, skip, _ in self.stack)
+        # 本文の目印より外側の除外は無視する。レイアウト用の外枠の class に "lnavi" などが
+        # 付いていて、本文ごと捨ててしまうサイトがあるため（例: 埼玉県 "column_lnavi"）。
+        start = 0
+        for i, (_, _, main) in enumerate(self.stack):
+            if main:
+                start = i
+        return any(skip for _, skip, _ in self.stack[start:])
 
     def _in_main(self):
         return any(main for _, _, main in self.stack)
