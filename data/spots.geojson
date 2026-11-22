@@ -247,6 +247,7 @@
         "status": "unconfirmed",
         "summary": "国の「釣り文化振興モデル港」。過去に日を限った「釣り限定開放」の実績があるが、2026 年の釣り開放の告知は県のページで確認できなかった。",
         "conditions": [
+          "国のガイドブック（2026年5月時点）では、開放は開放日限定・無料・8〜17時（日ごとに設定）。定期的な開放の再開は検討中とされている",
           "青森港では原則として釣りは禁止（県の案内）。開放日以外は釣りをしないこと",
           "開放日・条件は青森港管理所の告知で確認すること"
         ],
@@ -257,6 +258,14 @@
           "note": "地図の位置は青森港のおおよその場所で、施設の位置ではない。施設の場所は公式資料で確認"
         },
         "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
           {
             "title": "釣り文化振興モデル港",
             "publisher": "国土交通省 港湾局",
@@ -444,22 +453,30 @@
       },
       "properties": {
         "id": "chiba-tateyama-port",
-        "name": "館山港 多目的桟橋・2号防波堤",
+        "name": "館山港 多目的桟橋（館山夕日桟橋）",
         "port": "館山港",
         "prefecture": "千葉県",
-        "status": "unconfirmed",
-        "summary": "2024 年 8 月に国の「釣り文化振興モデル港」に指定され、多目的桟橋と 2 号防波堤が対象施設に登録された。釣りの開放の条件（場所・時間など）は県の発表では確認できなかった。",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・館山港の対象施設。国のガイドブックでは、多目的桟橋（館山夕日桟橋）は千葉県が管理し館山市が運営、無料・時間の制限なしで釣りができる。2 号防波堤は運営者・条件が未定。",
         "conditions": [
-          "釣りをしてよい範囲・条件は千葉県（港湾課）や館山市の案内で確認すること",
-          "2 号防波堤は海側と陸側で管理者が分かれている（県の発表）"
+          "釣りのルール・マナーは館山市の館山夕日桟橋のページで確認すること（国のガイドブック）",
+          "2 号防波堤は運営者・利用条件が示されていない（国のガイドブック）"
         ],
-        "hours": "県の発表に記載なし",
-        "fee": "県の発表に記載なし",
+        "hours": "制限なし（国のガイドブック、多目的桟橋）",
+        "fee": "無料（国のガイドブック、多目的桟橋）",
         "position": {
           "precision": "port",
           "note": "地図の位置は館山港のおおよその場所で、施設の位置ではない"
         },
         "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
           {
             "title": "館山港が国土交通省「釣り文化振興モデル港」に指定",
             "publisher": "千葉県 県土整備部 港湾課",
@@ -1955,17 +1972,26 @@
         "status": "open",
         "summary": "国の釣り文化振興モデル港・下関港の対象施設で、巌流島にある釣りデッキ。国土交通省 下関港湾整備事務所が釣りを楽しめる場所として案内している。",
         "conditions": [
-          "島へは巌流島連絡船（唐戸桟橋・門司港桟橋発着）で渡る（下関港湾整備事務所）",
+          "危険を伴う投げ釣りは禁止。釣りの禁止期間はなし（国のガイドブック）",
+          "島へは巌流島連絡船（唐戸桟橋・門司港桟橋発着）で渡り、最終便に乗る必要がある（国のガイドブック、下関港湾整備事務所）",
           "関門海峡の潮流が速い場所（下関港湾整備事務所）",
           "トイレ・休憩所はあるが売店・自販機はない（下関港湾整備事務所）"
         ],
         "hours": "記載なし（連絡船の運航時間に左右される）",
-        "fee": "記載なし（連絡船の運賃は別）",
+        "fee": "無料（国のガイドブック。連絡船の運賃は別）",
         "position": {
           "precision": "district",
           "note": "地図の位置は巌流島（下関市彦島船島）の島の代表点。釣りデッキの場所は国土交通省・下関市の案内で確認"
         },
         "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
           {
             "title": "釣り文化振興モデル港（下関港）",
             "publisher": "国土交通省 九州地方整備局 下関港湾整備事務所",
@@ -2270,22 +2296,29 @@
       },
       "properties": {
         "id": "oita-beppu-oriana-pier",
-        "name": "別府国際観光港 オリアナ桟橋",
+        "name": "別府港 餅ヶ浜桟橋（旧オリアナ桟橋）",
         "port": "別府港",
         "prefecture": "大分県",
-        "status": "unconfirmed",
-        "summary": "国の釣り文化振興モデル港（別府港）で、場所と時間を限って釣りに開放されている桟橋。国土交通省 九州地方整備局が案内している（港湾管理者は大分県）。",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・別府港の対象施設で、別府市が運営する一般開放（無料）の桟橋。国のガイドブックで条件が公表されている。",
         "conditions": [
-          "開放は場所と時間帯を限定（国土交通省 九州地方整備局）",
-          "ルールとマナーを守る。問い合わせは別府国際観光港みなとまちづくり協議会（国土交通省 九州地方整備局）"
+          "一般開放は無料。桟橋を使用・占用する場合は料金がかかる（国のガイドブック）"
         ],
-        "hours": "8時〜17時",
-        "fee": "記載なし",
+        "hours": "8:00〜17:00（国のガイドブック）",
+        "fee": "無料（一般開放）",
         "position": {
           "precision": "district",
           "note": "地図の位置は別府市餅ヶ浜町の代表点。桟橋の場所は九州地方整備局 別府港湾・空港整備事務所の案内で確認"
         },
         "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
           {
             "title": "釣り文化振興モデル港（別府港）",
             "publisher": "国土交通省 九州地方整備局 別府港湾・空港整備事務所",
@@ -2381,6 +2414,240 @@
             "publisher": "鹿児島市",
             "url": "https://www.city.kagoshima.lg.jp/seisanryutu/shisetsu/kanko/017.html",
             "published": "2025-04-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941208,
+          33.953491
+        ]
+      },
+      "properties": {
+        "id": "yamaguchi-arcaport",
+        "name": "あるかぽーとエリア",
+        "port": "下関港",
+        "prefecture": "山口県",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・下関港の対象施設で、無料で釣りができる岸。国のガイドブックで条件が公表されている。",
+        "conditions": [
+          "危険を伴う投げ釣りは禁止。釣りの禁止期間はなし（国のガイドブック）",
+          "トイレはあるが水道・売店はない（国のガイドブック）"
+        ],
+        "hours": "記載なし",
+        "fee": "無料（国のガイドブック）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（下関市あるかぽーと）の代表点。釣りができる岸の範囲は国のガイドブックで確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.868835,
+          33.904751
+        ]
+      },
+      "properties": {
+        "id": "fukuoka-hiagari-kaikyo-tsuri-koen",
+        "name": "日明・海峡釣り公園",
+        "port": "北九州港",
+        "prefecture": "福岡県",
+        "status": "open",
+        "summary": "北九州港にある無料の釣り公園。国のガイドブックで、北九州港の釣り施設として利用条件が案内されている。",
+        "conditions": [
+          "投げ釣りは禁止（国のガイドブック）",
+          "受付なし。トイレ・駐車場あり、レンタルあり（国のガイドブック）"
+        ],
+        "hours": "記載なし",
+        "fee": "無料（国のガイドブック）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（北九州市小倉北区西港町）の代表点。施設の場所は国のガイドブックで確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.941223,
+          33.888988
+        ]
+      },
+      "properties": {
+        "id": "fukuoka-kitakyushu-dairi-2",
+        "name": "北九州港 大里2号物揚場",
+        "port": "北九州港",
+        "prefecture": "福岡県",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・北九州港の対象施設。国のガイドブックでは、北九州市が管理・運営し、無料・時間の設定なしで開放している。",
+        "conditions": [
+          "利用の方法は北九州市・北九州釣りいこか倶楽部の案内で確認すること（国のガイドブックでは協議会がイベント・企画を実施）"
+        ],
+        "hours": "設定なし（国のガイドブック）",
+        "fee": "無料（国のガイドブック）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（北九州市門司区大里）の代表点。物揚場の場所は国のガイドブックで確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.079437,
+          35.089844
+        ]
+      },
+      "properties": {
+        "id": "shizuoka-atami-wadaiso",
+        "name": "熱海港海釣り施設（和田磯防波堤）",
+        "port": "熱海港",
+        "prefecture": "静岡県",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・熱海港の対象施設で、和田磯防波堤を使った有料の海釣り施設。国のガイドブックで条件が公表されている。",
+        "conditions": [
+          "ライフジャケットは無料で貸し出し（国のガイドブック）",
+          "休みの日・最新の時間は運営者に確認すること"
+        ],
+        "hours": "日没まで（開始時刻は国のガイドブックの文字が読み取れないため運営者に確認）",
+        "fee": "大人 500 円（見学 300 円）、小・中学生 300 円（見学 200 円）（国のガイドブック）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（熱海市和田浜南町）の代表点。施設の場所は国のガイドブックで確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.068436,
+          32.989704
+        ]
+      },
+      "properties": {
+        "id": "nagasaki-aokata-port",
+        "name": "青方港 大曽地区（防波堤・岸壁・物揚場）",
+        "port": "青方港",
+        "prefecture": "長崎県",
+        "status": "limited",
+        "summary": "国の釣り文化振興モデル港・青方港の対象施設（2022 年 10 月開放）。上五島町漁業協同組合が運営し、渡船で送迎する予約制の釣り場。",
+        "conditions": [
+          "予約制（予約フォームまたは電話）。現地事務所あり（国のガイドブック）",
+          "セリ場内の撮影とドローン飛行は禁止（国のガイドブック）"
+        ],
+        "hours": "9:00〜17:00（4〜11 月）（国のガイドブック）",
+        "fee": "釣具持参 2,000 円、釣具レンタル込み 4,100 円（小学生 3,800 円）。渡船代・保険料込み（国のガイドブック）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（新上五島町青方郷）の代表点。釣り場の場所は国のガイドブックで確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港ガイドブック（2026年5月時点の情報）",
+            "publisher": "国土交通省 港湾局 海洋・環境課",
+            "url": "https://www.mlit.go.jp/kowan/content/002026805.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
             "checked": "2026-11-23",
             "checked_how": "page"
           }
