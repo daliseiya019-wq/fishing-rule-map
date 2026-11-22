@@ -1,0 +1,44 @@
+name: 漁港などの「釣りができる範囲」の看板を知らせる
+description: 町・漁協が現地の看板で釣りの範囲を示している場所を知らせる（ウェブに公式発表がない場所向け）
+title: "[現地の看板] "
+labels: ["現地の看板"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        情報ありがとうございます。いただいた内容は、運営者が町・漁協への問い合わせや現地で確かめてから「現地の案内のみ」として載せます（確かめられない場合は載せません）。
+        **写真は添付しないでください。** この内容は誰でも見られます（人の顔・車のナンバーの写り込みや、看板の転載を避けるため）。
+        **個人情報（氏名・電話番号・住所など）も書かないでください。**
+  - type: input
+    id: place
+    attributes:
+      label: 場所
+      description: 例「福岡県新宮町 新宮漁港」
+    validations:
+      required: true
+  - type: input
+    id: issuer
+    attributes:
+      label: 看板を出している機関
+      description: 看板に書かれた名前。例「新宮町」「○○漁業協同組合」。分からなければ「不明」
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 釣りができる範囲と条件
+      description: 看板の文をそのまま写さず、要点を自分の言葉で。例「北側の堤防の内側だけ釣り可。スロープ・漁協の前は禁止。夜間は不可」
+    validations:
+      required: true
+  - type: input
+    id: seen
+    attributes:
+      label: 看板を見た日
+      description: 例「2026-11-20」
+    validations:
+      required: true
+  - type: input
+    id: notice
+    attributes:
+      label: 町・漁協のウェブサイトや SNS での告知（任意）
+      description: あれば URL を書いてください。

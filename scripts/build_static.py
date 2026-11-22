@@ -24,8 +24,12 @@ INDEX_HTML = ROOT / "index.html"
 SITEMAP = ROOT / "sitemap.xml"
 PREF_DIR = ROOT / "pref"
 
-STATUS_LABEL = {"open": "OK 常設の釣り場", "limited": "日 決まった日だけ開放", "unconfirmed": "？ 今年の開放を確認できず"}
-CHECKED_HOW = {"page": "ページ", "search": "検索"}
+STATUS_LABEL = {"open": "OK 常設の釣り場", "limited": "日 決まった日だけ開放", "unconfirmed": "？ 今年の開放を確認できず",
+                "local": "現 現地の案内のみ"}
+CHECKED_HOW = {"page": "ページ", "search": "検索", "notice": "現地の掲示・告知", "inquiry": "管理者への問い合わせ"}
+# app.js の LOCAL_NOTICE と同じ文
+LOCAL_NOTICE = ("ウェブ上の公式発表はありません。町・漁協の現地の看板や告知、問い合わせに基づく情報です。"
+                "釣りをする前に、必ず現地の看板で範囲と条件を確認してください。")
 CSP = ("default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; "
        "base-uri 'none'; form-action 'none'")
 
@@ -38,8 +42,8 @@ def fmt_date(iso):
 
 
 def link(url, text):
-    # app.js の safeLink と同じく https だけを外部リンクにする
-    if urlparse(url).scheme != "https":
+    # app.js の safeLink と同じく https だけを外部リンクにする（現地の看板など URL が無い出典は文字だけ）
+    if not url or urlparse(url).scheme != "https":
         return escape(text)
     return f'<a href="{escape(url)}" target="_blank" rel="noopener noreferrer">{escape(text)}</a>'
 
@@ -49,7 +53,7 @@ def render_spot(p):
     status = p["status"] if p["status"] in STATUS_LABEL else "unconfirmed"
     conditions = "".join(f"<li>{escape(c)}</li>" for c in p["conditions"])
     sources = "".join(
-        f"<p>出典: {link(s['url'], s['title'])}（{escape(s['publisher'])}）</p>"
+        f"<p>出典: {link(s.get('url'), s['title'])}（{escape(s['publisher'])}）</p>"
         f"<p>掲載日: {fmt_date(s.get('published'))} ／ 確認日: {fmt_date(s['checked'])}"
         f"（確認方法: {CHECKED_HOW.get(s['checked_how'], '不明')}）</p>"
         for s in p["sources"])
@@ -57,7 +61,8 @@ def render_spot(p):
         f'<li class="card"><h3>{escape(p["name"])}</h3>'
         f'<p class="meta">{escape(p["prefecture"])}{" ／ " + escape(p["port"]) if p.get("port") else ""}</p>'
         f'<span class="badge status-{status}">{STATUS_LABEL[status]}</span>'
-        f'<p>{escape(p["summary"])}</p><ul>{conditions}</ul>'
+        + (f'<p class="local-note">{escape(LOCAL_NOTICE)}</p>' if status == "local" else "")
+        + f'<p>{escape(p["summary"])}</p><ul>{conditions}</ul>'
         f'<dl><dt>時間</dt><dd>{escape(p["hours"])}</dd><dt>料金</dt><dd>{escape(p["fee"])}</dd>'
         f'<dt>地図の位置</dt><dd>{escape(p["position"]["note"])}</dd></dl>'
         f'<div class="sources">{sources}</div></li>')

@@ -16,8 +16,14 @@ SPOTS = ROOT / "data" / "spots.geojson"
 INDEX = ROOT / "data" / "sources.json"
 
 JST = timezone(timedelta(hours=9))
-STATUSES = {"open", "limited", "unconfirmed"}
-CHECKED_HOW = {"page", "search"}
+STATUSES = {"open", "limited", "unconfirmed", "local"}
+# page=公式ページを開いて確認 / search=検索結果で確認 / notice=現地の掲示・町や漁協の告知 / inquiry=管理者への問い合わせ
+CHECKED_HOW = {"page", "search", "notice", "inquiry"}
+# notice・inquiry はウェブ上の公式発表ではないので、「現地の案内のみ」（local）の場所でだけ使える
+LOCAL_ONLY_HOW = {"notice", "inquiry"}
+INDEX_CHECKED_HOW = {"page", "search"}
+# 「現地の案内のみ」は自動で確かめられないので、確認から 2 年たったら確認し直すか外す（docs/decisions 4d）
+LOCAL_EXPIRE_DAYS = 730
 PRECISIONS = {"point", "district", "port"}
 KINDS = {"海", "川・湖", "海・川", "港"}
 PREF_FILE = ROOT / "data" / "prefectures.json"
@@ -65,7 +71,9 @@ class Checker:
     def source(self, where, src):
         self.text(where, src.get("title"), "title")
         self.text(where, src.get("publisher"), "publisher")
-        self.url(where, src.get("url"))
+        # 現地の看板や問い合わせには URL が無いことがある。あるなら https に限る
+        if src.get("checked_how") not in LOCAL_ONLY_HOW or src.get("url") is not None:
+            self.url(where, src.get("url"))
         self.date(where, src.get("published"), "published", required=False)
         self.date(where, src.get("checked"), "checked")
         self.enum(where, src.get("checked_how"), "checked_how", CHECKED_HOW)
@@ -115,6 +123,22 @@ def check_spots(c):
         else:
             for j, src in enumerate(sources):
                 c.source(f"{where} sources[{j}]", src)
+            check_local(c, where, p.get("status"), sources)
+
+
+def check_local(c, where, status, sources):
+    hows = {s.get("checked_how") for s in sources}
+    if status != "local" and hows & LOCAL_ONLY_HOW:
+        c.error(where, "checked_how が notice / inquiry の出典は status が local の場所でだけ使えます")
+    if status == "local":
+        dates = [s.get("checked") for s in sources if isinstance(s.get("checked"), str)]
+        try:
+            newest = max(date.fromisoformat(d) for d in dates)
+        except ValueError:
+            return  # 日付の誤りは source() で報告済み
+        age = (datetime.now(JST).date() - newest).days
+        if age > LOCAL_EXPIRE_DAYS:
+            c.error(where, f"「現地の案内のみ」の確認から {age} 日たっています。確認し直すか、データから外してください")
 
 
 def check_index(c):
@@ -139,7 +163,7 @@ def check_index(c):
             c.url(lw, link.get("url"))
             c.date(lw, link.get("published"), "published", required=False)
             c.date(lw, link.get("checked"), "checked")
-            c.enum(lw, link.get("checked_how"), "checked_how", CHECKED_HOW)
+            c.enum(lw, link.get("checked_how"), "checked_how", INDEX_CHECKED_HOW)
             c.date(lw, link.get("valid_until"), "valid_until", required=False)
             c.text(lw, link.get("memo"), "memo", required=False)
 

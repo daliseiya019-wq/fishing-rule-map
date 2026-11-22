@@ -175,5 +175,23 @@ class PageTextTest(unittest.TestCase):
         self.assertIsNone(page_date("日付の記載なし"))
 
 
+class LoadSourcesTest(unittest.TestCase):
+    def test_sources_without_url_are_skipped(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            spots, index = Path(tmp, "spots.geojson"), Path(tmp, "sources.json")
+            spots.write_text(json.dumps({"features": [{"properties": {"sources": [
+                {"title": "電話で確認", "checked_how": "inquiry"},
+                {"url": "https://example.jp/a", "published": "2026-01-01"}]}}]}), encoding="utf-8")
+            index.write_text(json.dumps({"prefectures": []}), encoding="utf-8")
+            saved = cs.SPOTS, cs.INDEX
+            cs.SPOTS, cs.INDEX = spots, index
+            try:
+                self.assertEqual(cs.load_sources(), {"https://example.jp/a": {"2026-01-01"}})
+            finally:
+                cs.SPOTS, cs.INDEX = saved
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -70,7 +70,9 @@ def load_sources():
     spots = json.loads(SPOTS.read_text(encoding="utf-8"))
     for feature in spots["features"]:
         for s in feature["properties"]["sources"]:
-            published.setdefault(s["url"], set()).add(s.get("published"))
+            # 現地の看板・問い合わせの出典には URL が無いことがある（確かめるページが無いので対象外）
+            if s.get("url"):
+                published.setdefault(s["url"], set()).add(s.get("published"))
     index = json.loads(INDEX.read_text(encoding="utf-8"))
     for pref in index["prefectures"]:
         for link in pref["links"]:

@@ -44,11 +44,14 @@
         <span class="badge status-open">OK 常設の釣り場</span>
         <span class="badge status-limited">日 決まった日だけ開放</span>
         <span class="badge status-unconfirmed">？ 今年の開放を確認できず</span>
+        <span class="badge status-local">現 現地の案内のみ</span>
       </div>
       <div id="map" role="region" aria-label="釣りができる場所の地図"></div>
       <p id="static-note" class="map-note">地図の表示には JavaScript が必要です。下の一覧は JavaScript なしでも読めます。</p>
       <p class="map-note">点線の円は「このあたり」という目安です（地図上の位置の多くは地区の代表点です）。釣りをしてよい正確な範囲は、各場所の出典（公式の地図）で確認してください。</p>
       <label class="toggle"><input type="checkbox" id="show-unconfirmed"> 今年の開放を確認できない場所も地図に表示する</label>
+      <label class="toggle"><input type="checkbox" id="show-local"> 「現地の案内のみ」の場所も地図に表示する</label>
+      <p class="map-note">「現地の案内のみ」は、漁港などで町・漁協が現地の看板で釣りの範囲を示している場所です。ウェブ上の公式発表がないため、確認から 1 年で「古い情報」と表示し、2 年で載せるのをやめます。</p>
     </section>
 
     <section aria-labelledby="list-heading">
@@ -63,6 +66,7 @@
             <option value="open">常設の釣り場</option>
             <option value="limited">決まった日だけ開放</option>
             <option value="unconfirmed">今年の開放を確認できず</option>
+            <option value="local">現地の案内のみ</option>
           </select>
         </label>
       </div>
@@ -104,6 +108,7 @@
       </ul>
       <h3>誤りを見つけたら</h3>
       <p>情報の誤りや古い内容に気づいたら、<a href="https://github.com/daliseiya019-wq/fishing-rule-map/issues/new?template=report.yml" target="_blank" rel="noopener noreferrer">誤り報告フォーム</a>から知らせてください（GitHub のアカウントが必要です）。各場所の「この場所の誤りを報告」からも送れます。</p>
+      <p>漁港などで、町・漁協が現地の看板で「釣りができる範囲」を示している場所を知っていたら、<a href="https://github.com/daliseiya019-wq/fishing-rule-map/issues/new?template=local-sign.yml" target="_blank" rel="noopener noreferrer">現地の看板の情報フォーム</a>から知らせてください。確かめられたものを「現地の案内のみ」として載せます（写真は添付しないでください）。</p>
       <p class="attribution">背景地図: <a href="https://maps.gsi.go.jp/development/ichiran.html" rel="noopener noreferrer" target="_blank">国土地理院</a></p>
     </section>
   </main>

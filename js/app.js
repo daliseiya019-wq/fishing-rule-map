@@ -8,8 +8,16 @@
     open: { label: '常設の釣り場', mark: 'OK' },
     limited: { label: '決まった日だけ開放', mark: '日' },
     unconfirmed: { label: '今年の開放を確認できず', mark: '？' },
+    local: { label: '現地の案内のみ', mark: '現' },
   };
-  const CHECKED_HOW = { page: 'ページ', search: '検索' };
+  const CHECKED_HOW = { page: 'ページ', search: '検索', notice: '現地の掲示・告知', inquiry: '管理者への問い合わせ' };
+  // 地図に既定では出さない状態（OK の場所と並べると誤解されるもの）と、表示を切り替えるチェックボックス
+  const HIDDEN_BY_DEFAULT = { unconfirmed: 'show-unconfirmed', local: 'show-local' };
+  // 「現地の案内のみ」は自動で確かめられないので、確認からの日数で古さを知らせ、期限を過ぎたら出さない
+  const LOCAL_STALE_DAYS = 365;
+  const LOCAL_EXPIRE_DAYS = 730;
+  const LOCAL_NOTICE = 'ウェブ上の公式発表はありません。町・漁協の現地の看板や告知、問い合わせに基づく情報です。' +
+    '釣りをする前に、必ず現地の看板で範囲と条件を確認してください。';
   const JAPAN_VIEW = { center: [37.5, 137.5], zoom: 5 };
   const REPORT_URL = 'https://github.com/daliseiya019-wq/fishing-rule-map/issues/new';
   // 位置が「目安」の点は、寄りすぎると施設の場所だと誤解されるので、精度に応じて寄せ方と範囲の円を変える
@@ -75,6 +83,21 @@
     return `${y}年${Number(m)}月${Number(d)}日`;
   }
 
+  function daysSince(iso, today) {
+    return Math.round((Date.parse(today) - Date.parse(iso)) / 86400000);
+  }
+
+  // 出典の確認日のうち最も新しいものからの日数
+  function daysSinceChecked(p, today) {
+    return Math.min(...p.sources.map((s) => daysSince(s.checked, today)));
+  }
+
+  function localAlerts(p, today) {
+    if (statusKey(p.status) !== 'local') return [];
+    const days = daysSinceChecked(p, today);
+    return days > LOCAL_STALE_DAYS ? [`最後の確認から 1 年以上たっています（${days} 日）。看板の内容が変わっている可能性があります`] : [];
+  }
+
   // ---- 出典の状態（期限切れ・出典ページの変更） ----
   function expiryAlerts(validUntil, today) {
     return validUntil && validUntil < today ? [`有効期限（${formatDate(validUntil)}）を過ぎています`] : [];
@@ -98,6 +121,7 @@
   function renderSource(src, sourceStatus, today) {
     const alerts = sourceAlerts(src, sourceStatus, today);
     return el('div', null, [
+      // 現地の看板や問い合わせの出典には URL が無いことがある（safeLink は URL が無ければ文字だけにする）
       el('p', null, ['出典: ', safeLink(src.url, src.title), `（${src.publisher}）`]),
       el('p', {
         text: `掲載日: ${formatDate(src.published)} ／ 確認日: ${formatDate(src.checked)}` +
@@ -117,7 +141,9 @@
     return [
       el('p', { class: 'meta', text: p.port ? `${p.prefecture} ／ ${p.port}` : p.prefecture }),
       statusBadge(p.status),
-      ...expiryAlerts(p.valid_until, today).map((a) => el('p', { class: 'alert-line', text: `⚠ ${a}` })),
+      statusKey(p.status) === 'local' ? el('p', { class: 'local-note', text: LOCAL_NOTICE }) : null,
+      ...[...expiryAlerts(p.valid_until, today), ...localAlerts(p, today)]
+        .map((a) => el('p', { class: 'alert-line', text: `⚠ ${a}` })),
       el('p', { text: p.summary }),
       el('ul', null, p.conditions.map((c) => el('li', { text: c }))),
       el('dl', null, [
@@ -175,7 +201,12 @@
     const list = document.getElementById('spot-list');
     const prefSelect = document.getElementById('filter-pref');
     const statusSelect = document.getElementById('filter-status');
-    const showUnconfirmed = document.getElementById('show-unconfirmed');
+    const toggles = Object.fromEntries(
+      Object.entries(HIDDEN_BY_DEFAULT).map(([key, id]) => [key, document.getElementById(id)]));
+    const visibleOnMap = (p) => {
+      const toggle = toggles[statusKey(p.status)];
+      return !toggle || toggle.checked;
+    };
     // 大量の点は近いものをまとめて数字で表示する（全国表示で点が重なって押せなくなるのを防ぐ）
     // 「地図で見る」で寄る倍率（11 以上）ではまとめず、1 つずつの印にする
     const cluster = L.markerClusterGroup({
@@ -219,8 +250,8 @@
       const shown = features.filter((f) =>
         (!pref || f.properties.prefecture === pref) && (!status || f.properties.status === status));
 
-      // 「今年の開放を確認できず」は OK の場所と並べると誤解されるので、地図には選んだときだけ出す
-      const onMap = shown.filter((f) => statusKey(f.properties.status) !== 'unconfirmed' || showUnconfirmed.checked);
+      // 「今年の開放を確認できず」「現地の案内のみ」は OK の場所と並べると誤解されるので、地図には選んだときだけ出す
+      const onMap = shown.filter((f) => visibleOnMap(f.properties));
       cluster.clearLayers();
       circles.clearLayers();
       cluster.addLayers(onMap.map((f) => spots.get(f.properties.id).marker));
@@ -240,8 +271,8 @@
         const p = f.properties;
         const button = el('button', { type: 'button', class: 'show-on-map', text: '地図で見る' });
         button.addEventListener('click', () => {
-          if (statusKey(p.status) === 'unconfirmed' && !showUnconfirmed.checked) {
-            showUnconfirmed.checked = true;
+          if (!visibleOnMap(p)) {
+            toggles[statusKey(p.status)].checked = true;
             draw({ moveMap: false });
           }
           const { marker } = spots.get(p.id);
@@ -260,7 +291,7 @@
 
     prefSelect.addEventListener('change', () => draw({ moveMap: true }));
     statusSelect.addEventListener('change', () => draw({ moveMap: false }));
-    showUnconfirmed.addEventListener('change', () => draw({ moveMap: false }));
+    for (const toggle of Object.values(toggles)) toggle.addEventListener('change', () => draw({ moveMap: false }));
     // 最初の表示はアニメーションなしで合わせる（裏のタブで開かれるとアニメーションが止まり、範囲が合わないため）
     draw({ moveMap: true, animate: false });
   }
@@ -309,9 +340,12 @@
       ]);
       const sourceStatus = status.sources || {};
       const prefs = prefData.prefectures;
-      const spots = createSpotLayers(spotsData.features, sourceStatus, today);
+      // 確認から期限を過ぎた「現地の案内のみ」は、古い情報で人を誘導しないよう表示しない
+      const features = spotsData.features.filter((f) =>
+        statusKey(f.properties.status) !== 'local' || daysSinceChecked(f.properties, today) <= LOCAL_EXPIRE_DAYS);
+      const spots = createSpotLayers(features, sourceStatus, today);
       document.getElementById('static-note').hidden = true;
-      setupListAndMap(spotsData.features, spots, map, prefs, sourceStatus, today);
+      setupListAndMap(features, spots, map, prefs, sourceStatus, today);
       renderIndex(index, prefs, sourceStatus, today);
     } catch (err) {
       const box = document.getElementById('load-error');
