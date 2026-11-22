@@ -55,7 +55,7 @@ def render_spot(p):
         for s in p["sources"])
     return (
         f'<li class="card"><h3>{escape(p["name"])}</h3>'
-        f'<p class="meta">{escape(p["prefecture"])} ／ {escape(p["port"])}</p>'
+        f'<p class="meta">{escape(p["prefecture"])}{" ／ " + escape(p["port"]) if p.get("port") else ""}</p>'
         f'<span class="badge status-{status}">{STATUS_LABEL[status]}</span>'
         f'<p>{escape(p["summary"])}</p><ul>{conditions}</ul>'
         f'<dl><dt>時間</dt><dd>{escape(p["hours"])}</dd><dt>料金</dt><dd>{escape(p["fee"])}</dd>'

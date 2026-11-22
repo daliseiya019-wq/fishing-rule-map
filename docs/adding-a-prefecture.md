@@ -32,6 +32,9 @@
 - 位置: 公式ページに地点があれば `point`。無ければ地区の代表点（`district`）か港のおおよその場所（`port`）にし、`position.note` にそう書く。
   - 地区の代表点は国土地理院の住所検索で得られる（`https://msearch.gsi.go.jp/address-search/AddressSearch?q=<住所>`）。
   - 座標は **[経度, 緯度]** の順。
+- 港の外の施設（海づり公園など）は `port` を `null` にしてよい。
+- 見送った候補は `docs/candidates.md` に理由付きで書く。
+- 出典は週次チェックで毎回取りに行くので、20MB を超えるファイル（大きなガイドブックの PDF など）は使わない。
 - 出典ごとに `published`（ページの掲載日。無ければ null）、`checked`（確認した日）、`checked_how`（開いて読んだら `page`）。
 
 ## 3. 確認と書き出し

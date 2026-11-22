@@ -83,8 +83,10 @@ def check_spots(c):
         if spot_id in seen_ids:
             c.error(where, "id が重複しています")
         seen_ids.add(spot_id)
-        for name in ("name", "port", "summary", "hours", "fee"):
+        for name in ("name", "summary", "hours", "fee"):
             c.text(where, p.get(name), name)
+        if p.get("port") is not None:  # 港の外の施設（海づり公園など）は null
+            c.text(where, p.get("port"), "port")
         c.enum(where, p.get("prefecture"), "prefecture", PREFECTURES)
         c.enum(where, p.get("status"), "status", STATUSES)
         conditions = p.get("conditions")

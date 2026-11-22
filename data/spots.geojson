@@ -986,6 +986,1407 @@
         ],
         "valid_until": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.774553,
+          42.614708
+        ]
+      },
+      "properties": {
+        "id": "hokkaido-tomakomai-ippon-bohatei",
+        "name": "苫小牧港海釣り施設「一本防波堤」（東港区内防波堤A）",
+        "port": "苫小牧港",
+        "prefecture": "北海道",
+        "status": "limited",
+        "summary": "苫小牧港東港区の内防波堤を、国の釣り文化振興モデル港の取り組みとして有料の釣り場に開放している施設。北海道開発局が案内し、苫小牧港釣り文化振興協会が運営している。",
+        "conditions": [
+          "釣りができるのは、防波堤中間の立入禁止フェンスから先端までの東側だけ。西側の胸壁からの釣りは禁止（苫小牧港釣り文化振興協会）",
+          "ライフジャケットの着用が必須。竿は1人2本まで。飲酒・火気は禁止（苫小牧港釣り文化振興協会）",
+          "未就学児は入場できない。小中学生は保護者の同伴が必要（苫小牧港釣り文化振興協会）",
+          "予約なしの先着順で、入場者が100人を超えると空きが出るまで待つ。入場時に誓約書を出す（苫小牧港釣り文化振興協会）",
+          "波・風・雷・地震などの基準に当たると閉鎖し、防波堤から避難させる（苫小牧港釣り文化振興協会）"
+        ],
+        "hours": "開放は4月〜11月初めの土日祝（予定。2026年は11月3日で終了）。6時開場。9月は17時まで、10月以降は16時まで（8月以前の終了時刻は運営者のページに明記なし）",
+        "fee": "入場料 大人（高校生以上）1,500円・中学生1,000円・小学生500円。駐車料金800円。ライフジャケットの貸出1着500円",
+        "position": {
+          "precision": "point",
+          "note": "運営者サイトに埋め込まれた地図の「一本防波堤」のピン位置。北海道開発局の位置図の中心ともほぼ一致"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港（苫小牧港）",
+            "publisher": "国土交通省 北海道開発局",
+            "url": "https://www.hkd.mlit.go.jp/ky/kk/kou_kei/k5m5qg00000011t3.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "ご利用案内・料金（苫小牧港海釣り施設「一本防波堤」）",
+            "publisher": "一般社団法人 苫小牧港釣り文化振興協会",
+            "url": "https://ippon-b.com/guide/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2414,
+          38.0068
+        ]
+      },
+      "properties": {
+        "id": "niigata-higashiko-2nd-east-breakwater",
+        "name": "新潟東港 第2東防波堤（管理釣り場）",
+        "port": "新潟港（東港区）",
+        "prefecture": "新潟県",
+        "status": "limited",
+        "summary": "港湾施設の防波堤を、新潟県の案内のもとNPO法人ハッピーフィッシングが運営して有料の釣り場として開放している。国の釣り文化振興モデル港の対象施設。",
+        "conditions": [
+          "第2東防波堤以外の東港区の防波堤は立入禁止（新潟県）",
+          "ライフジャケット着用が必須（NPO法人ハッピーフィッシング）",
+          "小学生未満は保護者同伴でも入場不可、小学生は成人の同伴が必要（NPO法人ハッピーフィッシング）",
+          "荒天時や閉鎖基準に達したときは閉鎖（NPO法人ハッピーフィッシング）",
+          "防波堤上は禁煙・禁酒・火気禁止、パラソル等の持ち込み不可（NPO法人ハッピーフィッシング）"
+        ],
+        "hours": "3月〜10月が基本の開放期間で、日の出から日の入まで（2026年は11月15日まで開放し、今季の営業は終了と運営者が案内）",
+        "fee": "当日券 大人・高校生・中学生1,500円、小学生750円。ライフジャケット貸出500円（運営者の案内）",
+        "position": {
+          "precision": "point",
+          "note": "地図の位置は運営者（NPO法人ハッピーフィッシング）のサイトに載っている地図の地点"
+        },
+        "sources": [
+          {
+            "title": "新潟東港の主な施設を紹介します",
+            "publisher": "新潟県 新潟港湾事務所",
+            "url": "https://www.pref.niigata.lg.jp/sec/niigata_kouwan/1356860445805.html",
+            "published": "2019-03-29",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "「釣り文化振興促進モデル港」について",
+            "publisher": "国土交通省 北陸地方整備局 新潟港湾・空港整備事務所",
+            "url": "https://www.niigata.pa.hrr.mlit.go.jp/5393/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "ルール・料金（新潟東港第2東防波堤）",
+            "publisher": "NPO法人ハッピーフィッシング（運営者）",
+            "url": "https://happyfishing.jp/rule/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "入場料・営業時間・アクセス・施設案内",
+            "publisher": "NPO法人ハッピーフィッシング（運営者）",
+            "url": "https://happyfishing.jp/101271/",
+            "published": "2026-10-07",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2779,
+          37.2114
+        ]
+      },
+      "properties": {
+        "id": "niigata-naoetsu-3rd-east-breakwater",
+        "name": "直江津港 第3東防波堤（管理釣り場）",
+        "port": "直江津港",
+        "prefecture": "新潟県",
+        "status": "limited",
+        "summary": "直江津港の防波堤を、NPO法人ハッピーフィッシングが運営して有料の釣り場として開放している。新潟県と国の案内に載る、釣り文化振興モデル港の対象施設。",
+        "conditions": [
+          "ライフジャケット着用が必須（NPO法人ハッピーフィッシング）",
+          "入場には事前の順番待ち（受付番号の取得）が必要（NPO法人ハッピーフィッシング）",
+          "小学生未満は保護者同伴でも入場不可、小学生は成人の同伴が必要（NPO法人ハッピーフィッシング）",
+          "波・風・雷などの閉鎖基準に達したとき、LNG船の入出港時は閉鎖（NPO法人ハッピーフィッシング）",
+          "所定の場所以外での釣り、飲酒、火気、ドローン飛行、火力発電所方向の撮影は禁止（NPO法人ハッピーフィッシング）"
+        ],
+        "hours": "3月1日〜10月31日が基本の開放期間で、日の出から日の入まで（2026年は11月15日まで開放し、今期は終了と運営者が案内）",
+        "fee": "当日券 大人・高校生・中学生1,500円、小学生750円。ライフジャケット貸出500円（運営者の案内）",
+        "position": {
+          "precision": "point",
+          "note": "地図の位置は運営者（NPO法人ハッピーフィッシング）のサイトに載っている地図の地点。所在地は上越市八千浦4番地"
+        },
+        "sources": [
+          {
+            "title": "釣り場として開放している漁港施設（港湾施設の開放にも言及）",
+            "publisher": "新潟県 漁港課",
+            "url": "https://www.pref.niigata.lg.jp/sec/gyoko/kaihouturiba.html",
+            "published": "2022-12-05",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "「釣り文化振興促進モデル港」について",
+            "publisher": "国土交通省 北陸地方整備局 新潟港湾・空港整備事務所",
+            "url": "https://www.niigata.pa.hrr.mlit.go.jp/5393/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "ルール・料金（直江津港第3東防波堤 管理釣り場）",
+            "publisher": "NPO法人ハッピーフィッシング（運営者）",
+            "url": "https://happyfishing-n.jp/rule/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.242783,
+          38.083641
+        ]
+      },
+      "properties": {
+        "id": "niigata-himezu-fishing-port",
+        "name": "姫津漁港 西防波堤",
+        "port": "姫津漁港",
+        "prefecture": "新潟県",
+        "status": "open",
+        "summary": "新潟県が施設を整え、管理を佐渡市に委託して釣り場として開放している漁港の防波堤。",
+        "conditions": [
+          "気象・災害・施設の修繕などで閉鎖することがある（新潟県 漁港課）",
+          "開放している西防波堤以外の防波堤は立入禁止（新潟県 漁港課）"
+        ],
+        "hours": "5月1日〜10月31日、午前10時〜午後4時",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（佐渡市姫津）の代表点。防波堤の場所は新潟県 漁港課の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣り場として開放している漁港施設",
+            "publisher": "新潟県 漁港課",
+            "url": "https://www.pref.niigata.lg.jp/sec/gyoko/kaihouturiba.html",
+            "published": "2022-12-05",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.679626,
+          37.536972
+        ]
+      },
+      "properties": {
+        "id": "niigata-izumozaki-fishing-port",
+        "name": "出雲崎漁港 離岸堤",
+        "port": "出雲崎漁港",
+        "prefecture": "新潟県",
+        "status": "open",
+        "summary": "新潟県が施設を整え、管理を出雲崎町に委託して釣り場として開放している漁港の離岸堤。",
+        "conditions": [
+          "気象・災害・施設の修繕などで閉鎖することがある（新潟県 漁港課）",
+          "開放している施設以外の防波堤は立入禁止（新潟県 漁港課）"
+        ],
+        "hours": "4月1日〜11月30日、日の出から日没まで",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は漁港の所在地（出雲崎町大字尼瀬）の代表点。離岸堤の場所は新潟県 漁港課の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣り場として開放している漁港施設",
+            "publisher": "新潟県 漁港課",
+            "url": "https://www.pref.niigata.lg.jp/sec/gyoko/kaihouturiba.html",
+            "published": "2022-12-05",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "出雲崎漁港（第2種 新潟県管理）",
+            "publisher": "新潟県 漁港課",
+            "url": "https://www.pref.niigata.lg.jp/sec/gyoko/1227038488187.html",
+            "published": "2021-07-19",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.126245,
+          36.759969
+        ]
+      },
+      "properties": {
+        "id": "toyama-toyama-shinko",
+        "name": "富山新港の釣り可能区域（5か所）",
+        "port": "伏木富山港（新湊地区）",
+        "prefecture": "富山県",
+        "status": "open",
+        "summary": "港湾管理者の富山新港管理局が、南水路緑地・東水路先端緑地・開港記念碑緑地広場・東港口護岸・西波除堤の5か所を釣りができる場所として地図で案内している。",
+        "conditions": [
+          "西波除堤は3月〜10月の土日祝のみ開放、荒天時は閉鎖（富山県 富山新港管理局）",
+          "ライフジャケット等の着用、救命浮環・救命ハシゴの位置の確認を求めている（富山県 富山新港管理局）",
+          "所定の駐車場に駐車し、路上駐車はしない（富山県 富山新港管理局）",
+          "立入制限柵・看板のある場所には立ち入らない（富山県 富山新港管理局）"
+        ],
+        "hours": "西波除堤は9:00〜17:00（7〜8月は18:00まで）。ほかの4か所は記載なし",
+        "fee": "記載なし",
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は富山新港全体の代表点。5か所の場所は富山新港管理局の地図で確認"
+        },
+        "sources": [
+          {
+            "title": "富山新港で魚釣りができる場所",
+            "publisher": "富山県 富山新港管理局",
+            "url": "https://www.pref.toyama.jp/1545/kendodukuri/dourokouwan/toyamashinkou/kj00019993.html",
+            "published": "2025-07-05",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.614493,
+          36.607905
+        ]
+      },
+      "properties": {
+        "id": "ishikawa-kanazawa-port",
+        "name": "金沢港の釣り施設（大野地区釣り護岸・大浜地区ふれあい広場）",
+        "port": "金沢港",
+        "prefecture": "石川県",
+        "status": "open",
+        "summary": "石川県金沢港湾事務所が、金沢港の釣り施設として大野地区釣り護岸と大浜地区ふれあい広場を案内している。",
+        "conditions": [
+          "大浜地区ふれあい広場は4月〜10月のみ利用でき、それ以外の期間は立入不可（石川県 金沢港湾事務所）",
+          "防護柵（転落防止柵）の外側は立入禁止（石川県 金沢港湾事務所）",
+          "防波堤は立入禁止（石川県 金沢港湾事務所）",
+          "ごみ・余った餌は持ち帰る（石川県 金沢港湾事務所）"
+        ],
+        "hours": "大浜地区ふれあい広場は4月〜10月（時間の記載なし）。大野地区釣り護岸は記載なし",
+        "fee": "記載なし",
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は金沢港（クルーズターミナル付近）の代表点。2つの釣り施設の場所は金沢港湾事務所の地図で確認"
+        },
+        "sources": [
+          {
+            "title": "施設紹介 - 釣り施設",
+            "publisher": "石川県 金沢港湾事務所",
+            "url": "https://www.pref.ishikawa.lg.jp/kanazawakouwan/p05b.html",
+            "published": "2026-01-27",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "お知らせ - お願い",
+            "publisher": "石川県 金沢港湾事務所",
+            "url": "https://www.pref.ishikawa.lg.jp/kanazawakouwan/p04a.html",
+            "published": "2021-09-15",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.082321,
+          35.676441
+        ]
+      },
+      "properties": {
+        "id": "fukui-tsuruga-mariyama-tsuri-koen",
+        "name": "敦賀港 つり公園（鞠山北魚釣り護岸）",
+        "port": "敦賀港",
+        "prefecture": "福井県",
+        "status": "open",
+        "summary": "敦賀港のフェリーターミナル隣にある魚釣り用の護岸。福井県敦賀港湾事務所が、誰でも利用できる公共施設のつり公園として案内している。",
+        "conditions": [
+          "防波堤・岸壁・親水護岸での釣りはしない（福井県 敦賀港湾事務所）",
+          "つり公園入口の専用駐車場を使い、路上駐車はしない（福井県 敦賀港湾事務所）",
+          "強風・波浪・大雪の注意報が出ている日は利用を控える（福井県 敦賀港湾事務所）",
+          "ごみ・釣り針は持ち帰る（福井県 敦賀港湾事務所）",
+          "護岸改修工事による立入規制は2025年4月1日に解除済み（国土交通省 敦賀港湾事務所）"
+        ],
+        "hours": "記載なし",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（敦賀市鞠山）の代表点。施設の場所は敦賀港湾事務所の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "嶺南振興局敦賀港湾事務所（つり公園を利用される方へ）",
+            "publisher": "福井県 嶺南振興局敦賀港湾事務所",
+            "url": "https://www.pref.fukui.lg.jp/doc/tu-kouwan/",
+            "published": "2026-11-17",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "にぎわいと潤いの空間（魚釣り施設 鞠山海遊パーク）",
+            "publisher": "国土交通省 北陸地方整備局 敦賀港湾事務所",
+            "url": "https://www.tsuruga.pa.hrr.mlit.go.jp/3/159/169/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "護岸のリフレッシュ工事（入場規制解除のお知らせ）",
+            "publisher": "国土交通省 北陸地方整備局 敦賀港湾事務所",
+            "url": "https://www.tsuruga.pa.hrr.mlit.go.jp/file/topic/2024/88ee89f9.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.496155,
+          35.006317
+        ]
+      },
+      "properties": {
+        "id": "shizuoka-shimizu-hinode-pier",
+        "name": "清水港 日の出ふ頭（釣りフェスタの開放日）",
+        "port": "清水港",
+        "prefecture": "静岡県",
+        "status": "limited",
+        "summary": "静岡市が案内する「釣りフェスタ」の日だけ、日の出ふ頭の一部が無料の釣り場として開放される。",
+        "conditions": [
+          "ライフジャケットの着用が義務（無料貸出あり）（静岡市）",
+          "定員は約100人で、入場制限をすることがある（静岡市）",
+          "専用駐車場はなく、ふ頭内の道路に駐車しない。県営日の出駐車場か公共交通機関を使う（静岡市）",
+          "遠投する投げ釣りは控える。監視員の指示に従う（静岡市）",
+          "津波注意報・強風・波浪注意報などで中止になる（静岡市）"
+        ],
+        "hours": "開放日の8時〜15時。2026年は7月5日・10月10日に実施、11月15日は悪天候予報で中止",
+        "fee": "入場無料（レンタル竿は有料）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（静岡市清水区日の出町）の代表点。開放場所は静岡市の開放図で確認"
+        },
+        "sources": [
+          {
+            "title": "清水港日の出ふ頭「釣りフェスタ」",
+            "publisher": "静岡市",
+            "url": "https://www.city.shizuoka.lg.jp/s2431/s004730.html",
+            "published": "2026-11-14",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.822525,
+          34.954769
+        ]
+      },
+      "properties": {
+        "id": "aichi-shinmaiko-marine-park",
+        "name": "新舞子マリンパーク（魚釣り施設）",
+        "port": "名古屋港",
+        "prefecture": "愛知県",
+        "status": "open",
+        "summary": "名古屋港管理組合の臨港施設で、施設内容に魚釣り施設が含まれる。指定管理者は株式会社日誠。",
+        "conditions": [
+          "施設ごとの利用条件は指定管理者の案内による（名古屋港管理組合）"
+        ],
+        "hours": "公園の供用時間は午前5時〜午後9時（施設によって異なると記載）",
+        "fee": "釣りの料金は記載なし（駐車場は土日祝・海水浴期間などに1台1回500円）",
+        "position": {
+          "precision": "point",
+          "note": "地図の位置は公園の所在地（知多市緑浜町2番地）。魚釣り施設は園内"
+        },
+        "sources": [
+          {
+            "title": "施設案内 新舞子マリンパーク",
+            "publisher": "名古屋港管理組合",
+            "url": "https://www.port-of-nagoya.jp/kanko/kankoshisetsu/1000895.html",
+            "published": "2021-10-11",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.104524,
+          34.634236
+        ]
+      },
+      "properties": {
+        "id": "hyogo-suma-umizuri-park",
+        "name": "神戸市立須磨海づり公園",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "神戸市立の有料海釣り施設で、2024年11月にリニューアル再開。神戸市も市内で釣りができる場所として案内している。",
+        "conditions": [
+          "竿釣り・手釣り以外は禁止（須磨海づり公園）",
+          "北釣台で内側へ向けた投げ釣り・ルアー釣りは禁止。引っ掛け釣りもできない（須磨海づり公園）",
+          "集魚剤・赤土・ヌカは使用禁止。夜の投光器・集魚灯も禁止（須磨海づり公園）",
+          "竿は1人2本まで。小学3年生以下はライフジャケット着用（須磨海づり公園）",
+          "テント・火気・ペットは不可。敷地内は終日禁煙（須磨海づり公園）"
+        ],
+        "hours": "7時〜17時（4〜10月は6時開園、閉園時刻は月により異なる）。火曜休園（休日と7月21日〜8月31日は開園）、12月29日〜1月3日休園",
+        "fee": "おとな（16歳以上）4時間1,200円・延長1時間300円、こども（6〜15歳）4時間700円・延長1時間170円、見学 おとな200円・こども100円（神戸市在住65歳以上は割引あり）",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の「須磨海釣り公園」の点（神戸市須磨区一ノ谷町5丁目地先）"
+        },
+        "sources": [
+          {
+            "title": "ご利用ガイド（須磨海づり公園）",
+            "publisher": "須磨海づり公園（神戸市立・指定管理者）",
+            "url": "https://sumasakana-park.com/guide/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "魚釣り開放エリア（空港島親水護岸ほか）",
+            "publisher": "神戸市",
+            "url": "https://www.city.kobe.lg.jp/a42810/business/kowanjigyo/kobekukonishiryokuchi-tsuri.html",
+            "published": "2026-01-23",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.067811,
+          34.627085
+        ]
+      },
+      "properties": {
+        "id": "hyogo-hiraiso-umizuri-park",
+        "name": "神戸市立平磯海づり公園",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "神戸市立の有料海釣り施設で、東西約1,400mの釣台がある。指定管理者は神戸農政公社で、神戸市が料金改定を発表している。",
+        "conditions": [
+          "釣り場全体に高さ約80cmの柵がある（平磯海づり公園）",
+          "大雨・強風・波浪などの警報時や危険なときは閉場・退場になる（平磯海づり公園）"
+        ],
+        "hours": "記載なし（読んだページに開園時間の記載なし。公園の案内で確認）",
+        "fee": "3〜11月 大人（16歳以上）4時間1,200円・小人600円、12〜2月 大人800円・小人500円、特定日 大人1,500円・小人600円。延長は1時間ごと。見学 大人200円・小人100円（特定日の大人300円）。2026年4月1日から",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の「平磯海釣り公園」の点（神戸市垂水区平磯1丁目1-66）"
+        },
+        "sources": [
+          {
+            "title": "施設料金・案内（平磯海づり公園）",
+            "publisher": "一般財団法人 神戸農政公社（指定管理者）",
+            "url": "https://kobeumiduri.jp/facility/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "神戸市立平磯海づり公園の利用料金改定",
+            "publisher": "神戸市 経済観光局 農水産課",
+            "url": "https://www.city.kobe.lg.jp/a67688/675097559697.html",
+            "published": "2026-03-30",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.042188,
+          34.628028
+        ]
+      },
+      "properties": {
+        "id": "hyogo-azur-maiko",
+        "name": "アジュール舞子（護岸部の釣り場）",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "明石海峡大橋の近くにある公園で、園内図の護岸部が釣り場として案内されている（海釣り公園ではない）。神戸市も市内で釣りができる場所として挙げている。",
+        "conditions": [
+          "釣りは護岸部のみ。砂浜での釣りは海水浴期間外だけ（アジュール舞子）",
+          "柵で立入を制限しているエリアには入らない（2025年4月23日から護岸の立入制限を順次解除）（アジュール舞子）",
+          "ゴミ箱なし・ゴミは持ち帰り。公園内は火気禁止、水道場での魚の調理は不可（アジュール舞子）"
+        ],
+        "hours": "公園は23時閉園。23時以降も護岸部（園内図の赤線部分）で釣りが可能",
+        "fee": "入場無料（駐車場は別）",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の「アジュール舞子」（公園）の点。釣り場は公園の護岸部で、範囲はアジュール舞子の園内図で確認"
+        },
+        "sources": [
+          {
+            "title": "釣り（アジュール舞子）",
+            "publisher": "アジュール舞子",
+            "url": "https://kobe-park.or.jp/azur/fishing/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "魚釣り開放エリア（空港島親水護岸ほか）",
+            "publisher": "神戸市",
+            "url": "https://www.city.kobe.lg.jp/a42810/business/kowanjigyo/kobekukonishiryokuchi-tsuri.html",
+            "published": "2026-01-23",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.369039,
+          34.683308
+        ]
+      },
+      "properties": {
+        "id": "hyogo-amagasaki-uotsuri-park",
+        "name": "尼崎市立魚つり公園",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "武庫川河口にある尼崎市立の桟橋式の有料釣り公園。兵庫県の「兵庫の海釣り」でも海釣公園として紹介されている。",
+        "conditions": [
+          "小学3年生以下はライフジャケットを無料貸出（尼崎市立魚つり公園）",
+          "入園の予約はなし。悪天候の日は休園（尼崎市立魚つり公園）"
+        ],
+        "hours": "5・6・11月 6時〜19時、7〜10月 5時〜20時、12〜4月 7時〜17時。毎週火曜休園（祝日は営業し翌水曜休）、12月31日〜1月1日休園",
+        "fee": "釣り 大人830円・子ども（6〜15歳）410円、見学 大人200円・子ども100円、6歳未満無料。駐車場は別料金",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の「尼崎市立魚つり公園」の点（尼崎市平左衛門町66）"
+        },
+        "sources": [
+          {
+            "title": "ご利用案内・料金（尼崎市立魚つり公園）",
+            "publisher": "尼崎市立魚つり公園",
+            "url": "https://amagasaki-uoturikouen.com/guide.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "海釣公園（兵庫の海釣り）",
+            "publisher": "兵庫県（兵庫の海釣り／水産技術センター）",
+            "url": "https://www.hyogo-suigi.jp/fishing/park/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.355667,
+          34.696491
+        ]
+      },
+      "properties": {
+        "id": "hyogo-naruohama-umizuri",
+        "name": "鳴尾浜臨海公園 海づり広場",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "西宮市の鳴尾浜臨海公園（南地区）にある約300mの堤防の有料釣り場。西宮市が施設として案内し、兵庫県の「兵庫の海釣り」でも紹介されている。",
+        "conditions": [
+          "竿は1人2本まで（鳴尾浜臨海公園）",
+          "小学生以下は保護者同伴。16歳未満は18時以降は保護者同伴が必要（鳴尾浜臨海公園）",
+          "警報が出たときや危険なときは閉場（鳴尾浜臨海公園）"
+        ],
+        "hours": "4月 7時〜19時、5〜11月 5時〜20時、12〜3月 7時〜19時。12月29日〜1月3日休場（西宮市の2019年時点の案内とは時間が異なるため最新は施設に確認）",
+        "fee": "大人（16歳以上）300円、こども（6〜15歳）150円、見学100円（入場1回。西宮市民の65歳以上などは無料）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は住所（西宮市鳴尾浜三丁目13番地）の代表点。釣り場の場所は鳴尾浜臨海公園の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "海づり広場（鳴尾浜臨海公園）",
+            "publisher": "鳴尾浜臨海公園",
+            "url": "https://www.naruohama-park.com/umizuri/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "海づり広場（バリアフリー情報）",
+            "publisher": "西宮市",
+            "url": "https://www.nishi.or.jp/kenko/shakaifukushi/barrier-fre/barrier-free-info/sports/umidurihiroba.html",
+            "published": "2020-04-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.703735,
+          34.227081
+        ]
+      },
+      "properties": {
+        "id": "hyogo-minamiawaji-megafloat",
+        "name": "南あわじ市浮体式多目的公園（海釣り公園メガフロート）",
+        "port": null,
+        "prefecture": "兵庫県",
+        "status": "open",
+        "summary": "福良湾の入口に浮かぶ南あわじ市の有料海釣り公園。市の水産振興課のページで料金・時間を案内している。",
+        "conditions": [
+          "ペットの入園は禁止。メガフロートと桟橋は全面禁煙（南あわじ市）",
+          "台風など天候の悪い日・波浪警報の発令時は休園（南あわじ市）"
+        ],
+        "hours": "4〜10月 6時〜18時、11〜3月 7時〜17時（最終受付は閉園2時間前）。毎週火曜休園（祝日は開園し翌日休）、12月29日〜1月3日休園",
+        "fee": "釣り 大人（16歳以上）4時間1,400円・1日2,100円、小人（5〜15歳）4時間700円・1日1,050円。入園のみ 大人210円・小人100円。退園が20分以上遅れると割増あり",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は住所（南あわじ市阿万吹上町1432番地）の代表点（陸側）。釣り場の浮体は沖にあり、場所は南あわじ市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "南あわじ市浮体式多目的公園（海釣り公園メガフロート）",
+            "publisher": "南あわじ市 水産振興課",
+            "url": "https://www.city.minamiawaji.hyogo.jp/soshiki/suisan/umidurikouen-mega.html",
+            "published": "2026-05-27",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.344016,
+          35.514274
+        ]
+      },
+      "properties": {
+        "id": "kyoto-maizuru-shinkai-park",
+        "name": "舞鶴親海公園（海釣り広場・海釣り護岸）",
+        "port": null,
+        "prefecture": "京都府",
+        "status": "open",
+        "summary": "舞鶴湾に面した舞鶴市の公園（指定管理）で、海釣り広場に海釣り護岸がある。舞鶴市が公式ページで開場時間を案内している。",
+        "conditions": [
+          "海釣り広場の問い合わせ先は舞鶴市水産課（舞鶴市）"
+        ],
+        "hours": "4・5・9・10・11月 7時〜18時、6〜8月 7時〜19時、12〜3月 7時〜17時。毎週水曜定休（祝日の場合は翌日）",
+        "fee": "入園料は無料（釣りの料金は記載なし）",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の「舞鶴親海公園」（公園）の点（舞鶴市字千歳897-1）。海釣り護岸は公園内の海釣り広場"
+        },
+        "sources": [
+          {
+            "title": "舞鶴親海公園",
+            "publisher": "舞鶴市",
+            "url": "https://www.city.maizuru.kyoto.jp/kurashi/0000009016.html",
+            "published": "2026-09-07",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.416183,
+          34.366089
+        ]
+      },
+      "properties": {
+        "id": "hiroshima-kannon-higashi-breakwater",
+        "name": "観音東防波堤（観音マリーナ東端）",
+        "port": "広島港",
+        "prefecture": "広島県",
+        "status": "open",
+        "summary": "広島県が県民向けに開放している防波堤。隣の観音マリーナ海浜公園は釣り禁止で、釣りはこの防波堤を使うよう県が案内している。",
+        "conditions": [
+          "開放日は3〜11月が毎日、12〜2月は土日祝のみ（広島県 広島港湾振興事務所）",
+          "マリーナ側では釣りをしない（広島県 広島港湾振興事務所）",
+          "投げ釣り・まき餌釣り・だんご釣りは禁止（広島県 広島港湾振興事務所）",
+          "手前のNo.1浮防波堤では釣りをしない（広島県 広島港湾振興事務所）",
+          "観音マリーナ海浜公園の中は釣り禁止（広島県 広島港湾振興事務所）"
+        ],
+        "hours": "4〜9月は10時〜18時、10〜3月は10時〜16時",
+        "fee": "無料",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（広島市西区観音新町四丁目）の代表点。防波堤は観音マリーナの東端にあり、場所は広島県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "観音マリーナ海浜公園（広島市西区）",
+            "publisher": "広島県 広島港湾振興事務所",
+            "url": "https://www.pref.hiroshima.lg.jp/soshiki/221/park-park03.html",
+            "published": "2024-12-17",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.964286,
+          33.928075
+        ]
+      },
+      "properties": {
+        "id": "yamaguchi-fishing-park-hikari",
+        "name": "フィッシングパーク光",
+        "port": null,
+        "prefecture": "山口県",
+        "status": "open",
+        "summary": "光市が設置し、山口県漁協光支店が指定管理する有料の釣り桟橋（室積）。光市の公式サイトで利用案内を出している。",
+        "conditions": [
+          "ルアー釣りは禁止（光市）",
+          "周りに危険な投げ釣りは禁止（光市）",
+          "釣竿は1人2本まで（光市）",
+          "12歳未満は保護者の同伴が必要（光市）",
+          "飲酒状態での入園・酒類の持ち込みは禁止、ペット同伴は遠慮（光市）",
+          "風速10m以上の強風時は入場を制限することがある（光市）",
+          "休園日は毎週水曜（祝日は開園）と12月30日〜1月2日（光市）"
+        ],
+        "hours": "4・9・10月は6時〜21時、5〜8月は5時〜21時、11・3月は6時〜20時、12〜2月は7時〜17時",
+        "fee": "基本釣り料金（入園料と4時間）は大人690円・子ども410円。延長1時間ごと大人230円・子ども110円、閉園2時間前料金・入園のみ料金・障害者手帳割引あり",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の施設点（光市室積六丁目17-1付近）"
+        },
+        "sources": [
+          {
+            "title": "フィッシングパーク光 ご利用案内",
+            "publisher": "光市 農林水産課",
+            "url": "https://www.city.hikari.lg.jp/kanko_bunka/fishingpark/guide/15801.html",
+            "published": "2026-08-07",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "フィッシングパーク光",
+            "publisher": "光市 農林水産課",
+            "url": "https://www.city.hikari.lg.jp/kanko_bunka/fishingpark/index.html",
+            "published": "2025-09-25",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.901717,
+          34.062816
+        ]
+      },
+      "properties": {
+        "id": "yamaguchi-shimonoseki-fishing-park",
+        "name": "下関フィッシングパーク",
+        "port": null,
+        "prefecture": "山口県",
+        "status": "open",
+        "summary": "下関市の公共施設として運営されている有料の海釣り施設（吉見）。施設の公式サイトで料金と注意事項を案内している。",
+        "conditions": [
+          "釣台以外での釣りは禁止（下関フィッシングパーク）",
+          "釣竿は2本まで、釣り糸3本以上は禁止（下関フィッシングパーク）",
+          "投げ釣りとルアーは禁止（下関フィッシングパーク）",
+          "まき餌に赤土・砂・麦などを混ぜるのは禁止（下関フィッシングパーク）",
+          "火気・ペット・危険物の持ち込み、飲酒状態での利用は不可（下関フィッシングパーク）",
+          "小学生以下は18歳以上の同伴が必要、ライフジャケット着用（無料貸与）（下関フィッシングパーク）",
+          "休園日は毎週火曜（祝日の場合はその後の平日）と12月30日〜1月1日、悪天候・警報時は臨時閉園（下関フィッシングパーク）"
+        ],
+        "hours": "4月は6時〜19時、5〜10月は5時〜20時、11月は6時〜18時、12〜3月は7時〜17時",
+        "fee": "1日券は一般1,250円・小中学生620円。4時間は一般830円・小中学生410円（延長1時間ごとに一般210円・小中学生100円）。小学生未満無料",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の施設点（下関市吉見古宿町10-1付近）"
+        },
+        "sources": [
+          {
+            "title": "ご利用案内・料金について",
+            "publisher": "下関フィッシングパーク（下関市の公共施設）",
+            "url": "https://shimonoseki-fishingpark.com/guide.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "下関フィッシングパーク（トップ）",
+            "publisher": "下関フィッシングパーク（下関市の公共施設）",
+            "url": "https://shimonoseki-fishingpark.com/index.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.929804,
+          33.933352
+        ]
+      },
+      "properties": {
+        "id": "yamaguchi-ganryujima-pier",
+        "name": "巌流島 釣り桟橋（釣りデッキ）",
+        "port": "下関港",
+        "prefecture": "山口県",
+        "status": "open",
+        "summary": "国の釣り文化振興モデル港・下関港の対象施設で、巌流島にある釣りデッキ。国土交通省 下関港湾整備事務所が釣りを楽しめる場所として案内している。",
+        "conditions": [
+          "島へは巌流島連絡船（唐戸桟橋・門司港桟橋発着）で渡る（下関港湾整備事務所）",
+          "関門海峡の潮流が速い場所（下関港湾整備事務所）",
+          "トイレ・休憩所はあるが売店・自販機はない（下関港湾整備事務所）"
+        ],
+        "hours": "記載なし（連絡船の運航時間に左右される）",
+        "fee": "記載なし（連絡船の運賃は別）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は巌流島（下関市彦島船島）の島の代表点。釣りデッキの場所は国土交通省・下関市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港（下関港）",
+            "publisher": "国土交通省 九州地方整備局 下関港湾整備事務所",
+            "url": "https://www.pa.qsr.mlit.go.jp/shimonoseki/fishing/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "巌流島の概要（釣りデッキ）",
+            "publisher": "国土交通省 九州地方整備局 下関港湾整備事務所",
+            "url": "https://www.pa.qsr.mlit.go.jp/shimonoseki/fishing/turi_ganryujima.pdf",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.0017492,
+          34.4450667
+        ]
+      },
+      "properties": {
+        "id": "kagawa-naoshima-tsuri-koen",
+        "name": "直島つり公園",
+        "port": null,
+        "prefecture": "香川県",
+        "status": "open",
+        "summary": "直島町が案内する町の釣り公園。入園料に釣り料が含まれる。",
+        "conditions": [
+          "釣りができるのは西側の石積場と小割施設のあたりだけ。東側の固定桟橋や磯の釣り場は復旧時期未定で使えない（直島町）",
+          "夜釣りはできない（直島町）",
+          "中学生未満は保護者か引率者がいないと入園できない（直島町）",
+          "竿は1人2本まで（直島町）",
+          "休園日：月曜・火曜（祝日などの場合はその後の平日）、12月16日〜翌年1月14日、台風など悪天候の日（直島町）"
+        ],
+        "hours": "7:00〜17:00（水〜日曜・祝日）",
+        "fee": "入園料 大人（16歳以上）100円、小人（6歳以上16歳未満）50円、6歳未満無料。貸竿は別料金",
+        "position": {
+          "precision": "point",
+          "note": "直島町の案内ページにある地図リンクの位置（所在地：直島町340番地）"
+        },
+        "sources": [
+          {
+            "title": "直島つり公園",
+            "publisher": "直島町 産業環境課",
+            "url": "https://www.town.naoshima.lg.jp/about/kanko/turi.html",
+            "published": "2022-02-16",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.029877,
+          34.049259
+        ]
+      },
+      "properties": {
+        "id": "ehime-imabari-tomita",
+        "name": "今治港 富田地区（富田親水防波堤・魚釣護岸）",
+        "port": "今治港",
+        "prefecture": "愛媛県",
+        "status": "open",
+        "summary": "今治市（港湾管理者）が、富田地区の親水防波堤と魚釣護岸では釣りができると案内している港湾緑地。バリアフリーで車いすでも入れる。",
+        "conditions": [
+          "波や風が強いときは入らない（今治市 港湾漁港課）",
+          "富田地区以外の防波堤や護岸は人が入る前提の造りではないため立ち入らない（今治市 港湾漁港課）",
+          "案内図では富田新港側の岸壁が立入禁止区域、車いす・自転車の進入路はバイク進入禁止（今治市 港湾漁港課の図）"
+        ],
+        "hours": "記載なし",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は地区（今治市富田新港）の代表点。防波堤は地区の北西、親水緑地・魚釣護岸は東側の海沿い。場所は今治市の案内図で確認"
+        },
+        "sources": [
+          {
+            "title": "港湾緑地",
+            "publisher": "今治市 港湾漁港課",
+            "url": "https://www.city.imabari.ehime.jp/kouwan/kouwan_ryokuchi/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.330841,
+          33.989958
+        ]
+      },
+      "properties": {
+        "id": "ehime-niihama-shinsui-gogan",
+        "name": "マリンパーク新居浜 親水護岸",
+        "port": "新居浜港",
+        "prefecture": "愛媛県",
+        "status": "open",
+        "summary": "新居浜市（港務局 港湾課）が、階段状の親水護岸で子どもや車いすの人も釣りや散策を楽しめると案内している。",
+        "conditions": [
+          "釣りについての細かい決まりは記載なし（新居浜市）",
+          "マリンパーク新居浜は火曜日（祝日なら翌日）と12月29日〜1月3日が休場（新居浜市）"
+        ],
+        "hours": "記載なし（親水護岸の時間は案内なし）",
+        "fee": "記載なし（使用料の案内に親水護岸の項目なし）",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap のマリンパーク新居浜の位置（所在地：新居浜市垣生3丁目324番地）。親水護岸は園内"
+        },
+        "sources": [
+          {
+            "title": "親水護岸",
+            "publisher": "新居浜市 港務局 港湾課",
+            "url": "https://www.city.niihama.lg.jp/soshiki/kouwan/4536.html",
+            "published": "2014-12-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "マリンパーク新居浜のご案内",
+            "publisher": "新居浜市 港務局 港湾課",
+            "url": "https://www.city.niihama.lg.jp/soshiki/kouwan/marinpark-annai.html",
+            "published": "2024-04-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.764233,
+          33.974357
+        ]
+      },
+      "properties": {
+        "id": "ehime-matsuyama-kashima",
+        "name": "鹿島（松山市北条）",
+        "port": null,
+        "prefecture": "愛媛県",
+        "status": "open",
+        "summary": "松山市が、北条沖の鹿島では1年を通して釣りを楽しめると案内している。島へは市の鹿島公園渡船で渡る。",
+        "conditions": [
+          "島へは市の渡船で渡る。強風・高波で運休することがある（松山市）",
+          "釣り場の範囲や釣りの決まりは記載なし（松山市）"
+        ],
+        "hours": "記載なし（渡船は北条発 7時台から。4〜11月と12〜3月で時刻表が違う）",
+        "fee": "釣りの料金は記載なし。渡船は往復 大人230円・小児120円",
+        "position": {
+          "precision": "point",
+          "note": "OpenStreetMap の鹿島（島）の位置。渡船乗り場は松山市北条辻1605番地"
+        },
+        "sources": [
+          {
+            "title": "鹿島海水浴場・釣り",
+            "publisher": "松山市 観光・国際交流課",
+            "url": "https://www.city.matsuyama.ehime.jp/kanko/kankoguide/shitestukoen/kashima/kaisuiyoku.html",
+            "published": "2026-09-09",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "鹿島公園渡船・周遊船・駐車場（料金）",
+            "publisher": "松山市 観光・国際交流課",
+            "url": "https://www.city.matsuyama.ehime.jp/kanko/kankoguide/shitestukoen/kashima/tosen.html",
+            "published": "2026-11-20",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.71936,
+          33.92767
+        ]
+      },
+      "properties": {
+        "id": "fukuoka-wakita-fishing-pier",
+        "name": "脇田海釣り桟橋",
+        "port": null,
+        "prefecture": "福岡県",
+        "status": "open",
+        "summary": "北九州市若松区のひびき海の公園にある、沖へ約500mのびる釣り台付きの桟橋。北九州市（水産課）の施設で、指定管理者のひびき灘漁協が運営している。",
+        "conditions": [
+          "釣りは釣り台の上だけ。竿は1人2本まで（指定管理者）",
+          "竿釣り・手釣り以外は禁止。投げ釣り・ルアーは投げ釣りコーナーの設置期間以外は禁止（指定管理者）",
+          "赤土や麦などのまきえは禁止（指定管理者）",
+          "救命胴衣を貸し出すので着用する。小学生以下は大人の同伴が必要（指定管理者）",
+          "ひびき海の公園では、この桟橋以外での釣りと水産物の採取は禁止（北九州市）"
+        ],
+        "hours": "4〜10月は6時〜18時、11〜3月は7時〜17時。火曜（祝日なら翌日）、12月29日〜1月3日、天候の悪い日は休み",
+        "fee": "大人1,000円、小・中学生500円（30名以上の団体割引・回数券あり）。駐車場は1日300円（12〜3月は無料、北九州市の案内）",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は住所（北九州市若松区安屋）の代表点。桟橋の場所は脇田海釣り桟橋の公式サイトのアクセス案内で確認"
+        },
+        "sources": [
+          {
+            "title": "脇田海釣り桟橋",
+            "publisher": "北九州市 産業経済局水産課",
+            "url": "https://www.city.kitakyushu.lg.jp/contents/10200100.html",
+            "published": "2025-02-08",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "ご利用案内",
+            "publisher": "脇田海釣り桟橋（指定管理者 ひびき灘漁業協同組合）",
+            "url": "https://waita-fishingpier.com/?page_id=3",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "ひびき海の公園（マリンパーク）",
+            "publisher": "北九州市 産業経済局水産課",
+            "url": "https://www.city.kitakyushu.lg.jp/contents/924_11370.html",
+            "published": "2024-09-02",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.757652,
+          32.669138
+        ]
+      },
+      "properties": {
+        "id": "nagasaki-tobishima-iso-tsuri-koen",
+        "name": "飛島磯釣り公園",
+        "port": null,
+        "prefecture": "長崎県",
+        "status": "open",
+        "summary": "長崎市高島町の高島から防波堤と橋でつないだ飛島に釣り台を設けた、外洋に面した釣り公園。長崎市が高島地区の施設として案内している。",
+        "conditions": [
+          "高島へは長崎港からの定期船で渡る（長崎市）",
+          "釣りのルール（竿の本数・まきえ等）は案内ページに記載なし。現地の管理事務所で確認（長崎市）"
+        ],
+        "hours": "4〜10月は6時30分〜18時、11〜3月は7時〜17時。12〜2月の毎週火曜と12月29日〜1月3日は休み",
+        "fee": "一般720円、小・中・高校生360円。長崎〜高島の往復乗船券とセットの「釣りパック」あり（長崎港の切符売場で販売）",
+        "position": {
+          "precision": "point",
+          "note": "地図の位置は飛島（小島）の位置。釣り公園はこの島と、高島と結ぶ防波堤にある"
+        },
+        "sources": [
+          {
+            "title": "ながさき暮らし情報（エリア別生活情報「高島地区」）",
+            "publisher": "長崎市 高島地域センター",
+            "url": "https://www.city.nagasaki.lg.jp/sumai/620000/629004/p006878.html",
+            "published": "2026-06-12",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.502274,
+          33.293781
+        ]
+      },
+      "properties": {
+        "id": "oita-beppu-oriana-pier",
+        "name": "別府国際観光港 オリアナ桟橋",
+        "port": "別府港",
+        "prefecture": "大分県",
+        "status": "unconfirmed",
+        "summary": "国の釣り文化振興モデル港（別府港）で、場所と時間を限って釣りに開放されている桟橋。国土交通省 九州地方整備局が案内している（港湾管理者は大分県）。",
+        "conditions": [
+          "開放は場所と時間帯を限定（国土交通省 九州地方整備局）",
+          "ルールとマナーを守る。問い合わせは別府国際観光港みなとまちづくり協議会（国土交通省 九州地方整備局）"
+        ],
+        "hours": "8時〜17時",
+        "fee": "記載なし",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は別府市餅ヶ浜町の代表点。桟橋の場所は九州地方整備局 別府港湾・空港整備事務所の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣り文化振興モデル港（別府港）",
+            "publisher": "国土交通省 九州地方整備局 別府港湾・空港整備事務所",
+            "url": "https://www.pa.qsr.mlit.go.jp/beppu/fishing/",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          },
+          {
+            "title": "釣り文化振興モデル港",
+            "publisher": "国土交通省 港湾局",
+            "url": "https://www.mlit.go.jp/kowan/kowan_tk6_000032.html",
+            "published": null,
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.595276,
+          31.584061
+        ]
+      },
+      "properties": {
+        "id": "kagoshima-sakurajima-umiduri-koen",
+        "name": "桜島海づり公園",
+        "port": null,
+        "prefecture": "鹿児島県",
+        "status": "open",
+        "summary": "桜島フェリーターミナルから歩いて行ける、鹿児島市の海づり公園。指定管理者（株式会社ビルメン鹿児島）が運営し、竿は無料で借りられる。",
+        "conditions": [
+          "決められた場所以外での釣り・立ち入りは禁止（鹿児島市）",
+          "まきえは禁止（アミカゴを使うものは除く）（鹿児島市）",
+          "釣り糸は1人2本まで。投げ釣りは禁止（鹿児島市）",
+          "飲酒しての利用、危険物・ペットの持ち込みは不可（鹿児島市）"
+        ],
+        "hours": "4〜9月は6時〜19時、10月は6時〜18時、11〜3月は7時〜17時。年中無休",
+        "fee": "有料（釣り料・入園料。令和7年10月に改定。金額は鹿児島市の利用料金表PDFで確認）。駐車場は無料",
+        "position": {
+          "precision": "district",
+          "note": "地図の位置は住所（鹿児島市桜島横山町）の代表点。施設は桜島港フェリーターミナルから徒歩約10分（鹿児島市の案内）"
+        },
+        "sources": [
+          {
+            "title": "桜島海づり公園",
+            "publisher": "鹿児島市",
+            "url": "https://www.city.kagoshima.lg.jp/seisanryutu/shisetsu/kanko/018.html",
+            "published": "2025-04-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.56221,
+          31.556942
+        ]
+      },
+      "properties": {
+        "id": "kagoshima-kamoike-umiduri-koen",
+        "name": "鴨池海づり公園",
+        "port": null,
+        "prefecture": "鹿児島県",
+        "status": "open",
+        "summary": "鹿児島市与次郎の錦江湾に面した、鹿児島市の海づり公園。指定管理者（株式会社ビルメン鹿児島）が運営し、釣り具や餌の販売・貸し出しもある。",
+        "conditions": [
+          "決められた場所以外での釣り・立ち入りは禁止（鹿児島市）",
+          "まきえは禁止（アミカゴを使うものは除く）（鹿児島市）",
+          "釣り糸は1人2本まで。投げ釣りは禁止（鹿児島市）",
+          "飲酒しての利用、危険物・ペットの持ち込みは不可（鹿児島市）"
+        ],
+        "hours": "4〜9月は6時〜19時、10月は6時〜18時、11〜3月は7時〜17時。年中無休",
+        "fee": "有料（釣り料・入園料・駐車場。令和7年10月に改定。金額は鹿児島市の利用料金表PDFで確認）",
+        "position": {
+          "precision": "point",
+          "note": "地図の位置は公式の住所（鹿児島市与次郎2丁目9-12）の地点"
+        },
+        "sources": [
+          {
+            "title": "鴨池海づり公園",
+            "publisher": "鹿児島市",
+            "url": "https://www.city.kagoshima.lg.jp/seisanryutu/shisetsu/kanko/017.html",
+            "published": "2025-04-01",
+            "checked": "2026-11-23",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
     }
   ]
 }

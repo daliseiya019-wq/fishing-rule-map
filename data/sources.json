@@ -2,6 +2,41 @@
   "note": "県ごとの公式ルールへの索引。要点は自分の言葉で書き、原文は転載しない。checked_how: page=ページを開いて確認 / search=検索結果で存在を確認",
   "prefectures": [
     {
+      "name": "北海道",
+      "links": [
+        {
+          "label": "フィッシングルール2026（海・川の釣りのルール、さけ・ます河口規制、遊漁規則の概要、エリア別ルールマップ）",
+          "kind": "海・川",
+          "url": "https://www.pref.hokkaido.lg.jp/sr/ggk/ggs/turi-r-m/rule-manner.html",
+          "publisher": "北海道 水産林務部水産局漁業管理課",
+          "published": "2026-09-07",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "北海道漁業調整規則（本文・別表・改正）",
+          "kind": "海・川",
+          "url": "https://www.pref.hokkaido.lg.jp/sr/ggk/gyogyoucyouseikisoku.html",
+          "publisher": "北海道 水産林務部水産局漁業管理課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "漁港での遊泳禁止（道内の全漁港の指定区域で、水に入っての釣りも禁止）",
+          "kind": "港",
+          "url": "https://www.pref.hokkaido.lg.jp/sr/gkg/kannri/gyokoyueikinshi.html",
+          "publisher": "北海道 水産林務部水産局漁港漁場課",
+          "published": "2026-02-27",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
       "name": "青森県",
       "links": [
         {
@@ -146,76 +181,6 @@
       ]
     },
     {
-      "name": "千葉県",
-      "links": [
-        {
-          "label": "海での釣り（遊漁）のルール（使える釣り方、漁業権、まき餌の禁止区域・使用量）",
-          "kind": "海",
-          "url": "https://www.pref.chiba.lg.jp/suisan/makiesa.html",
-          "publisher": "千葉県 水産局",
-          "published": null,
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        },
-        {
-          "label": "川・湖で釣りをする皆さんへ（あゆの禁止期間、漁協の遊漁規則、漁場図）",
-          "kind": "川・湖",
-          "url": "https://www.pref.chiba.lg.jp/suisan/gyogyou/kawazuri/kawazuri.html",
-          "publisher": "千葉県 水産局",
-          "published": null,
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        }
-      ]
-    },
-    {
-      "name": "神奈川県",
-      "links": [
-        {
-          "label": "海のルールを守りましょう",
-          "kind": "海",
-          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p8874.html",
-          "publisher": "神奈川県 水産課",
-          "published": "2026-07-16",
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        },
-        {
-          "label": "川・湖のルールを守りましょう（漁協の遊漁規則の変更のお知らせを含む）",
-          "kind": "川・湖",
-          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p504690.html",
-          "publisher": "神奈川県 水産課",
-          "published": "2026-07-27",
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        },
-        {
-          "label": "横浜港の港湾施設への立入制限（海づり施設以外のふ頭・防波堤）",
-          "kind": "港",
-          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/kikikanri/seigen.html",
-          "publisher": "横浜市 港湾局",
-          "published": "2025-12-03",
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        },
-        {
-          "label": "川崎港内の港湾施設への立入禁止について（PDF）",
-          "kind": "港",
-          "url": "https://www.city.kawasaki.jp/580/cmsfiles/contents/0000022/22140/20250630_onegai.pdf",
-          "publisher": "川崎市 港湾局",
-          "published": null,
-          "checked": "2026-11-22",
-          "checked_how": "page",
-          "valid_until": null
-        }
-      ]
-    },
-    {
       "name": "茨城県",
       "links": [
         {
@@ -286,6 +251,51 @@
       ]
     },
     {
+      "name": "群馬県",
+      "links": [
+        {
+          "label": "遊漁に関するルール（漁業調整規則の説明、17漁協の遊漁規則一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gunma.jp/page/217085.html",
+          "publisher": "群馬県 農政部蚕糸特産課",
+          "published": "2026-02-25",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "コクチバスのリリース禁止（内水面漁場管理委員会指示）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gunma.jp/page/9361.html",
+          "publisher": "群馬県 農政部蚕糸特産課",
+          "published": "2026-03-31",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": "2028-03-31"
+        },
+        {
+          "label": "内水面漁場管理委員会の指示（コイの持ち出し・移植の制限、コクチバス再放流禁止）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gunma.jp/page/101488.html",
+          "publisher": "群馬県 農政部蚕糸特産課（群馬県内水面漁場管理委員会）",
+          "published": "2026-05-27",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "群馬県漁業調整規則（本文・県報 令和2年11月10日 第9850号）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gunma.jp/uploaded/attachment/23433.pdf",
+          "publisher": "群馬県",
+          "published": "2020-11-10",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
       "name": "埼玉県",
       "links": [
         {
@@ -294,6 +304,31 @@
           "url": "https://www.pref.saitama.lg.jp/a0904/kisoku/index.html",
           "publisher": "埼玉県 生産振興課",
           "published": "2026-09-03",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "千葉県",
+      "links": [
+        {
+          "label": "海での釣り（遊漁）のルール（使える釣り方、漁業権、まき餌の禁止区域・使用量）",
+          "kind": "海",
+          "url": "https://www.pref.chiba.lg.jp/suisan/makiesa.html",
+          "publisher": "千葉県 水産局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖で釣りをする皆さんへ（あゆの禁止期間、漁協の遊漁規則、漁場図）",
+          "kind": "川・湖",
+          "url": "https://www.pref.chiba.lg.jp/suisan/gyogyou/kawazuri/kawazuri.html",
+          "publisher": "千葉県 水産局",
+          "published": null,
           "checked": "2026-11-22",
           "checked_how": "page",
           "valid_until": null
@@ -341,6 +376,991 @@
           "publisher": "東京都 港湾局",
           "published": "2025-09-05",
           "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "神奈川県",
+      "links": [
+        {
+          "label": "海のルールを守りましょう",
+          "kind": "海",
+          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p8874.html",
+          "publisher": "神奈川県 水産課",
+          "published": "2026-07-16",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖のルールを守りましょう（漁協の遊漁規則の変更のお知らせを含む）",
+          "kind": "川・湖",
+          "url": "https://www.pref.kanagawa.jp/docs/kb2/cnt/f790/p504690.html",
+          "publisher": "神奈川県 水産課",
+          "published": "2026-07-27",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "横浜港の港湾施設への立入制限（海づり施設以外のふ頭・防波堤）",
+          "kind": "港",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/kikikanri/seigen.html",
+          "publisher": "横浜市 港湾局",
+          "published": "2025-12-03",
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川崎港内の港湾施設への立入禁止について（PDF）",
+          "kind": "港",
+          "url": "https://www.city.kawasaki.jp/580/cmsfiles/contents/0000022/22140/20250630_onegai.pdf",
+          "publisher": "川崎市 港湾局",
+          "published": null,
+          "checked": "2026-11-22",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "新潟県",
+      "links": [
+        {
+          "label": "海での釣りのルール（使える釣り方、漁業権、採捕禁止の区域）",
+          "kind": "海",
+          "url": "https://www.pref.niigata.lg.jp/sec/suisan/1229457690527.html",
+          "publisher": "新潟県 水産課",
+          "published": "2026-06-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖での釣りのルール（サケ・サクラマス、遊漁料、外来魚のリリース禁止）",
+          "kind": "川・湖",
+          "url": "https://www.pref.niigata.lg.jp/sec/suisan/1229889672773.html",
+          "publisher": "新潟県 水産課",
+          "published": "2022-12-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "釣り場として開放している漁港施設（姫津漁港・出雲崎漁港）",
+          "kind": "港",
+          "url": "https://www.pref.niigata.lg.jp/sec/gyoko/kaihouturiba.html",
+          "publisher": "新潟県 漁港課",
+          "published": "2022-12-05",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "港の立入禁止区域での釣りへの注意（港湾整備課）",
+          "kind": "港",
+          "url": "https://www.pref.niigata.lg.jp/sec/kowanseibi/1229025678975.html",
+          "publisher": "新潟県 港湾整備課",
+          "published": "2020-07-03",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "富山県",
+      "links": [
+        {
+          "label": "富山湾遊漁マップ（海での釣りのルール・マナー）",
+          "kind": "海",
+          "url": "https://www.pref.toyama.jp/400/sangyou/nourinsuisan/suisan/kj00002416/index.html",
+          "publisher": "富山県 水産漁港課",
+          "published": "2021-03-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "サケ・サクラマスの採捕禁止（川と河口付近の海）",
+          "kind": "海・川",
+          "url": "https://www.pref.toyama.jp/1615/kurashi/sportsleisure/leisure/kj00005838.html",
+          "publisher": "富山県 水産漁港課",
+          "published": "2021-02-24",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "内水面漁場管理委員会指示（川・湖での採捕の制限）",
+          "kind": "川・湖",
+          "url": "https://www.pref.toyama.jp/700/sangyou/nourinsuisan/suisan/kj00000546.html",
+          "publisher": "富山県 水産漁港課",
+          "published": "2026-11-10",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "富山新港で魚釣りができる場所",
+          "kind": "港",
+          "url": "https://www.pref.toyama.jp/1545/kendodukuri/dourokouwan/toyamashinkou/kj00019993.html",
+          "publisher": "富山県 富山新港管理局",
+          "published": "2025-07-05",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "石川県",
+      "links": [
+        {
+          "label": "石川県で海釣りを楽しむ皆様へ（遊漁ルールブック 海面編）",
+          "kind": "海",
+          "url": "https://www.pref.ishikawa.lg.jp/suisanka/gyogyousya/umituri.html",
+          "publisher": "石川県 水産課",
+          "published": "2024-04-30",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖の遊漁規則（漁協ごとの一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.ishikawa.lg.jp/suisanka/gyogyouken/15yuugyokisoku.html",
+          "publisher": "石川県 水産課",
+          "published": "2026-01-04",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "金沢港の防波堤立入禁止と親水護岸の利用のお願い",
+          "kind": "港",
+          "url": "https://www.pref.ishikawa.lg.jp/kanazawakouwan/p04a.html",
+          "publisher": "石川県 金沢港湾事務所",
+          "published": "2021-09-15",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "福井県",
+      "links": [
+        {
+          "label": "ふくい海のルール＆マナー（海のルール）",
+          "kind": "海",
+          "url": "https://info.pref.fukui.lg.jp/suisan/rlmn/umi/rule/",
+          "publisher": "福井県 水産課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川と湖のルール＆マナー（漁協ごとの遊漁規則）",
+          "kind": "川・湖",
+          "url": "https://info.pref.fukui.lg.jp/suisan/rlmn/umi/kenri/index.html",
+          "publisher": "福井県 水産課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "福井港の防波堤・護岸での釣り禁止",
+          "kind": "港",
+          "url": "https://www.pref.fukui.lg.jp/doc/fu-kouwan/index.html",
+          "publisher": "福井県 福井港湾事務所",
+          "published": "2026-11-17",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "敦賀港のつり公園の利用と防波堤・岸壁での釣り禁止",
+          "kind": "港",
+          "url": "https://www.pref.fukui.lg.jp/doc/tu-kouwan/",
+          "publisher": "福井県 嶺南振興局敦賀港湾事務所",
+          "published": "2026-11-17",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "山梨県",
+      "links": [
+        {
+          "label": "遊漁について～釣りをされる方へ～",
+          "kind": "川・湖",
+          "url": "https://www.pref.yamanashi.jp/shokusui/86113308216.html",
+          "publisher": "山梨県",
+          "published": "2026-11-18",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "漁業協同組合ごとの遊漁規則と漁場図",
+          "kind": "川・湖",
+          "url": "https://www.pref.yamanashi.jp/shokusui/gyojyouzuyuugyokisoku.html",
+          "publisher": "山梨県",
+          "published": "2026-10-20",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "長野県",
+      "links": [
+        {
+          "label": "釣り（遊漁）のルールとマナー",
+          "kind": "川・湖",
+          "url": "https://www.pref.nagano.lg.jp/enchiku/sangyo/nogyo/engei-suisan/rule.html",
+          "publisher": "長野県 園芸畜産課",
+          "published": "2026-01-26",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "漁協ごとの遊漁規則",
+          "kind": "川・湖",
+          "url": "https://www.pref.nagano.lg.jp/enchiku/sangyo/nogyo/engei-suisan/suisan/yugyokisoku.html",
+          "publisher": "長野県 園芸畜産課",
+          "published": "2025-03-07",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "岐阜県",
+      "links": [
+        {
+          "label": "岐阜県の漁業権（漁場図・遊漁規則の一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gifu.lg.jp/page/11131.html",
+          "publisher": "岐阜県 里川・水産振興課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "岐阜県漁業調整規則の一部改正（たも網の扱い、小学生以下は遊漁無料）",
+          "kind": "川・湖",
+          "url": "https://www.pref.gifu.lg.jp/page/443021.html",
+          "publisher": "岐阜県 里川・水産振興課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "静岡県",
+      "links": [
+        {
+          "label": "海面における遊漁のルール（使える釣り方、採捕禁止期間・大きさ）",
+          "kind": "海",
+          "url": "https://www.pref.shizuoka.jp/sangyoshigoto/suisan/suisanshigen/1047550/1028113.html",
+          "publisher": "静岡県 水産資源課",
+          "published": "2026-06-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "海釣りをする遊漁者の皆さんへ（委員会指示・地域ごとの推奨ルール）",
+          "kind": "海",
+          "url": "https://www.pref.shizuoka.jp/sangyoshigoto/suisan/suisanshigen/1047550/1028117.html",
+          "publisher": "静岡県 水産資源課",
+          "published": "2026-07-29",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "内水面における遊漁のルール（川遊びを楽しむ方へ）",
+          "kind": "川・湖",
+          "url": "https://www.pref.shizuoka.jp/sangyoshigoto/suisan/suisanshigen/1047550/1028120.html",
+          "publisher": "静岡県 水産資源課",
+          "published": "2025-08-13",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "内水面の漁業権・漁協・遊漁規則",
+          "kind": "川・湖",
+          "url": "https://www.pref.shizuoka.jp/sangyoshigoto/suisan/suisanshigen/1047550/1028126.html",
+          "publisher": "静岡県 水産資源課",
+          "published": "2026-07-27",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "三重県",
+      "links": [
+        {
+          "label": "海での釣りのルール（使える漁具・漁法、禁止期間など）",
+          "kind": "海",
+          "url": "https://www.pref.mie.lg.jp/SUISAN/HP/38869033664.htm",
+          "publisher": "三重県 農林水産部 漁政課",
+          "published": "2026-07-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川での釣りのルール（漁協の遊漁承認証が必要な河川の一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.mie.lg.jp/SUISAN/HP/86303033603.htm",
+          "publisher": "三重県 農林水産部 漁政課",
+          "published": "2024-03-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "滋賀県",
+      "links": [
+        {
+          "label": "琵琶湖・川での釣りのルール（漁具・漁法、禁止期間・区域、電子手帖FiShiga）",
+          "kind": "川・湖",
+          "url": "https://www.pref.shiga.lg.jp/gf00/7213.html",
+          "publisher": "滋賀県 農政水産部 水産課",
+          "published": "2025-01-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "河川の有料釣り場（漁協ごとの漁場一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.shiga.lg.jp/gf00/7214.html",
+          "publisher": "滋賀県 農政水産部 水産課",
+          "published": "2025-02-03",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "琵琶湖での外来魚リリース禁止",
+          "kind": "川・湖",
+          "url": "https://www.pref.shiga.lg.jp/dk00/2908.html",
+          "publisher": "滋賀県 琵琶湖環境部 琵琶湖保全再生課",
+          "published": "2021-10-08",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "京都府",
+      "links": [
+        {
+          "label": "海での釣り・磯遊びのルール（使える漁具・漁法、禁止区域）",
+          "kind": "海",
+          "url": "https://www.pref.kyoto.jp/suiji/isoasobirule.html",
+          "publisher": "京都府 農林水産部 水産事務所",
+          "published": "2024-10-04",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川での釣りのルール（遊漁のてびき、外来魚）",
+          "kind": "川・湖",
+          "url": "https://www.pref.kyoto.jp/suiji/kawaasobi.html",
+          "publisher": "京都府 農林水産部 水産事務所",
+          "published": "2020-12-09",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "大阪府",
+      "links": [
+        {
+          "label": "海での釣りのルールとマナー（採捕禁止区域、漁具・漁法の制限）",
+          "kind": "海",
+          "url": "https://www.pref.osaka.lg.jp/o120130/suisan/ru-ru/index.html",
+          "publisher": "大阪府 環境農林水産部 水産課",
+          "published": "2011-09-26",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "兵庫県",
+      "links": [
+        {
+          "label": "海での釣りのルールとマナー（漁業権、使える漁具・漁法、禁止区域）",
+          "kind": "海",
+          "url": "https://www.hyogo-suigi.jp/fishing/manners/",
+          "publisher": "兵庫県（兵庫の海釣り／水産技術センター）",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川での釣りのルール（漁業権のある河川、県の規則、外来魚）",
+          "kind": "川・湖",
+          "url": "https://web.pref.hyogo.lg.jp/nk16/af18_000000002.html",
+          "publisher": "兵庫県 農林水産部 水産漁港課",
+          "published": "2026-10-16",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "神戸港で釣りができる場所と禁止の案内",
+          "kind": "港",
+          "url": "https://www.city.kobe.lg.jp/a42810/business/kowanjigyo/kobekukonishiryokuchi-tsuri.html",
+          "publisher": "神戸市",
+          "published": "2026-01-23",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "奈良県",
+      "links": [
+        {
+          "label": "川での釣りのルール（禁止期間・大きさ・区域・漁法）",
+          "kind": "川・湖",
+          "url": "https://www.pref.nara.lg.jp/n118/16650.html",
+          "publisher": "奈良県 食農部 農業水産振興課",
+          "published": "2026-08-12",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "アユ・アマゴ・ワカサギの解禁情報",
+          "kind": "川・湖",
+          "url": "https://www.pref.nara.lg.jp/n118/p043025.html",
+          "publisher": "奈良県 食農部 農業水産振興課",
+          "published": "2026-10-23",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "和歌山県",
+      "links": [
+        {
+          "label": "海での釣りのルールとマナー（使える漁具・漁法、まき餌・火光の禁止区域）",
+          "kind": "海",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/071500/yuugyo/sensuiki/ru-ru.html",
+          "publisher": "和歌山県 農林水産部 水産局 資源管理課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川での釣りのルールとマナー",
+          "kind": "川・湖",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/071500/yuugyo/sensuiki/naisuimenman-.html",
+          "publisher": "和歌山県 農林水産部 水産局 資源管理課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "漁協ごとの遊漁規則（第五種共同漁業権）",
+          "kind": "川・湖",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/071500/d00207944.html",
+          "publisher": "和歌山県 農林水産部 水産局 資源管理課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "鳥取県",
+      "links": [
+        {
+          "label": "海での遊漁に使える漁具・漁法（漁業権魚種、河口の禁止区域）",
+          "kind": "海",
+          "url": "https://www.pref.tottori.lg.jp/305750.htm",
+          "publisher": "鳥取県 水産振興局 漁業調整課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川や池（内水面）の禁止漁具・漁法、禁止期間、体長制限",
+          "kind": "川・湖",
+          "url": "https://www.pref.tottori.lg.jp/305507.htm",
+          "publisher": "鳥取県 水産振興局 漁業調整課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "島根県",
+      "links": [
+        {
+          "label": "海面（中海を含む）での遊漁のルール（使える釣り方、捕れない魚介、禁止区域）",
+          "kind": "海",
+          "url": "https://www.pref.shimane.lg.jp/industry/suisan/kanri/iji/awabi_sazae.html",
+          "publisher": "島根県 水産課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖（内水面）での遊漁のルール（使えない漁法、禁止期間・サイズ、漁業権区域）",
+          "kind": "川・湖",
+          "url": "https://www.pref.shimane.lg.jp/suisan/naisuimen.html",
+          "publisher": "島根県 水産課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "岡山県",
+      "links": [
+        {
+          "label": "遊漁者のみなさまへ（海編）：使える漁具漁法、ガザミ等の制限、夜たき釣の禁止",
+          "kind": "海",
+          "url": "https://www.pref.okayama.jp/page/detail-2855.html",
+          "publisher": "岡山県 水産課",
+          "published": "2026-01-16",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "遊漁者のみなさまへ（川編）：漁業権区域と遊漁規則、遊漁証",
+          "kind": "川・湖",
+          "url": "https://www.pref.okayama.jp/page/detail-2854.html",
+          "publisher": "岡山県 水産課",
+          "published": "2021-08-02",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "公共埠頭の入場制限（水島港・宇野港・岡山港・東備港の立入制限区域）",
+          "kind": "港",
+          "url": "https://www.pref.okayama.jp/page/detail-43514.html",
+          "publisher": "岡山県 港湾課",
+          "published": "2009-10-07",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "広島県",
+      "links": [
+        {
+          "label": "広島県の遊漁のルール（海・川の漁具漁法、禁止期間、漁業権、まきえ釣の禁止区域）",
+          "kind": "海・川",
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/88/yuugyohenositumonmatome.html",
+          "publisher": "広島県 水産課",
+          "published": "2026-04-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "海で釣りが制限される区域（漁業権区域、保護水面、陸からのまきえ釣禁止）",
+          "kind": "海",
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/88/1170384636260.html",
+          "publisher": "広島県 水産課",
+          "published": "2020-12-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "山口県",
+      "links": [
+        {
+          "label": "遊漁をされる皆さんへ（海・川の漁業権、やす・カニ網の扱い、遊漁のしおり）",
+          "kind": "海・川",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/108/21930.html",
+          "publisher": "山口県 水産振興課",
+          "published": "2024-08-02",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川の漁協ごとの遊漁規則（認可内容の一覧）",
+          "kind": "川・湖",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/108/250770.html",
+          "publisher": "山口県 水産振興課",
+          "published": "2024-04-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "徳島県",
+      "links": [
+        {
+          "label": "海での釣りのルール（使える漁具・漁法、漁業との共存、安全）",
+          "kind": "海",
+          "url": "https://www.pref.tokushima.lg.jp/ippannokata/kyoiku/kanko/2003050100865/",
+          "publisher": "徳島県",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "鳴門市沿岸で釣りをする人へのお願い（漁業権区域・つきいそ・養殖施設周辺）",
+          "kind": "海",
+          "url": "https://www.pref.tokushima.lg.jp/ippannokata/sangyo/suisangyo/5031166/",
+          "publisher": "徳島県",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "吉野川での釣りのルール（禁止の漁法、禁止期間・サイズ、禁止区域）",
+          "kind": "川・湖",
+          "url": "https://www.pref.tokushima.lg.jp/ippannokata/kyoiku/kanko/7309889/",
+          "publisher": "徳島県",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "香川県",
+      "links": [
+        {
+          "label": "海での釣りのルール（使える釣り方、禁止海域、禁止期間・サイズ）",
+          "kind": "海",
+          "url": "https://www.pref.kagawa.lg.jp/suisan/yugyo/rule/yuuryou.html",
+          "publisher": "香川県 水産課",
+          "published": "2020-12-10",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "イイダコ釣りの期間・時間の制限（委員会指示）",
+          "kind": "海",
+          "url": "https://www.pref.kagawa.lg.jp/kaikui/kaiku/oshirase/iinnkaishijishiryou.html",
+          "publisher": "香川県 香川海区漁業調整委員会",
+          "published": "2026-06-12",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": "2027-07-31"
+        },
+        {
+          "label": "川の遊漁規則（第五種共同漁業権・三豊淡水漁協）",
+          "kind": "川・湖",
+          "url": "https://www.pref.kagawa.lg.jp/suisan/yugyo/rule/yugyokisoku.html",
+          "publisher": "香川県 水産課",
+          "published": "2024-05-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "サンポート高松の釣り禁止区域と注意事項",
+          "kind": "港",
+          "url": "https://www.pref.kagawa.lg.jp/takamatsukokanri/port_takamatsu/kisou2nd3rd.html",
+          "publisher": "香川県 高松港管理事務所",
+          "published": "2020-05-25",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "愛媛県",
+      "links": [
+        {
+          "label": "海での釣りのルールとマナー（引っ掛け釣り・やす・まきえ釣りの禁止区域など）",
+          "kind": "海",
+          "url": "https://www.pref.ehime.jp/page/4120.html",
+          "publisher": "愛媛県 水産課",
+          "published": "2026-04-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖でのあゆ等の禁止期間と許可が必要な漁法",
+          "kind": "川・湖",
+          "url": "https://www.pref.ehime.jp/page/4121.html",
+          "publisher": "愛媛県 水産課",
+          "published": "2022-12-13",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "高知県",
+      "links": [
+        {
+          "label": "海や川で釣りをする人へ（ルールの案内ページの索引）",
+          "kind": "海・川",
+          "url": "https://www.pref.kochi.lg.jp/doc/2021110900132/",
+          "publisher": "高知県 漁業管理課",
+          "published": "2024-05-10",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "海で使える漁具・漁法",
+          "kind": "海",
+          "url": "https://www.pref.kochi.lg.jp/doc/2020092800089/",
+          "publisher": "高知県 漁業管理課",
+          "published": "2020-12-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川で使える漁具・漁法と使えないもの",
+          "kind": "川・湖",
+          "url": "https://www.pref.kochi.lg.jp/doc/2020092800096/",
+          "publisher": "高知県 漁業管理課",
+          "published": "2020-09-30",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "福岡県",
+      "links": [
+        {
+          "label": "遊漁のルールとマナー（漁業権・使える漁具漁法・密漁の罰則）",
+          "kind": "海・川",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/yugyo-rule.html",
+          "publisher": "福岡県 漁業管理課",
+          "published": "2025-04-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖での遊漁のルール（禁止漁法・禁止期間・大きさ制限）",
+          "kind": "川・湖",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/naisuime-rule.html",
+          "publisher": "福岡県",
+          "published": "2021-09-22",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "佐賀県",
+      "links": [
+        {
+          "label": "海や川で遊漁をする人へのルール（使える漁具漁法、禁止期間、委員会指示）",
+          "kind": "海・川",
+          "url": "https://www.pref.saga.lg.jp/kiji00350576/index.html",
+          "publisher": "佐賀県 水産課",
+          "published": "2026-07-27",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "長崎県",
+      "links": [
+        {
+          "label": "漁業調整規則による規制（遊漁で使える漁具漁法、大きさ・期間の制限）",
+          "kind": "海・川",
+          "url": "https://www.pref.nagasaki.jp/bunrui/shigoto-sangyo/suisangho/gyogyo-shinko/gyogyo-tyosei/tyosei-kisoku/",
+          "publisher": "長崎県 漁業振興課",
+          "published": null,
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "熊本県",
+      "links": [
+        {
+          "label": "海での遊漁のルール（使える漁具漁法、禁止期間、大きさ制限）",
+          "kind": "海",
+          "url": "https://www.pref.kumamoto.jp/soshiki/94/122478.html",
+          "publisher": "熊本県 水産振興課",
+          "published": "2026-08-06",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖での遊漁のルール（禁止漁法、禁止期間、禁止区域）",
+          "kind": "川・湖",
+          "url": "https://www.pref.kumamoto.jp/soshiki/94/1741.html",
+          "publisher": "熊本県 水産振興課",
+          "published": "2024-04-17",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "大分県",
+      "links": [
+        {
+          "label": "遊漁のルールとマナー（パンフレット、まきえ釣り禁止区域、やす・もりの区別）",
+          "kind": "海・川",
+          "url": "https://www.pref.oita.jp/soshiki/16350/yugyo.html",
+          "publisher": "大分県 漁業管理課",
+          "published": "2026-06-05",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川の漁協ごとの遊漁規則の一覧",
+          "kind": "川・湖",
+          "url": "https://www.pref.oita.jp/soshiki/16350/09.html",
+          "publisher": "大分県 漁業管理課",
+          "published": "2026-09-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "宮崎県",
+      "links": [
+        {
+          "label": "海での遊漁のルール（漁業権、禁止期間、まき餌・あぶらえさの禁止）",
+          "kind": "海",
+          "url": "https://www.pref.miyazaki.lg.jp/gyogyo-kanri/shigoto/suisangyo/20201221153542.html",
+          "publisher": "宮崎県 漁業管理課",
+          "published": "2026-04-01",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川・湖での遊漁のルール（遊漁券、禁止期間、大きさ制限）",
+          "kind": "川・湖",
+          "url": "https://www.pref.miyazaki.lg.jp/gyogyo-kanri/shigoto/suisangyo/20201224102748.html",
+          "publisher": "宮崎県 漁業管理課",
+          "published": "2026-09-30",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "鹿児島県",
+      "links": [
+        {
+          "label": "海や川を利用する人のためのハンドブック（海面・内水面のルール）",
+          "kind": "海・川",
+          "url": "https://www.pref.kagoshima.jp/af05/suisan/gyochou/handbook.html",
+          "publisher": "鹿児島県 水産振興課",
+          "published": "2024-04-30",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "漁業調整規則・漁業法による規制（一般の人への規制を含む）",
+          "kind": "海・川",
+          "url": "https://www.pref.kagoshima.jp/af05/suisan/gyochou/kisoku.html",
+          "publisher": "鹿児島県 水産振興課",
+          "published": "2026-09-18",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        },
+        {
+          "label": "川の漁協ごとの遊漁規則の一覧",
+          "kind": "川・湖",
+          "url": "https://www.pref.kagoshima.jp/af05/suisan/gyochou/yuugyokisoku.html",
+          "publisher": "鹿児島県 水産振興課",
+          "published": "2026-10-09",
+          "checked": "2026-11-23",
+          "checked_how": "page",
+          "valid_until": null
+        }
+      ]
+    },
+    {
+      "name": "沖縄県",
+      "links": [
+        {
+          "label": "よくある質問（遊漁者が使える漁具漁法、採捕のルールのパンフレット）",
+          "kind": "海",
+          "url": "https://www.pref.okinawa.jp/site/norin/suisan/faq.html",
+          "publisher": "沖縄県 水産課",
+          "published": "2026-05-25",
+          "checked": "2026-11-23",
           "checked_how": "page",
           "valid_until": null
         }

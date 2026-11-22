@@ -115,7 +115,7 @@
   // 一覧のカードと地図のポップアップで同じ中身を使う
   function spotDetails(p, sourceStatus, today) {
     return [
-      el('p', { class: 'meta', text: `${p.prefecture} ／ ${p.port}` }),
+      el('p', { class: 'meta', text: p.port ? `${p.prefecture} ／ ${p.port}` : p.prefecture }),
       statusBadge(p.status),
       ...expiryAlerts(p.valid_until, today).map((a) => el('p', { class: 'alert-line', text: `⚠ ${a}` })),
       el('p', { text: p.summary }),
