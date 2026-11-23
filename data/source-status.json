@@ -30,6 +30,9 @@
     "https://www.kaiho.mlit.go.jp/02kanku/akita/2-oshirase/2-3-marinnet/6-3-1marinnet-backnumber/backnumber2026/marinnet393.pdf": {
       "hash": "2965579aa14fb5dbcc8b949f099343c0db457c876a619d246753220be747b2b6"
     },
+    "https://www.mlit.go.jp/kowan/content/002026805.pdf": {
+      "hash": "8e92c235ee81eaa54d9b5acb233cc5eeb280fb12e7274da4296a9034d6bf8ad3"
+    },
     "https://www.pref.aomori.lg.jp/soshiki/kendo/ao-kokan/opening-period.html": {
       "page_date": "2026-03-18",
       "hash": "9f5948b30526d2d72438df9f48b1d86aaa1ac16ff6c9a7e550fb557f3939e0aa"
@@ -172,7 +175,8 @@
       "hash": "33676309a1a0b6571e21c6e5bea90f2d9e89fa33b3dfd36c187a5d0c2904bdbe"
     },
     "https://www.naruohama-park.com/umizuri/": {
-      "hash": "c0ba9009b6c0b500d947e0929c1972354e9518696e3915f118ebf1809c0ce858"
+      "hash": "8483146c1e98cf6dcfd5ec34f60ee796c6277d3d7eb42b120e316ab731a79bb3",
+      "changed_at": "2026-11-23T00:57:54+00:00"
     },
     "https://www.nishi.or.jp/kenko/shakaifukushi/barrier-fre/barrier-free-info/sports/umidurihiroba.html": {
       "hash": "16f13d5cdc3c81349bb1a85d5eeed41df9b50fda0b358bbced9f8a1e6b92c0a7",
@@ -201,7 +205,8 @@
       "hash": "345b8d31e3f85deed5769c1099f3146288fd68da54fd270febe068994fbd728c"
     },
     "https://shimonoseki-fishingpark.com/index.html": {
-      "hash": "2eb3c0279ffb3338b3c53821d0c676890559617f9ae9c42ccdff3707ffe65d53"
+      "hash": "97f34e5776881fddb2107b89967dd882712fef6ca84bea289e2530bc24b147c8",
+      "changed_at": "2026-11-23T00:57:54+00:00"
     },
     "https://www.pa.qsr.mlit.go.jp/shimonoseki/fishing/": {
       "hash": "719b3bf60c3c72a9c79c1c927aa43c721c255f0380648838429b1be7ced90fbe"
@@ -257,6 +262,69 @@
     "https://www.city.kagoshima.lg.jp/seisanryutu/shisetsu/kanko/017.html": {
       "hash": "07677d4e33e9966ba29d87102f6d02467f2c532380cf8009ab9c3101269c68e4",
       "page_date": "2025-04-01"
+    },
+    "https://www.pref.aomori.lg.jp/soshiki/kendo/ha-kokan/sanpo.html": {
+      "hash": "81326af84e47a0fb0f856f6a6310469144ca3ecc94b0c18f0ecab8189a05919d",
+      "page_date": "2021-09-16"
+    },
+    "https://www.pref.iwate.jp/engan/miya_doboku/1068762/1068763/1058063.html": {
+      "hash": "036a9222fb5e33130e955d5dcc4a16cc6fd8174def0a2d08469368023835bf69",
+      "page_date": "2022-08-10"
+    },
+    "https://www.city.ichihara.chiba.jp/article?articleId=6023824dece4651c88c19610": {
+      "hash": "2932eb08acc07b6e2fea83a0b8d4f5fac11e79994dba0a0ece8bfe4584dd7c5c"
+    },
+    "https://ichihara-umizuri.com/guide": {
+      "hash": "a83efb9bd41d34bc5442a185684732c6f14dbc71fe172515f4ba4ac4dee7571a"
+    },
+    "https://www.city.yokosuka.kanagawa.jp/5820/minato/amenity_kouen/umituri/index.html": {
+      "hash": "059165ad6bd5b2938488402ba9218a9f63eeae1bf628b625bdcb3390d6842a6a",
+      "page_date": "2025-06-03"
+    },
+    "https://www.kanagawaparks.com/umibeturi/about.html": {
+      "hash": "93aa5dba63ead685ac9445853e39e62944a9fe6e53069ed8be49b14f7aaff062"
+    },
+    "https://www.city.yokosuka.kanagawa.jp/5820/minato/amenity_kouen/umikaze/index.html": {
+      "hash": "01410a407925309e28f9babaa752c6e2ddfab84a1759aa64495a3bbed1238a9e",
+      "page_date": "2024-07-24"
+    },
+    "https://www.kanagawaparks.com/umikaze/about.html": {
+      "hash": "e6b3897c2ab1daaca92e74c179032781cb8f67b62e9976e40e7c4fd70fefb2de"
+    },
+    "https://www.pref.kanagawa.jp/docs/wk7/cnt/f11988/p36331.html": {
+      "hash": "efe910a9b0dcf5c6b83ea4e990e4d05cc14b026d5370d6332371b693023d3d25",
+      "page_date": "2026-11-10"
+    },
+    "https://www.town.oiso.kanagawa.jp/soshiki/sangyokankoubu/sangyo/tanto/oisoko/1358496911892.html": {
+      "hash": "c6125a3cbd5328e7eb0edd035697c5b4018b03be2894c2f1e968db4594217cba",
+      "page_date": "2026-10-20"
+    },
+    "https://www.city.munakata.lg.jp/kanko/kiji0032575/index.html": {
+      "hash": "8ee0e319fa0dd53aa3510a29e8cebc59d2641ed0af4e50fc5f6a4cc49a3b578d",
+      "page_date": "2024-07-23"
+    },
+    "https://umi-ing.com/mt.html": {
+      "hash": "6910fffb00352833df8823140274de1122e85fad28f437e00bb627436dbc0130"
+    },
+    "https://umi-ing.com/breakwater02.html": {
+      "hash": "194000ffece6e176f2b9c147fd6d6db325219096db925943518f508ea09318b7"
+    },
+    "https://www.pref.miyazaki.lg.jp/documents/53011/53011_20260820143658-1.pdf": {
+      "hash": "7a3294db13335c75bc0ef5a9610bd896680c7c78c6bae93db75a2f572e547862"
+    },
+    "https://www.pref.miyazaki.lg.jp/documents/110215/110215_20260629135937-1.pdf": {
+      "hash": "69b0e450239dd269d0f0627aa85d8cb252b1b5ad12cf83d35bbb70680d02b4a7"
+    },
+    "https://www.city.kainan.lg.jp/kakubusho/machizukuribu/norinsuisangakari/7961.html": {
+      "hash": "6c6c097cf77c1a135078a907aa27c7dc7d4201260263838b0e820d303a8483d3",
+      "page_date": "2026-02-24"
+    },
+    "https://www.city.shizuoka.lg.jp/s7524/s013047.html": {
+      "hash": "75939ff267413772ce647802da6a41ec7022a6d574eb19f0bc9b959baf4ab65b",
+      "page_date": "2026-04-28"
+    },
+    "https://www.city.shizuoka.lg.jp/documents/58413/20260416004.pdf": {
+      "hash": "3df94ad92798c24c9e4d360ad2ea2a780e0725b64ad927ed62d9cafc57b3ee99"
     },
     "https://www.pref.hokkaido.lg.jp/sr/ggk/ggs/turi-r-m/rule-manner.html": {
       "hash": "bd7195b9f18ad77a3dcb61f806c87881883c1164ec232c0f50825c51d7302bf5"
@@ -390,6 +458,10 @@
     "https://www.pref.toyama.jp/700/sangyou/nourinsuisan/suisan/kj00000546.html": {
       "hash": "fd23dca294c8fc4201514315649746bc008ef3f380a49e9f994d53fbe19c0871",
       "page_date": "2026-11-10"
+    },
+    "https://www.pref.toyama.jp/1540/tatiirikinsi.html": {
+      "hash": "1344553d16178fc618e68fc14b6aa116cd787eb3372468b5e202d2d856f4eb6f",
+      "page_date": "2026-10-16"
     },
     "https://www.pref.ishikawa.lg.jp/suisanka/gyogyousya/umituri.html": {
       "hash": "a81216ac68f4d769e78e325dfd069453d0015d5fb59f25fc70af9a7855159b2a",
