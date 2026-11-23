@@ -1,0 +1,59 @@
+# 週 1 回、自治体サイトの新しいページから釣りに関するお知らせを探す（scripts/watch_news.py）。
+# 見つかったら Issue を立てる。人がそれを読み、公式に「釣りができる」と案内しているものだけデータに足す。
+# 前回どこまで見たかは data/watch-state.json に記録してコミットする。
+name: watch-news
+
+on:
+  schedule:
+    - cron: "0 0 * * 3" # 毎週水曜 9:00（日本時間）。出典チェック（月曜）と重ならないようにする
+  workflow_dispatch:
+    inputs:
+      backlog_days:
+        description: "過去 N 日に更新されたページも調べる（初回の洗い出し用。空なら通常の差分だけ）"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: watch-news
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300 # 初回の洗い出し（数千ページ・2 秒間隔）でも終わるように
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Watch municipal news
+        env:
+          BACKLOG_DAYS: ${{ inputs.backlog_days }}
+        run: |
+          if [ -n "$BACKLOG_DAYS" ]; then
+            python scripts/watch_news.py --issue-body issue.md --backlog-days "$BACKLOG_DAYS" --max-fetch 1500
+          else
+            python scripts/watch_news.py --issue-body issue.md
+          fi
+      - name: Commit state
+        run: |
+          git add data/watch-state.json
+          if git diff --cached --quiet; then
+            echo "変化なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "自治体サイトの新着の確認位置を更新"
+          # 実行中に別の push があっても失敗しないよう、取り込んでから push する
+          git pull --rebase
+          git push
+      - name: Open issue
+        if: hashFiles('issue.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "釣りに関する自治体のお知らせ候補（$(date -u +%Y-%m-%d)）" --body-file issue.md

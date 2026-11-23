@@ -16,11 +16,15 @@
 | `docs/adding-a-prefecture.md` | **都道府県を追加する手順** |
 | `docs/candidates.md` | 公式情報を確認できず見送った場所・索引（理由付き） |
 | `scripts/check_sources.py` | 出典ページの本文を比べ、変わった行の位置・短い抜粋・掲載日の修正案を Issue にする。失敗はその場で 1 回取り直し、2 週続けて失敗したときだけ「開けない」と表示 |
+| `scripts/watch_news.py` | 自治体サイトの新着（サイトマップ・RSS・新着一覧）から「釣り」などの語を含むページを探し、Issue にする（AI は使わない） |
+| `data/watch_targets.json` | ↑で見に行く自治体サイトの一覧と探す語（まずは福岡県の沿岸の市町村） |
+| `data/watch-state.json` | ↑の前回の確認位置（自動生成。手で編集しない） |
 | `scripts/page_text.py` | ページから本文だけを取り出す（メニュー・新着欄・フッターを除く）、掲載日を読み取る |
 | `scripts/validate_data.py` | `data/` の書式チェック（日付・必須項目・座標・URL・ID の重複など） |
 | `scripts/build_static.py` | 一覧と索引を `index.html` に前もって書き出し、`sitemap.xml` を作る（検索エンジン・SNS 向け） |
 | `tests/` | チェック用スクリプトのテスト（通信なし） |
 | `.github/workflows/check-sources.yml` | 週 1 回チェックし、確認が必要な変化があればコミットして Issue を立てる（変化がなければ何もしない） |
+| `.github/workflows/watch-news.yml` | 週 1 回（水曜）自治体の新着を探し、候補があれば Issue を立てる。初回の洗い出しは手動実行で「backlog_days」を指定 |
 | `.github/workflows/validate.yml` | push のたびに書式チェック・テスト・書き出しの鮮度を確かめる |
 | `.github/ISSUE_TEMPLATE/report.yml` | サイトからの誤り報告フォーム |
 
