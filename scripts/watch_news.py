@@ -239,7 +239,7 @@ def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch
     # 題名・リンク文字に語があるものを先に読む（上限で読み残すときに、関係の深いものを落とさないため）
     ordered = sorted(candidates.values(), key=lambda e: not find_hits(e.hint, keywords, exclude))
     limit = max_fetch or target.get("max_fetch", DEFAULT_MAX_FETCH)
-    hits = []
+    hits, read_count, empty = [], 0, 0
     for e in ordered[:limit]:
         if not allowed_by_robots(e.url):
             continue
@@ -248,10 +248,14 @@ def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch
         except FETCH_ERRORS:
             result = None  # 読めないページは手がかり（題名）だけで判断する
         title, body = result if result else (e.hint, "")
+        read_count += 1
+        empty += len(body) < 50  # 本文がほぼ空（アクセス制限の画面などの可能性）
         snippets = find_hits(f"{title}\n{body}", keywords, exclude) or find_hits(e.hint, keywords, exclude)
         if snippets:
             hits.append({"url": e.url, "title": title or e.hint, "snippets": snippets})
         time.sleep(REQUEST_INTERVAL_SEC)
+    if read_count:
+        print(f"  読んだページ {read_count} 件（本文がほぼ空 {empty} 件）")
     return drop_boilerplate(hits), max(0, len(ordered) - limit), errors
 
 
@@ -274,7 +278,7 @@ def issue_body(results):
     return "\n".join(lines)
 
 
-def run_pref(pref, backlog_since, max_fetch):
+def run_pref(pref, backlog_since, max_fetch, only=None):
     """1 都道府県分を調べ、確認位置を保存して、結果の一覧を返す。"""
     config = json.loads((TARGETS_DIR / f"{pref['slug']}.json").read_text(encoding="utf-8"))
     state_path = STATE_DIR / f"{pref['slug']}.json"
@@ -282,6 +286,8 @@ def run_pref(pref, backlog_since, max_fetch):
     state = json.loads(json.dumps(old_state))  # 書き換え用の写し
     results = []
     for target in config["targets"]:
+        if only and target["name"] != only:
+            continue  # 動作確認で 1 自治体だけ調べるとき
         hits, skipped, errors = check_target(target, state["sources"], config["keywords"], config["exclude"],
                                              backlog_since, max_fetch)
         name = target["name"] if target["name"].startswith(pref["name"]) else f"{pref['name']} {target['name']}"
@@ -304,6 +310,7 @@ def main():
     parser.add_argument("--issue-body", type=Path, help="見つかったものがあれば Issue 本文を書き出すファイル")
     parser.add_argument("--backlog-days", type=int, help="過去 N 日に更新されたページも調べる（初回の洗い出し用）")
     parser.add_argument("--max-fetch", type=int, help="1 自治体あたりに読むページ数の上限（洗い出しのときに増やす）")
+    parser.add_argument("--only", help="この名前の自治体だけ調べる（--pref と一緒に。動作確認用）")
     args = parser.parse_args()
     backlog_since = (date.today() - timedelta(days=args.backlog_days)).isoformat() if args.backlog_days else None
 
@@ -312,7 +319,7 @@ def main():
     for pref in prefs:
         if (args.pref and pref["slug"] != args.pref) or not (TARGETS_DIR / f"{pref['slug']}.json").exists():
             continue
-        results += run_pref(pref, backlog_since, args.max_fetch)
+        results += run_pref(pref, backlog_since, args.max_fetch, args.only)
     if args.issue_body and any(r["hits"] or r["skipped"] for r in results):
         args.issue_body.write_text(issue_body(results), encoding="utf-8", newline="\n")
     return 0

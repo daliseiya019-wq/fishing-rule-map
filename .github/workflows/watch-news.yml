@@ -17,6 +17,10 @@ on:
         description: "この都道府県（slug）だけ調べる。空ならすべて"
         required: false
         default: ""
+      only:
+        description: "この名前の自治体だけ調べる（pref と一緒に。動作確認用）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -62,13 +66,13 @@ jobs:
         env:
           PREF: ${{ matrix.pref }}
           BACKLOG_DAYS: ${{ inputs.backlog_days }}
+          ONLY: ${{ inputs.only }}
         run: |
           mkdir -p out
-          if [ -n "$BACKLOG_DAYS" ]; then
-            python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md" --backlog-days "$BACKLOG_DAYS" --max-fetch 1500
-          else
-            python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md"
-          fi
+          opts=()
+          if [ -n "$BACKLOG_DAYS" ]; then opts+=(--backlog-days "$BACKLOG_DAYS" --max-fetch 1500); fi
+          if [ -n "$ONLY" ]; then opts+=(--only "$ONLY"); fi
+          python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md" "${opts[@]}"
           if [ -f "data/watch-state/$PREF.json" ]; then cp "data/watch-state/$PREF.json" "out/state-$PREF.json"; fi
       - uses: actions/upload-artifact@v4
         with:
