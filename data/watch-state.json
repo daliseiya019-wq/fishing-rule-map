@@ -1,7 +1,7 @@
 {
  "sources": {
   "https://www.pref.fukuoka.lg.jp/sitemap_index.xml": {
-   "lastmod": "2026-11-23",
+   "lastmod": "2026-11-25",
    "seen": []
   },
   "https://www.city.kitakyushu.lg.jp/newslist.html": {
@@ -229,7 +229,21 @@
     "860fcaee8d51",
     "67e708a58759",
     "27eedd2d1374",
-    "cd169242deb5"
+    "cd169242deb5",
+    "af2fcbdb46d2",
+    "06e7a1d0bb5f",
+    "9e4791bddb3d",
+    "895e68d6232a",
+    "f075d9ee3063",
+    "2f455847b748",
+    "90d6dd7db37f",
+    "684524a5645f",
+    "0b0c2981b0d8",
+    "eec7ea9a5fd2",
+    "95575725abee",
+    "ed8c10a5df32",
+    "b4b2b99008d5",
+    "127e2b01ec54"
    ]
   },
   "https://www.city.kitakyushu.lg.jp/kanko/newslist.html": {
@@ -336,7 +350,10 @@
     "a445ce0be77f",
     "67e708a58759",
     "27eedd2d1374",
-    "cd169242deb5"
+    "cd169242deb5",
+    "af2fcbdb46d2",
+    "06e7a1d0bb5f",
+    "9e4791bddb3d"
    ]
   },
   "https://www.city.fukuoka.lg.jp/new.html": {
@@ -621,7 +638,12 @@
     "38e8f7b4d23c",
     "ab90b9cca25c",
     "621e56c1402a",
-    "af08543e1389"
+    "af08543e1389",
+    "b833bb522244",
+    "5792d76371dc",
+    "ee50bb4ef2aa",
+    "6398696ca41e",
+    "911337b1affc"
    ]
   },
   "https://www.city.yanagawa.fukuoka.jp/oshirase/rss.xml": {
@@ -726,7 +748,13 @@
     "64056d6e54f2",
     "e41f7e4cc426",
     "b2899326af06",
-    "136d6f2729eb"
+    "136d6f2729eb",
+    "e6e55ee85a75",
+    "8f05fdc026a5",
+    "4d4db13a1198",
+    "668c07837174",
+    "b9400a5b5e2d",
+    "71e173868f78"
    ]
   },
   "https://www.city.yukuhashi.fukuoka.jp/rss/10/list1.xml": {
@@ -831,11 +859,15 @@
     "9980a306b485",
     "d8f8f9675675",
     "5d17bdaa465b",
-    "02c3eb188774"
+    "02c3eb188774",
+    "111f147afecf",
+    "d4d07126a81d",
+    "b003f8c4d195",
+    "5f21c88145a8"
    ]
   },
   "https://www.city.munakata.lg.jp/dynamic/sitemap.ashx": {
-   "lastmod": "2026-11-23",
+   "lastmod": "2026-11-25",
    "seen": [
     "f6d44e454d18",
     "2e4b42532de4",
@@ -1379,11 +1411,13 @@
     "c1541d562666",
     "d27fd4930cdd",
     "1e26a369b01c",
-    "fed7aab1efaf"
+    "fed7aab1efaf",
+    "6e8677550c36",
+    "5d57a1712eb2"
    ]
   },
   "https://www.city.fukutsu.lg.jp/sitemap.xml": {
-   "lastmod": "2026-11-20",
+   "lastmod": "2026-11-24",
    "seen": []
   },
   "https://www.city.itoshima.lg.jp/sitemap.xml": {
@@ -1395,7 +1429,7 @@
    "seen": []
   },
   "https://www.town.ashiya.lg.jp/sitemap_index.xml": {
-   "lastmod": "2026-11-23",
+   "lastmod": "2026-11-25",
    "seen": []
   },
   "https://www.town.onga.lg.jp/rss/10/list1.xml": {
@@ -1500,7 +1534,24 @@
     "3f38e67c4a07",
     "93d0e9fe6c4a",
     "9507675b5aff",
-    "9f51e917de09"
+    "9f51e917de09",
+    "f84945af4d3d",
+    "ffcf93a09015",
+    "65969c06a361",
+    "fc01aca1007d",
+    "28f32c2a4b84",
+    "b5ba8c882645",
+    "6d27a091d4a5",
+    "818b167a3678",
+    "0eddc19a961a",
+    "5deb4e5dd248",
+    "3dd15c065040",
+    "4985a9a43b23",
+    "80d319961caf",
+    "95cc15bf8e18",
+    "8cad635e1a68",
+    "4dfc6ed26f63",
+    "2d7ac666951f"
    ]
   },
   "https://www.town.kanda.lg.jp/rss/10/list1.xml": {
@@ -1605,7 +1656,8 @@
     "b10f748e7633",
     "a6b98071d022",
     "aa76762a37d0",
-    "eae1e212a068"
+    "eae1e212a068",
+    "974c1efa0daa"
    ]
   },
   "https://www.town.yoshitomi.lg.jp/user/feed_out/gyosei_topics.xml": {
@@ -1705,7 +1757,8 @@
     "85b62a1b9353",
     "be5c4d0f2305",
     "45f6378fe9ce",
-    "3a17de6b0353"
+    "3a17de6b0353",
+    "b977141eb908"
    ]
   },
   "https://www.city.miyama.lg.jp/news.html": {
@@ -1827,7 +1880,11 @@
     "0a818117cda4",
     "20e09ce9a9f6",
     "c66309980393",
-    "4d2b8ef0e3c9"
+    "4d2b8ef0e3c9",
+    "b451902b72be",
+    "9b4c16957aa6",
+    "523a633061dd",
+    "143bda4956f8"
    ]
   },
   "https://www.town.okagaki.lg.jp/news.rss": {
@@ -1852,7 +1909,14 @@
     "92e4607fa547",
     "560a00dbd2e0",
     "3d9cce015f06",
-    "b1b942dd17a6"
+    "b1b942dd17a6",
+    "333f8a4caa2d",
+    "43dd9f99baac",
+    "a16967bee651",
+    "c6e34ecb9559",
+    "1d9c83540f85",
+    "b1bca35ed730",
+    "444ffca1a281"
    ]
   },
   "https://www.town.chikujo.fukuoka.jp/": {
@@ -1961,7 +2025,8 @@
     "c1a1e9989b1b",
     "5b35547132e6",
     "166da8731db8",
-    "d7210b8efd06"
+    "d7210b8efd06",
+    "1aee9f36609d"
    ]
   }
  }
