@@ -1,0 +1,192 @@
+{
+ "note": "長崎県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "長崎県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.nagasaki.jp/doc/index.html"
+    }
+   ]
+  },
+  {
+   "name": "長崎市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.nagasaki.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "佐世保市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sasebo.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "島原市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.shimabara.lg.jp/new_list/pub/Default.aspx?c_id=1"
+    }
+   ]
+  },
+  {
+   "name": "諫早市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.isahaya.nagasaki.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大村市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.omura.nagasaki.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "松浦市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city-matsuura.jp/"
+    }
+   ]
+  },
+  {
+   "name": "対馬市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tsushima.nagasaki.jp/daiji/index.html"
+    }
+   ]
+  },
+  {
+   "name": "壱岐市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.iki.nagasaki.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "五島市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.goto.nagasaki.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "西海市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.saikai.nagasaki.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "雲仙市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.unzen.nagasaki.jp/new_list.html"
+    }
+   ]
+  },
+  {
+   "name": "南島原市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.minamishimabara.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "時津町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.togitsu.nagasaki.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "東彼杵町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.higashisonogi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "川棚町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.kawatana.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "小値賀町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.ojika.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "新上五島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://official.shinkamigoto.net/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "平戸市（https://en.city.hirado.nagasaki.jp/）: トップページを開けない（URLError）"
+ ]
+}

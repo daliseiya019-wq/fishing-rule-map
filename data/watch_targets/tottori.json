@@ -1,0 +1,91 @@
+{
+ "note": "鳥取県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "鳥取県",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.pref.tottori.lg.jp/xml/pressrelease_RSS/all.xml"
+    }
+   ]
+  },
+  {
+   "name": "鳥取市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tottori.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "米子市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.yonago.lg.jp/services/rdf/rss10/1023.xml"
+    }
+   ]
+  },
+  {
+   "name": "境港市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.sakaiminato.lg.jp/rss/whatsnew.xml"
+    }
+   ]
+  },
+  {
+   "name": "岩美町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.iwami.gr.jp/services/rdf/rss10/4902.xml"
+    }
+   ]
+  },
+  {
+   "name": "湯梨浜町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.yurihama.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大山町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.daisen.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

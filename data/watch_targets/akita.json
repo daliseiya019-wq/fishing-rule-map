@@ -1,0 +1,91 @@
+{
+ "note": "秋田県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "秋田県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.pref.akita.lg.jp/api/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "男鹿市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.oga.akita.jp/"
+    }
+   ]
+  },
+  {
+   "name": "由利本荘市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.yurihonjo.lg.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "潟上市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.katagami.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "にかほ市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.nikaho.akita.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "八峰町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.happo.lg.jp/api/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "八郎潟町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.hachirogata.akita.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

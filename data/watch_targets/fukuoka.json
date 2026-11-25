@@ -1,0 +1,231 @@
+{
+ "note": "福岡県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "福岡県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.fukuoka.lg.jp/sitemap_index.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "北九州市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kitakyushu.lg.jp/newslist.html"
+    },
+    {
+     "type": "list",
+     "url": "https://www.city.kitakyushu.lg.jp/kanko/newslist.html"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "福岡市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.fukuoka.lg.jp/new.html"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "大牟田市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.omuta.lg.jp/new_list.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "柳川市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.yanagawa.fukuoka.jp/oshirase/rss.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "大川市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.okawa.lg.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "行橋市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.yukuhashi.fukuoka.jp/rss/10/list1.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "豊前市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.buzen.lg.jp/news/index.html"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "宗像市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.munakata.lg.jp/dynamic/sitemap.ashx"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "福津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.fukutsu.lg.jp/sitemap.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "みやま市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.miyama.lg.jp/news.html"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "糸島市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.itoshima.lg.jp/sitemap.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "新宮町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.shingu.fukuoka.jp/sitemap.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "芦屋町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.ashiya.lg.jp/sitemap_index.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "岡垣町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.okagaki.lg.jp/news.rss"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "吉富町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.yoshitomi.lg.jp/user/feed_out/gyosei_topics.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "築上町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.chikujo.fukuoka.jp/"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "古賀市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.koga.fukuoka.jp/news/"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "遠賀町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.onga.lg.jp/rss/10/list1.xml"
+    }
+   ],
+   "manual": true
+  },
+  {
+   "name": "苅田町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.kanda.lg.jp/rss/10/list1.xml"
+    }
+   ],
+   "manual": true
+  }
+ ],
+ "not_watched": []
+}

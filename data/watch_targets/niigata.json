@@ -1,0 +1,118 @@
+{
+ "note": "新潟県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "新潟県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.niigata.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "新潟市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.niigata.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "柏崎市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kashiwazaki.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "新発田市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.shibata.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "村上市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.murakami.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "糸魚川市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.itoigawa.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "上越市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.joetsu.niigata.jp/rss/10/list1.xml"
+    }
+   ]
+  },
+  {
+   "name": "佐渡市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.sado.niigata.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "出雲崎町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.izumozaki.niigata.jp/topics"
+    }
+   ]
+  },
+  {
+   "name": "粟島浦村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.awashimaura.lg.jp/wp-sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

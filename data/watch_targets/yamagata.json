@@ -1,0 +1,64 @@
+{
+ "note": "山形県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "山形県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.yamagata.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "鶴岡市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/infomation/atsumi/joho/AT-fukuei-josetu.html"
+    }
+   ]
+  },
+  {
+   "name": "酒田市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sakata.lg.jp/allNewsList.html"
+    }
+   ]
+  },
+  {
+   "name": "遊佐町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.yuza.yamagata.jp/latest?label=all"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

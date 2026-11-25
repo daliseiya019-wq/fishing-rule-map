@@ -1,0 +1,181 @@
+{
+ "note": "山口県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "山口県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.yamaguchi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "下関市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shimonoseki.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "宇部市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ube.yamaguchi.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "山口市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.yamaguchi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "萩市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hagi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "防府市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hofu.yamaguchi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "岩国市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.iwakuni.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "光市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hikari.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "長門市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.nagato.yamaguchi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "柳井市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city-yanai.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "周南市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shunan.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "山陽小野田市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.sanyo-onoda.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "周防大島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.suo-oshima.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "上関町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.kaminoseki.lg.jp/wp-sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "田布施町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.tabuse.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "平生町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.hirao.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "阿武町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.abu.lg.jp/wp-sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

@@ -1,0 +1,37 @@
+{
+ "note": "埼玉県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "埼玉県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.saitama.lg.jp/s-info/library-info/oshirase.html"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

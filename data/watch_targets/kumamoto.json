@@ -1,0 +1,145 @@
+{
+ "note": "熊本県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "熊本県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.kumamoto.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "熊本市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kumamoto.jp/dynamic/sitemap.ashx"
+    }
+   ]
+  },
+  {
+   "name": "八代市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.yatsushiro.lg.jp/dynamic/sitemap.ashx"
+    }
+   ]
+  },
+  {
+   "name": "荒尾市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.arao.lg.jp/oshirase/juyo/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "水俣市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.minamata.lg.jp/dynamic/sitemap.ashx"
+    }
+   ]
+  },
+  {
+   "name": "玉名市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.tamana.lg.jp/rss/rc/1.xml"
+    }
+   ]
+  },
+  {
+   "name": "宇土市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.uto.lg.jp/rss/nrss.xml"
+    }
+   ]
+  },
+  {
+   "name": "上天草市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.kamiamakusa.kumamoto.jp/rss/rc/999.xml"
+    }
+   ]
+  },
+  {
+   "name": "宇城市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.uki.kumamoto.jp/"
+    }
+   ]
+  },
+  {
+   "name": "天草市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.amakusa.kumamoto.jp/dynamic/sitemap.ashx"
+    }
+   ]
+  },
+  {
+   "name": "芦北町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.ashikita.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "津奈木町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.tsunagi.lg.jp/new_list/pub/Default.aspx?c_id=1"
+    }
+   ]
+  },
+  {
+   "name": "苓北町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://reihoku-kumamoto.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

@@ -1,0 +1,47 @@
+{
+ "note": "愛知県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "西尾市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nishio.aichi.jp/newslist.html"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "愛知県（http://www.pref.aichi.jp/global/en/）: トップページを開けない（HTTPError）",
+  "豊橋市（https://www.city.toyohashi.lg.jp/）: トップページを開けない（HTTPError）",
+  "豊川市（https://www.city.toyokawa.lg.jp/）: トップページを開けない（HTTPError）",
+  "碧南市（https://www.city.hekinan.lg.jp/）: トップページを開けない（HTTPError）",
+  "蒲郡市（https://www.city.gamagori.lg.jp/）: トップページを開けない（HTTPError）",
+  "常滑市（https://www.city.tokoname.aichi.jp/）: トップページを開けない（HTTPError）",
+  "田原市（https://www.city.tahara.aichi.jp/）: トップページを開けない（HTTPError）",
+  "南知多町（https://www.town.minamichita.lg.jp/）: トップページを開けない（HTTPError）",
+  "美浜町（https://www.town.aichi-mihama.lg.jp/）: トップページを開けない（HTTPError）"
+ ]
+}

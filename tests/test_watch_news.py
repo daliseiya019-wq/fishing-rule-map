@@ -71,6 +71,16 @@ class HitsTest(unittest.TestCase):
     def test_excluded_words_do_not_match(self):
         self.assertEqual(wn.find_hits("窓口ではお釣りが出ないよう、釣り銭のないようにお願いします", KEYWORDS, EXCLUDE), [])
 
+    def test_boilerplate_snippets_are_dropped(self):
+        menu = "漁業と遊漁のルール"
+        hits = [{"url": f"https://t.jp/{i}", "title": "", "snippets": [menu]} for i in range(3)]
+        hits.append({"url": "https://t.jp/x", "title": "", "snippets": [menu, "漁港の釣り許容エリア"]})
+        self.assertEqual(wn.drop_boilerplate(hits), [{"url": "https://t.jp/x", "title": "", "snippets": ["漁港の釣り許容エリア"]}])
+
+    def test_sitemap_pages_are_not_read(self):
+        self.assertFalse(wn.is_html_like("https://t.jp/sitemap.html"))
+        self.assertTrue(wn.is_html_like("https://t.jp/news/1.html"))
+
     def test_phishing_is_not_fishing(self):
         self.assertEqual(wn.find_hits("フィッシング詐欺にご注意ください", KEYWORDS, EXCLUDE), [])
 

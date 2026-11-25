@@ -1,0 +1,190 @@
+{
+ "note": "静岡県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "静岡県",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.pref.shizuoka.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "静岡市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.shizuoka.lg.jp/oshirase.xml"
+    }
+   ]
+  },
+  {
+   "name": "浜松市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.hamamatsu.shizuoka.jp/oshirase/index.html"
+    }
+   ]
+  },
+  {
+   "name": "沼津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.numazu.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "熱海市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.atami.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "伊東市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.ito.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "磐田市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.iwata.shizuoka.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "焼津市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.yaizu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "下田市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shimoda.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "湖西市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kosai.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊豆市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.izu.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "牧之原市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.makinohara.shizuoka.jp/sitemap01.xml"
+    }
+   ]
+  },
+  {
+   "name": "東伊豆町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.higashiizu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "河津町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kawazu.shizuoka.jp/news-archive/"
+    }
+   ]
+  },
+  {
+   "name": "南伊豆町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.minamiizu.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "松崎町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.matsuzaki.shizuoka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "西伊豆町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nishiizu.shizuoka.jp/"
+    }
+   ]
+  },
+  {
+   "name": "吉田町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.yoshida.shizuoka.jp/services/rdf/rss10/11095.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

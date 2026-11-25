@@ -1,0 +1,154 @@
+{
+ "note": "神奈川県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "神奈川県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.kanagawa.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "横浜市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.yokohama.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "横須賀市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.yokosuka.kanagawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "平塚市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.hiratsuka.kanagawa.jp/rss_top.rdf"
+    }
+   ]
+  },
+  {
+   "name": "鎌倉市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kamakura.kanagawa.jp/oshirase/index.html"
+    }
+   ]
+  },
+  {
+   "name": "藤沢市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.fujisawa.kanagawa.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "小田原市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.odawara.kanagawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "茅ヶ崎市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.chigasaki.kanagawa.jp/about/update.html"
+    }
+   ]
+  },
+  {
+   "name": "逗子市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.zushi.kanagawa.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "三浦市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.miura.kanagawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "葉山町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.hayama.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "二宮町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.ninomiya.kanagawa.jp/rss/rss_new.xml"
+    }
+   ]
+  },
+  {
+   "name": "真鶴町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.manazuru.kanagawa.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "湯河原町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yugawara.kanagawa.jp/sitemap_index.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

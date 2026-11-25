@@ -1,0 +1,136 @@
+{
+ "note": "福井県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "福井県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.fukui.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "福井市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.city.fukui.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "敦賀市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tsuruga.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "小浜市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www1.city.obama.fukui.jp/news/index.html"
+    }
+   ]
+  },
+  {
+   "name": "あわら市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.awara.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "坂井市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.fukui-sakai.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "南越前町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.minamiechizen.lg.jp/topics.xml"
+    }
+   ]
+  },
+  {
+   "name": "越前町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.echizen.fukui.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "美浜町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.fukui-mihama.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "高浜町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.takahama.fukui.jp/news2026.html"
+    }
+   ]
+  },
+  {
+   "name": "おおい町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.ohi.fukui.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "若狭町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.fukui-wakasa.lg.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

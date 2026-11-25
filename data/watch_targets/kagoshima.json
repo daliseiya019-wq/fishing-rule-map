@@ -1,0 +1,343 @@
+{
+ "note": "鹿児島県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "鹿児島県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.kagoshima.jp/saishin/index.html"
+    }
+   ]
+  },
+  {
+   "name": "鹿児島市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kagoshima.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "枕崎市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.makurazaki.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "阿久根市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.akune.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "出水市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kagoshima-izumi.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "指宿市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ibusuki.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "西之表市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nishinoomote.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "垂水市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tarumizu.lg.jp/shinchaku/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "薩摩川内市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.satsumasendai.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "日置市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.hioki.kagoshima.jp/kouho/home/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "霧島市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city-kirishima.jp/hisyokouhou/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "いちき串木野市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ichikikushikino.lg.jp/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "南さつま市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.minamisatsuma.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "志布志市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shibushi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "奄美市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.amami.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "南九州市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.minamikyushu.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "姶良市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.aira.lg.jp/shinchakuichiran.html"
+    }
+   ]
+  },
+  {
+   "name": "十島村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.tokara.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "長島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.nagashima.lg.jp/wp-sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "南大隅町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.minamiosumi.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "肝付町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.kimotsuki-town.jp/"
+    }
+   ]
+  },
+  {
+   "name": "中種子町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://town.nakatane.kagoshima.jp/koho/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "南種子町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.town.minamitane.kagoshima.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "屋久島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yakushima.kagoshima.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "大和村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.yamato.lg.jp/kikaku/shinchaku.html"
+    }
+   ]
+  },
+  {
+   "name": "宇検村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.uken.net/"
+    }
+   ]
+  },
+  {
+   "name": "瀬戸内町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.setouchi.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "龍郷町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.tatsugo.lg.jp/ryugakukan/chose/machinoshisetsu/idx-dayori.html"
+    }
+   ]
+  },
+  {
+   "name": "喜界町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kikai.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "徳之島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.tokunoshima-town.org/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "天城町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.amagi.lg.jp/oshirase/oshirase/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊仙町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.isen.kagoshima.jp/mirai/oshirase.html"
+    }
+   ]
+  },
+  {
+   "name": "和泊町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.wadomari.lg.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "知名町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.china.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "与論町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.yoron.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

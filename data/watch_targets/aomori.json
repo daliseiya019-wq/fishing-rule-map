@@ -1,0 +1,235 @@
+{
+ "note": "青森県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "青森県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.aomori.lg.jp/news/index_1.html"
+    }
+   ]
+  },
+  {
+   "name": "青森市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.aomori.aomori.jp/"
+    }
+   ]
+  },
+  {
+   "name": "八戸市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hachinohe.aomori.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "五所川原市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.goshogawara.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "三沢市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.misawa.lg.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "むつ市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.mutsu.lg.jp/feed.rss"
+    }
+   ]
+  },
+  {
+   "name": "つがる市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tsugaru.aomori.jp/new.html"
+    }
+   ]
+  },
+  {
+   "name": "平内町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.hiranai.aomori.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "今別町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.imabetsu.lg.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "蓬田村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.yomogita.lg.jp/oshirase/topics/"
+    }
+   ]
+  },
+  {
+   "name": "外ヶ浜町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.sotogahama.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "鰺ヶ沢町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.ajigasawa.lg.jp/allNewsList.html"
+    }
+   ]
+  },
+  {
+   "name": "深浦町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.fukaura.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "中泊町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nakadomari.lg.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "野辺地町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.noheji.aomori.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "横浜町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.yokohama.lg.jp/fresh01/index.cfm/view.1.-.-.html"
+    }
+   ]
+  },
+  {
+   "name": "六ヶ所村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.rokkasho.jp/"
+    }
+   ]
+  },
+  {
+   "name": "おいらせ町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.oirase.aomori.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大間町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.ooma.lg.jp/allnews_index.html"
+    }
+   ]
+  },
+  {
+   "name": "東通村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.vill.higashidoori.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "風間浦村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.kazamaura.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "佐井村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.sai.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "階上町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.hashikami.lg.jp/rss.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

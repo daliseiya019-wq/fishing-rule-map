@@ -1,0 +1,109 @@
+{
+ "note": "佐賀県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "佐賀県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.saga.lg.jp/new_list.html"
+    }
+   ]
+  },
+  {
+   "name": "佐賀市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.saga.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "唐津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.karatsu.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊万里市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.imari.saga.jp/services/rdf/rss10/1052.xml"
+    }
+   ]
+  },
+  {
+   "name": "鹿島市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.saga-kashima.lg.jp/rss/rss_output.php"
+    }
+   ]
+  },
+  {
+   "name": "神埼市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.kanzaki.saga.jp/rss/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "玄海町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.town.genkai.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "白石町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.shiroishi.lg.jp/rss/topics.xml"
+    }
+   ]
+  },
+  {
+   "name": "太良町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.tara.lg.jp/rss/new.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

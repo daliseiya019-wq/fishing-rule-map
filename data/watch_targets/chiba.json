@@ -1,0 +1,174 @@
+{
+ "note": "千葉県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "千葉県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "銚子市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.choshi.chiba.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "市川市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.ichikawa.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "館山市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tateyama.chiba.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "木更津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kisarazu.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "旭市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.asahi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "勝浦市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.katsuura.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "鴨川市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kamogawa.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "君津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kimitsu.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "富津市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.futtsu.lg.jp/rss/rss_topics.xml"
+    }
+   ]
+  },
+  {
+   "name": "浦安市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.urayasu.lg.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "南房総市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.minamiboso.chiba.jp/rss/rss_emergency2.xml"
+    }
+   ]
+  },
+  {
+   "name": "匝瑳市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sosa.lg.jp/news.php"
+    }
+   ]
+  },
+  {
+   "name": "いすみ市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.isumi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "九十九里町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.kujukuri.chiba.jp/rss/rss_new.xml"
+    }
+   ]
+  },
+  {
+   "name": "鋸南町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.kyonan.chiba.jp/sitemap_index.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "御宿町（https://www.town.onjuku.chiba.jp/）: トップページを開けない（HTTPError）"
+ ]
+}

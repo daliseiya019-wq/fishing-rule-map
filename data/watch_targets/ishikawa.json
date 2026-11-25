@@ -1,0 +1,120 @@
+{
+ "note": "石川県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "石川県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.ishikawa.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "七尾市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nanao.lg.jp/oshirase/index.html"
+    }
+   ]
+  },
+  {
+   "name": "小松市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.komatsu.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "輪島市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.wajima.ishikawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "珠洲市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.suzu.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "羽咋市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hakui.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "白山市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hakusan.lg.jp/sitemapxml.xml"
+    }
+   ]
+  },
+  {
+   "name": "志賀町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.shika.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "穴水町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.anamizu.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "能登町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.noto.lg.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "加賀市（https://www.city.kaga.ishikawa.jp/）: トップページを開けない（URLError）"
+ ]
+}

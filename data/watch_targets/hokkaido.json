@@ -1,0 +1,678 @@
+{
+ "note": "北海道で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "北海道",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.pref.hokkaido.lg.jp/news/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "函館市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hakodate.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "小樽市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.otaru.lg.jp/categories/kubun/chumoku/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "室蘭市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.muroran.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "釧路市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kushiro.lg.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "北見市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kitami.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "網走市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.abashiri.hokkaido.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "留萌市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.e-rumoi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "稚内市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.wakkanai.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "根室市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nemuro.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "登別市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.noboribetsu.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊達市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.date.hokkaido.jp/hotnews/sitemap_for_robot.php"
+    }
+   ]
+  },
+  {
+   "name": "石狩市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.ishikari.hokkaido.jp/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "北斗市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.hokuto.hokkaido.jp/topics/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "松前町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.matsumae.hokkaido.jp/hotnews/sitemap_for_robot.php"
+    }
+   ]
+  },
+  {
+   "name": "福島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.fukushima.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "知内町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.shiriuchi.hokkaido.jp/rss/whatsnew.rdf"
+    }
+   ]
+  },
+  {
+   "name": "木古内町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kikonai.hokkaido.jp/whatsnew.html"
+    }
+   ]
+  },
+  {
+   "name": "鹿部町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.shikabe.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "森町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.hokkaido-mori.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "八雲町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yakumo.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "長万部町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.oshamambe.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "江差町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.hokkaido-esashi.jp/modules/topics/index.html"
+    }
+   ]
+  },
+  {
+   "name": "上ノ国町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.kaminokuni.lg.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "乙部町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.otobe.lg.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "奥尻町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.okushiri.lg.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "せたな町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.setana.lg.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "島牧村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.shimamaki.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "寿都町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.suttu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "蘭越町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.rankoshi.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "岩内町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.iwanai.hokkaido.jp/wp-sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "泊村",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.vill.tomari.hokkaido.jp/new_info/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "神恵内村",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.vill.kamoenai.hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "積丹町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.shakotan.lg.jp/feed.xml"
+    }
+   ]
+  },
+  {
+   "name": "古平町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.furubira.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "余市町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.yoichi.hokkaido.jp/new/index.html"
+    }
+   ]
+  },
+  {
+   "name": "増毛町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.mashike.hokkaido.jp/newsroom/index.html"
+    }
+   ]
+  },
+  {
+   "name": "小平町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.obira.hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "苫前町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.tomamae.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "羽幌町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.haboro.lg.jp/rss/feed.rss"
+    }
+   ]
+  },
+  {
+   "name": "初山別村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.vill.shosanbetsu.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "遠別町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.embetsu.hokkaido.jp/c90/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "猿払村",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.vill.sarufutsu.hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "浜頓別町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.hamatonbetsu.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "豊富町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.toyotomi.hokkaido.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "礼文町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.rebun.hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "利尻富士町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.rishirifuji.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "斜里町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.shari.hokkaido.jp/"
+    }
+   ]
+  },
+  {
+   "name": "佐呂間町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.saroma.hokkaido.jp/rss/feed.rss"
+    }
+   ]
+  },
+  {
+   "name": "湧別町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.yubetsu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "興部町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.okoppe.lg.jp/cms/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "雄武町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.oumu.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "豊浦町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.toyoura.hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "洞爺湖町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.toyako.hokkaido.jp/topics/osirase/4743"
+    }
+   ]
+  },
+  {
+   "name": "むかわ町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "http://www.town.mukawa.lg.jp/services/rdf/rss10/5131.xml"
+    }
+   ]
+  },
+  {
+   "name": "日高町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.hidaka.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "新冠町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.niikappu.jp/info/index.html"
+    }
+   ]
+  },
+  {
+   "name": "浦河町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.urakawa.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "様似町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.samani.jp/"
+    }
+   ]
+  },
+  {
+   "name": "えりも町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.erimo.lg.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "新ひだか町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.shinhidaka-hokkaido.jp/hotnews/rss.rdf"
+    }
+   ]
+  },
+  {
+   "name": "大樹町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.taiki.hokkaido.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "広尾町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.hiroo.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "豊頃町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.toyokoro.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "浦幌町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.urahoro.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "釧路町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.kushiro.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "厚岸町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.akkeshi-town.jp/oshirase/4369/"
+    }
+   ]
+  },
+  {
+   "name": "浜中町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.townhamanaka.jp/rss/feed.rss"
+    }
+   ]
+  },
+  {
+   "name": "白糠町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.shiranuka.lg.jp/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "別海町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://betsukai.jp/oshirase/7696/"
+    }
+   ]
+  },
+  {
+   "name": "標津町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.shibetsutown.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "羅臼町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.rausu-town.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "利尻町（https://www.town.rishiri.hokkaido.jp/）: トップページを開けない（HTTPError）"
+ ]
+}

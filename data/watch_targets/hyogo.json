@@ -1,0 +1,145 @@
+{
+ "note": "兵庫県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "兵庫県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://web.pref.hyogo.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "神戸市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kobe.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "姫路市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.himeji.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "明石市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.akashi.lg.jp/shise/koho/oshirase/index.html"
+    }
+   ]
+  },
+  {
+   "name": "洲本市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.sumoto.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "豊岡市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.toyooka.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "赤穂市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ako.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "南あわじ市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.minamiawaji.hyogo.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "淡路市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.awaji.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "たつの市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tatsuno.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "播磨町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.harima.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "香美町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.mikata-kami.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "新温泉町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.shinonsen.hyogo.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

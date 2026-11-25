@@ -1,6 +1,7 @@
 # 週 1 回、自治体サイトの新しいページから釣りに関するお知らせを探す（scripts/watch_news.py）。
-# 見つかったら Issue を立てる。人がそれを読み、公式に「釣りができる」と案内しているものだけデータに足す。
-# 前回どこまで見たかは data/watch-state.json に記録してコミットする。
+# 都道府県ごとに並べて動かし（data/watch_targets/<slug>.json）、最後に 1 つの Issue にまとめる。
+# 人がそれを読み、公式に「釣りができる」と案内しているものだけデータに足す。
+# 前回どこまで見たかは data/watch-state/<slug>.json に記録してコミットする。
 name: watch-news
 
 on:
@@ -10,6 +11,10 @@ on:
     inputs:
       backlog_days:
         description: "過去 N 日に更新されたページも調べる（初回の洗い出し用。空なら通常の差分だけ）"
+        required: false
+        default: ""
+      pref:
+        description: "この都道府県（slug）だけ調べる。空ならすべて"
         required: false
         default: ""
 
@@ -22,9 +27,32 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      prefs: ${{ steps.list.outputs.prefs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        env:
+          ONLY: ${{ inputs.pref }}
+        run: |
+          if [ -n "$ONLY" ]; then
+            names="$ONLY"
+          else
+            names=$(ls data/watch_targets/*.json | xargs -n1 basename | sed 's/\.json$//')
+          fi
+          echo "prefs=$(printf '%s\n' $names | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read().split()))')" >> "$GITHUB_OUTPUT"
+
   watch:
+    needs: list
     runs-on: ubuntu-latest
     timeout-minutes: 300 # 初回の洗い出し（数千ページ・2 秒間隔）でも終わるように
+    strategy:
+      fail-fast: false
+      max-parallel: 10 # 同時に動かす都道府県の数（各サイトへは 2 秒間隔で 1 件ずつ）
+      matrix:
+        pref: ${{ fromJson(needs.list.outputs.prefs) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,16 +60,42 @@ jobs:
           python-version: "3.12"
       - name: Watch municipal news
         env:
+          PREF: ${{ matrix.pref }}
           BACKLOG_DAYS: ${{ inputs.backlog_days }}
         run: |
+          mkdir -p out
           if [ -n "$BACKLOG_DAYS" ]; then
-            python scripts/watch_news.py --issue-body issue.md --backlog-days "$BACKLOG_DAYS" --max-fetch 1500
+            python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md" --backlog-days "$BACKLOG_DAYS" --max-fetch 1500
           else
-            python scripts/watch_news.py --issue-body issue.md
+            python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md"
           fi
+          if [ -f "data/watch-state/$PREF.json" ]; then cp "data/watch-state/$PREF.json" "out/state-$PREF.json"; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: watch-${{ matrix.pref }}
+          path: out/
+          if-no-files-found: ignore
+
+  collect:
+    needs: watch
+    if: always() && needs.watch.result != 'cancelled'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: watch-*
+          path: out
+          merge-multiple: true
       - name: Commit state
         run: |
-          git add data/watch-state.json
+          mkdir -p data/watch-state
+          for f in out/state-*.json; do
+            [ -e "$f" ] || continue
+            slug=$(basename "$f" .json); slug=${slug#state-}
+            cp "$f" "data/watch-state/$slug.json"
+          done
+          git add data/watch-state
           if git diff --cached --quiet; then
             echo "変化なし"
             exit 0
@@ -53,7 +107,19 @@ jobs:
           git pull --rebase
           git push
       - name: Open issue
-        if: hashFiles('issue.md') != ''
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "釣りに関する自治体のお知らせ候補（$(date -u +%Y-%m-%d)）" --body-file issue.md
+        run: |
+          if ! ls out/issue-*.md >/dev/null 2>&1; then
+            echo "候補なし"
+            exit 0
+          fi
+          {
+            echo "自治体サイトの新しい・更新されたページのうち、釣りに関する語を含むものです。"
+            echo "公式に「釣りができる」と案内しているものがあれば、確認して data/ に追加してください（関係ないものは閉じて構いません）。"
+            echo
+            for f in out/issue-*.md; do tail -n +4 "$f"; echo; done
+          } > issue.md
+          # Issue 本文の上限（65,536 文字）を超えないように切り詰める
+          python3 -c "import sys; t=open('issue.md',encoding='utf-8').read(); open('issue.md','w',encoding='utf-8').write(t if len(t)<60000 else t[:60000]+'\n\n（長すぎるため以下省略。Actions のログを参照）')"
+          gh issue create --title "釣りに関する自治体のお知らせ候補（$(date -u +%Y-%m-%d)）" --body-file issue.md

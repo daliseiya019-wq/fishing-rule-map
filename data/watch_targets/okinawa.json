@@ -1,0 +1,346 @@
+{
+ "note": "沖縄県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "沖縄県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.okinawa.lg.jp/news/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "那覇市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.naha.okinawa.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "宜野湾市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ginowan.lg.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "石垣市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ishigaki.okinawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "浦添市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.urasoe.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "糸満市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.itoman.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "沖縄市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.okinawa.okinawa.jp/shinchakuichiran.html"
+    }
+   ]
+  },
+  {
+   "name": "豊見城市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tomigusuku.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "うるま市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.uruma.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "宮古島市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.miyakojima.lg.jp/rss/feed.rss"
+    }
+   ]
+  },
+  {
+   "name": "南城市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nanjo.okinawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "国頭村",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.vill.kunigami.okinawa.jp/feed/"
+    }
+   ]
+  },
+  {
+   "name": "大宜味村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.ogimi.okinawa.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "東村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.higashi.okinawa.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "本部町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.motobu.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "恩納村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.onna.okinawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "宜野座村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.vill.ginoza.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊江村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.iejima.org/"
+    }
+   ]
+  },
+  {
+   "name": "読谷村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.yomitan.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "嘉手納町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kadena.okinawa.jp/info/"
+    }
+   ]
+  },
+  {
+   "name": "北谷町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.chatan.jp/rss_news.xml"
+    }
+   ]
+  },
+  {
+   "name": "中城村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.nakagusuku.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "与那原町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yonabaru.okinawa.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "渡嘉敷村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.tokashiki.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "座間味村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.zamami.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "粟国村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.aguni.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "渡名喜村",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "http://www.vill.tonaki.okinawa.jp/rss/RssFeed.jsp"
+    }
+   ]
+  },
+  {
+   "name": "南大東村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.vill.minamidaito.okinawa.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊平屋村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.vill.iheya.okinawa.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊是名村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://vill.izena.okinawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "久米島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.kumejima.okinawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "八重瀬町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.yaese.lg.jp/docs/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "多良間村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.tarama.okinawa.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "竹富町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.taketomi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "与那国町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.yonaguni.okinawa.jp/category/kubun/info/index.rss"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "名護市（https://www.city.nago.okinawa.jp/）: トップページを開けない（URLError）",
+  "今帰仁村（https://www.nakijin.jp/）: トップページを開けない（URLError）"
+ ]
+}

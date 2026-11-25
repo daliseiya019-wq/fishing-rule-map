@@ -1,0 +1,100 @@
+{
+ "note": "富山県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "富山県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.toyama.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "富山市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.toyama.toyama.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "魚津市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.uozu.toyama.jp/"
+    }
+   ]
+  },
+  {
+   "name": "氷見市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.himi.toyama.jp/"
+    }
+   ]
+  },
+  {
+   "name": "滑川市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.namerikawa.toyama.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "黒部市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kurobe.toyama.jp/"
+    }
+   ]
+  },
+  {
+   "name": "入善町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.nyuzen.toyama.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "朝日町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.asahi.toyama.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

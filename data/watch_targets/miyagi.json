@@ -1,0 +1,147 @@
+{
+ "note": "宮城県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "宮城県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.miyagi.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "仙台市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sendai.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "石巻市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.ishinomaki.lg.jp/news01.rss"
+    }
+   ]
+  },
+  {
+   "name": "塩竈市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shiogama.miyagi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "気仙沼市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.kesennuma.miyagi.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "名取市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.natori.miyagi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "亘理町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.watari.miyagi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "山元町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yamamoto.miyagi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "松島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.miyagi-matsushima.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "七ヶ浜町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.shichigahama.com/relax2/news_index.html"
+    }
+   ]
+  },
+  {
+   "name": "利府町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.rifu.miyagi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "女川町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.onagawa.miyagi.jp/index_new.html"
+    }
+   ]
+  },
+  {
+   "name": "南三陸町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.minamisanriku.miyagi.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "東松島市（https://www.city.higashimatsushima.miyagi.jp/）: トップページを開けない（HTTPError）"
+ ]
+}

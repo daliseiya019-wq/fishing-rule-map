@@ -1,0 +1,109 @@
+{
+ "note": "宮崎県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "宮崎県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.miyazaki.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "宮崎市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.miyazaki.miyazaki.jp/news/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "延岡市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.nobeoka.miyazaki.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "日南市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.nichinan.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "串間市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kushima.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "新富町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.shintomi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "川南町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.kawaminami.miyazaki.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "都農町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.tsuno.lg.jp/prd/tno/portal/openapi/v1/sitemap/retrieve"
+    }
+   ]
+  },
+  {
+   "name": "門川町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kadogawa.lg.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

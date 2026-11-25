@@ -1,0 +1,199 @@
+{
+ "note": "和歌山県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "和歌山県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.wakayama.lg.jp/whatsnew/news.html"
+    }
+   ]
+  },
+  {
+   "name": "和歌山市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.wakayama.wakayama.jp/site/uplist.html"
+    }
+   ]
+  },
+  {
+   "name": "海南市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kainan.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "有田市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.arida.lg.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "御坊市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.gobo.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "田辺市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tanabe.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "新宮市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.shingu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "湯浅町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.yuasa.wakayama.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "広川町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.hirogawa.wakayama.jp/kankou/news-event/inamuranohimatsuri.html"
+    }
+   ]
+  },
+  {
+   "name": "美浜町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "http://www.town.mihama.wakayama.jp/shinchaku/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "日高町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "http://www.town.wakayama-hidaka.lg.jp/shinchaku/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "由良町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "http://www.town.yura.wakayama.jp/shinchaku/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "印南町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.wakayama-inami.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "みなべ町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.minabe.lg.jp/whatsnew.html"
+    }
+   ]
+  },
+  {
+   "name": "白浜町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.shirahama.wakayama.jp/"
+    }
+   ]
+  },
+  {
+   "name": "すさみ町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.town.susami.lg.jp/whatsnew.html"
+    }
+   ]
+  },
+  {
+   "name": "那智勝浦町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nachikatsuura.wakayama.jp/menu/6"
+    }
+   ]
+  },
+  {
+   "name": "太地町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.taiji.wakayama.jp/tyousei/information/index.html"
+    }
+   ]
+  },
+  {
+   "name": "串本町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kushimoto.wakayama.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

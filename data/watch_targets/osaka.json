@@ -1,0 +1,100 @@
+{
+ "note": "大阪府で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "大阪府",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.osaka.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "堺市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sakai.lg.jp/newlist/index.html"
+    }
+   ]
+  },
+  {
+   "name": "岸和田市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kishiwada.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "泉佐野市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.izumisano.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "高石市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.takaishi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "阪南市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hannan.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "田尻町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.tajiri.osaka.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "岬町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.misaki.osaka.jp/news_list.html"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

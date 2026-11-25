@@ -1,0 +1,136 @@
+{
+ "note": "広島県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "広島県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.hiroshima.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "広島市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.hiroshima.lg.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "呉市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kure.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "竹原市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.takehara.lg.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "三原市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.mihara.hiroshima.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "尾道市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.onomichi.hiroshima.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "福山市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "http://www.city.fukuyama.hiroshima.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大竹市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.otake.hiroshima.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "東広島市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.higashihiroshima.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "廿日市市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.hatsukaichi.hiroshima.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "江田島市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.etajima.hiroshima.jp/index2.html"
+    }
+   ]
+  },
+  {
+   "name": "大崎上島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.osakikamijima.hiroshima.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

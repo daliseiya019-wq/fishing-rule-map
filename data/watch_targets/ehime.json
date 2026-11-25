@@ -1,0 +1,154 @@
+{
+ "note": "愛媛県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "愛媛県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.ehime.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "松山市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.matsuyama.ehime.jp/rss_news.xml"
+    }
+   ]
+  },
+  {
+   "name": "今治市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.imabari.ehime.jp/imabari/rss/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "宇和島市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.uwajima.ehime.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "八幡浜市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.yawatahama.ehime.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "新居浜市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.niihama.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "西条市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.saijo.ehime.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大洲市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.ozu.ehime.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊予市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.iyo.lg.jp/new/index.html"
+    }
+   ]
+  },
+  {
+   "name": "四国中央市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shikokuchuo.ehime.jp/sitemap01.xml"
+    }
+   ]
+  },
+  {
+   "name": "西予市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.seiyo.ehime.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "上島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.kamijima.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "伊方町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.ikata.ehime.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "愛南町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.ainan.ehime.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

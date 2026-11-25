@@ -1,0 +1,129 @@
+{
+ "note": "香川県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "香川県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.kagawa.lg.jp/cgi-bin/page/list.php?tpl_type=2&dept_code=&page_type=3&tpl_id=&dir=&link_page_id=1"
+    }
+   ]
+  },
+  {
+   "name": "高松市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.takamatsu.kagawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "丸亀市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.marugame.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "坂出市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.sakaide.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "観音寺市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kanonji.kagawa.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "東かがわ市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.higashikagawa.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "三豊市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.mitoyo.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "土庄町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.tonosho.kagawa.jp/"
+    }
+   ]
+  },
+  {
+   "name": "小豆島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.shodoshima.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "直島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.naoshima.lg.jp/allNewsList.html"
+    }
+   ]
+  },
+  {
+   "name": "多度津町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.tadotsu.kagawa.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "さぬき市（https://www.city.sanuki.kagawa.jp/）: トップページを開けない（URLError）"
+ ]
+}

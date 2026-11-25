@@ -1,0 +1,172 @@
+{
+ "note": "三重県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "三重県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.mie.lg.jp/s_kensei/oshirase/index.htm"
+    }
+   ]
+  },
+  {
+   "name": "津市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.info.city.tsu.mie.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "四日市市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.yokkaichi.lg.jp/www/rss/topics.rdf"
+    }
+   ]
+  },
+  {
+   "name": "伊勢市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ise.mie.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "松阪市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.matsusaka.mie.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "桑名市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kuwana.lg.jp/shinchaku/index.html"
+    }
+   ]
+  },
+  {
+   "name": "鈴鹿市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.suzuka.lg.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "尾鷲市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.owase.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "鳥羽市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.toba.mie.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "熊野市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kumano.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "志摩市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shima.mie.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "川越町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kawagoe.mie.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "明和町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.meiwa.mie.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "大紀町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.taiki.mie.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "南伊勢町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.minamiise.lg.jp/admin/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "紀北町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.mie-kihoku.lg.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

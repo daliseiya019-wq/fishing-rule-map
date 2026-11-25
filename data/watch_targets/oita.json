@@ -1,0 +1,138 @@
+{
+ "note": "大分県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "大分県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.oita.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "大分市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.oita.oita.jp/shinchakuichiran/index.html"
+    }
+   ]
+  },
+  {
+   "name": "別府市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.beppu.oita.jp/rss/beppu.xml"
+    }
+   ]
+  },
+  {
+   "name": "中津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city-nakatsu.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "佐伯市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.saiki.oita.jp/dynamic/sitemap.ashx"
+    }
+   ]
+  },
+  {
+   "name": "臼杵市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.usuki.oita.jp/article/index.rss"
+    }
+   ]
+  },
+  {
+   "name": "津久見市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tsukumi.oita.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "豊後高田市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.bungotakada.oita.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "杵築市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kitsuki.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "国東市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kunisaki.oita.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "姫島村",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.himeshima.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "日出町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.hiji.lg.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "宇佐市（https://www.city.usa.oita.jp/）: トップページを開けない（URLError）"
+ ]
+}

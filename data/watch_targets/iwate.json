@@ -1,0 +1,129 @@
+{
+ "note": "岩手県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "岩手県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.iwate.jp/news/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "宮古市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.miyako.iwate.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "大船渡市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.ofunato.iwate.jp/latest?label=all"
+    }
+   ]
+  },
+  {
+   "name": "陸前高田市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.rikuzentakata.iwate.jp/info.html"
+    }
+   ]
+  },
+  {
+   "name": "釜石市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kamaishi.iwate.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "大槌町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.otsuchi.iwate.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "山田町",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.town.yamada.iwate.jp/oshirase/rss.xml"
+    }
+   ]
+  },
+  {
+   "name": "岩泉町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.iwaizumi.lg.jp/category/attribute/town/oshirase/"
+    }
+   ]
+  },
+  {
+   "name": "田野畑村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.tanohata.iwate.jp/"
+    }
+   ]
+  },
+  {
+   "name": "普代村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.fudai.iwate.jp/"
+    }
+   ]
+  },
+  {
+   "name": "野田村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.noda.iwate.jp/news.html"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "久慈市（https://www.city.kuji.iwate.jp/）: トップページを開けない（URLError）"
+ ]
+}

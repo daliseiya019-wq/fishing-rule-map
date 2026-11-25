@@ -1,0 +1,127 @@
+{
+ "note": "島根県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "島根県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.shimane.lg.jp/top_news.html"
+    }
+   ]
+  },
+  {
+   "name": "松江市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.matsue.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "浜田市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.hamada.shimane.jp/www/rss/news.rdf"
+    }
+   ]
+  },
+  {
+   "name": "出雲市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.izumo.shimane.jp/www/rss/topics.rdf"
+    }
+   ]
+  },
+  {
+   "name": "益田市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.masuda.lg.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "大田市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.oda.lg.jp/feed/"
+    }
+   ]
+  },
+  {
+   "name": "江津市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.gotsu.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "海士町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.ama.shimane.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "西ノ島町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nishinoshima.shimane.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "知夫村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "http://www.vill.chibu.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "隠岐の島町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.okinoshima.shimane.jp/sitemap.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

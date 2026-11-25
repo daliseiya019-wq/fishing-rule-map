@@ -1,7 +1,7 @@
 """自治体サイトの新しいページから、釣りに関するお知らせを見つけて一覧にする（週 1 回、GitHub Actions）。
 
 漁港の「釣り許容エリア」の告知などは、県・市町村の新着のお知らせや広報に出ることが多い。
-それを人や AI がネットを探し回らずに拾えるよう、data/watch_targets.json の自治体サイトについて
+それを人や AI がネットを探し回らずに拾えるよう、data/watch_targets/<都道府県>.json の自治体サイトについて
   1. サイトマップ（更新日付き）・RSS・新着一覧ページから、前回より後に増えた・更新されたページを見つけ、
   2. そのページの題名と本文に「釣り」などの語があるかを調べ、
   3. 見つかったものを Issue の本文にする（確認して載せるかは人が決める）。
@@ -10,8 +10,9 @@
 （件数が多いので GitHub Actions で 1 回だけ手動で動かす想定。AI のトークンは使わない）。
 
 標準ライブラリのみで動く。使い方:
-  python scripts/watch_news.py --issue-body issue.md
-  python scripts/watch_news.py --issue-body issue.md --backlog-days 730 --max-fetch 1500
+  python scripts/watch_news.py --issue-body issue.md                 # 監視対象のある全都道府県
+  python scripts/watch_news.py --pref fukuoka --issue-body issue.md  # 1 都道府県だけ（Actions では都道府県ごとに並列）
+  python scripts/watch_news.py --pref fukuoka --issue-body issue.md --backlog-days 730 --max-fetch 1500
 """
 import argparse
 import hashlib
@@ -28,8 +29,9 @@ from check_sources import FETCH_ERRORS, allowed_by_robots, decode_html, open_url
 from page_text import main_text
 
 ROOT = Path(__file__).resolve().parent.parent
-TARGETS = ROOT / "data" / "watch_targets.json"
-STATE = ROOT / "data" / "watch-state.json"
+TARGETS_DIR = ROOT / "data" / "watch_targets"  # 都道府県ごとの監視対象（<slug>.json）
+STATE_DIR = ROOT / "data" / "watch-state"  # 都道府県ごとの前回の確認位置（<slug>.json）
+PREFS = ROOT / "data" / "prefectures.json"
 
 MAX_BYTES = 15 * 1024 * 1024  # 大きな自治体のサイトマップでも 10MB 程度
 MAX_CHILD_SITEMAPS = 30  # サイトマップの目次から辿る子サイトマップの上限
@@ -38,6 +40,7 @@ REQUEST_INTERVAL_SEC = 2
 SEEN_CAP = 3000  # 新着一覧・RSS で「見た」ページを覚えておく件数（1 出典あたり）
 SNIPPET_CHARS = 15  # 見つかった語の前後に付ける文字数（場所が分かる程度にとどめ、転載にしない）
 MAX_SNIPPETS = 2
+BOILERPLATE_PAGES = 3  # 同じ抜粋がこの数以上のページに出るなら、メニューなど共通部分の文として捨てる
 SKIP_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".zip", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
             ".mp4", ".mp3", ".csv")
 
@@ -198,7 +201,23 @@ def page_text(url):
 
 
 def is_html_like(url):
-    return not urlparse(url).path.lower().endswith(SKIP_EXT)
+    path = urlparse(url).path.lower()
+    # サイトマップのページはメニューの文が並ぶだけなので読まない
+    return not path.endswith(SKIP_EXT) and "sitemap" not in path
+
+
+def drop_boilerplate(hits):
+    """メニュー・フッターなど、多くのページに共通する文だけで当たったものを除く。"""
+    counts = {}
+    for h in hits:
+        for snippet in set(h["snippets"]):
+            counts[snippet] = counts.get(snippet, 0) + 1
+    kept = []
+    for h in hits:
+        snippets = [s for s in h["snippets"] if counts[s] < BOILERPLATE_PAGES]
+        if snippets:
+            kept.append({**h, "snippets": snippets})
+    return kept
 
 
 def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch=None):
@@ -211,6 +230,7 @@ def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch
             errors.append(f"{source['url']}: {type(exc).__name__}")
             continue
         found, state[source["url"]] = new_entries(entries, state.get(source["url"]), backlog_since)
+        print(f"  {source['url']}: {len(entries)} 件中 新しい {len(found)} 件")
         for e in found:
             if is_html_like(e.url):
                 candidates.setdefault(e.url, e)
@@ -232,7 +252,7 @@ def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch
         if snippets:
             hits.append({"url": e.url, "title": title or e.hint, "snippets": snippets})
         time.sleep(REQUEST_INTERVAL_SEC)
-    return hits, max(0, len(ordered) - limit), errors
+    return drop_boilerplate(hits), max(0, len(ordered) - limit), errors
 
 
 def issue_body(results):
@@ -254,32 +274,47 @@ def issue_body(results):
     return "\n".join(lines)
 
 
+def run_pref(pref, backlog_since, max_fetch):
+    """1 都道府県分を調べ、確認位置を保存して、結果の一覧を返す。"""
+    config = json.loads((TARGETS_DIR / f"{pref['slug']}.json").read_text(encoding="utf-8"))
+    state_path = STATE_DIR / f"{pref['slug']}.json"
+    old_state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"sources": {}}
+    state = json.loads(json.dumps(old_state))  # 書き換え用の写し
+    results = []
+    for target in config["targets"]:
+        hits, skipped, errors = check_target(target, state["sources"], config["keywords"], config["exclude"],
+                                             backlog_since, max_fetch)
+        name = target["name"] if target["name"].startswith(pref["name"]) else f"{pref['name']} {target['name']}"
+        results.append({"name": name, "hits": hits, "skipped": skipped, "errors": errors})
+        print(f"{name}: 該当 {len(hits)} 件 / 読み残し {skipped} 件 / エラー {len(errors)} 件")
+
+    # 一覧から外した出典の記録は消す
+    wanted = {s["url"] for t in config["targets"] for s in t["sources"]}
+    state["sources"] = {u: s for u, s in state["sources"].items() if u in wanted}
+    if state != old_state:
+        STATE_DIR.mkdir(exist_ok=True)
+        state_path.write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+    return results
+
+
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--pref", help="この都道府県（slug）だけ調べる。省略すると監視対象のある全都道府県")
     parser.add_argument("--issue-body", type=Path, help="見つかったものがあれば Issue 本文を書き出すファイル")
     parser.add_argument("--backlog-days", type=int, help="過去 N 日に更新されたページも調べる（初回の洗い出し用）")
     parser.add_argument("--max-fetch", type=int, help="1 自治体あたりに読むページ数の上限（洗い出しのときに増やす）")
     args = parser.parse_args()
     backlog_since = (date.today() - timedelta(days=args.backlog_days)).isoformat() if args.backlog_days else None
 
-    config = json.loads(TARGETS.read_text(encoding="utf-8"))
-    old_state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {"sources": {}}
-    state = json.loads(json.dumps(old_state))  # 書き換え用の写し
+    prefs = json.loads(PREFS.read_text(encoding="utf-8"))["prefectures"]
     results = []
-    for target in config["targets"]:
-        hits, skipped, errors = check_target(target, state["sources"], config["keywords"], config["exclude"],
-                                             backlog_since, args.max_fetch)
-        results.append({"name": target["name"], "hits": hits, "skipped": skipped, "errors": errors})
-        print(f"{target['name']}: 該当 {len(hits)} 件 / 読み残し {skipped} 件 / エラー {len(errors)} 件")
-
-    # 一覧から外した出典の記録は消す
-    wanted = {s["url"] for t in config["targets"] for s in t["sources"]}
-    state["sources"] = {u: s for u, s in state["sources"].items() if u in wanted}
-    if state != old_state:
-        STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for pref in prefs:
+        if (args.pref and pref["slug"] != args.pref) or not (TARGETS_DIR / f"{pref['slug']}.json").exists():
+            continue
+        results += run_pref(pref, backlog_since, args.max_fetch)
     if args.issue_body and any(r["hits"] or r["skipped"] for r in results):
-        args.issue_body.write_text(issue_body(results), encoding="utf-8")
+        args.issue_body.write_text(issue_body(results), encoding="utf-8", newline="\n")
     return 0
 
 

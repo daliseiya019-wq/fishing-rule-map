@@ -1,0 +1,192 @@
+{
+ "note": "高知県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "高知県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.kochi.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "高知市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kochi.kochi.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "室戸市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.muroto.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "安芸市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.aki.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "南国市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.nankoku.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "土佐市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tosa.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "須崎市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.susaki.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "宿毛市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.sukumo.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "土佐清水市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tosashimizu.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "四万十市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.shimanto.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "香南市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kochi-konan.lg.jp/news_list.html"
+    }
+   ]
+  },
+  {
+   "name": "奈半利町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nahari.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "安田町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.yasuda.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "芸西村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.geisei.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "中土佐町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.nakatosa.lg.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "四万十町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.shimanto.lg.jp/news/"
+    }
+   ]
+  },
+  {
+   "name": "大月町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.otsuki.kochi.jp/"
+    }
+   ]
+  },
+  {
+   "name": "黒潮町",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.town.kuroshio.lg.jp/pb/cont/yakuba/1346"
+    }
+   ]
+  }
+ ],
+ "not_watched": [
+  "東洋町（http://www.town.toyo.kochi.jp/）: トップページを開けない（URLError）"
+ ]
+}

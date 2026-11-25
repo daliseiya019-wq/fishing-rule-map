@@ -1,0 +1,118 @@
+{
+ "note": "茨城県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "茨城県",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.pref.ibaraki.jp/news.html"
+    }
+   ]
+  },
+  {
+   "name": "日立市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.hitachi.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "土浦市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.tsuchiura.lg.jp/"
+    }
+   ]
+  },
+  {
+   "name": "北茨城市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kitaibaraki.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "かすみがうら市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kasumigaura.lg.jp/news.php"
+    }
+   ]
+  },
+  {
+   "name": "神栖市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.kamisu.ibaraki.jp/newslist.html"
+    }
+   ]
+  },
+  {
+   "name": "行方市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.namegata.ibaraki.jp/"
+    }
+   ]
+  },
+  {
+   "name": "茨城町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.ibaraki.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "大洗町",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.town.oarai.lg.jp/sitemap.xml"
+    }
+   ]
+  },
+  {
+   "name": "美浦村",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.vill.miho.lg.jp/"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}

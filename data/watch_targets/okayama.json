@@ -1,0 +1,100 @@
+{
+ "note": "岡山県で監視する自治体サイト（scripts/build_watch_targets.py で自動作成。手で直したものは \"manual\": true を付けると上書きされない）",
+ "keywords": [
+  "釣り",
+  "釣場",
+  "魚釣",
+  "海づり",
+  "海釣",
+  "釣果",
+  "遊漁",
+  "フィッシング"
+ ],
+ "exclude": [
+  "釣り銭",
+  "釣銭",
+  "お釣り",
+  "つり銭",
+  "釣り合い",
+  "釣合",
+  "フィッシング詐欺",
+  "フィッシングメール",
+  "フィッシングサイト",
+  "フィッシング対策"
+ ],
+ "targets": [
+  {
+   "name": "岡山県",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.pref.okayama.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "岡山市",
+   "sources": [
+    {
+     "type": "list",
+     "url": "https://www.city.okayama.jp/"
+    }
+   ]
+  },
+  {
+   "name": "倉敷市",
+   "sources": [
+    {
+     "type": "feed",
+     "url": "https://www.city.kurashiki.okayama.jp/rss_list/news.rss"
+    }
+   ]
+  },
+  {
+   "name": "玉野市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.tamano.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "笠岡市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.kasaoka.okayama.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "備前市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.bizen.okayama.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "瀬戸内市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.setouchi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  },
+  {
+   "name": "浅口市",
+   "sources": [
+    {
+     "type": "sitemap",
+     "url": "https://www.city.asakuchi.lg.jp/sitemap_index.xml"
+    }
+   ]
+  }
+ ],
+ "not_watched": []
+}
