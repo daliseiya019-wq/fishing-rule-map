@@ -243,7 +243,8 @@
     "95575725abee",
     "ed8c10a5df32",
     "b4b2b99008d5",
-    "127e2b01ec54"
+    "127e2b01ec54",
+    "1bd974b6f25c"
    ]
   },
   "https://www.city.kitakyushu.lg.jp/kanko/newslist.html": {
@@ -643,7 +644,8 @@
     "5792d76371dc",
     "ee50bb4ef2aa",
     "6398696ca41e",
-    "911337b1affc"
+    "911337b1affc",
+    "ac75dfd9ac2c"
    ]
   },
   "https://www.city.yanagawa.fukuoka.jp/oshirase/rss.xml": {
@@ -1413,11 +1415,12 @@
     "1e26a369b01c",
     "fed7aab1efaf",
     "6e8677550c36",
-    "5d57a1712eb2"
+    "5d57a1712eb2",
+    "50015e0ae76b"
    ]
   },
   "https://www.city.fukutsu.lg.jp/sitemap.xml": {
-   "lastmod": "2026-11-24",
+   "lastmod": "2026-11-25",
    "seen": []
   },
   "https://www.city.itoshima.lg.jp/sitemap.xml": {
@@ -1551,7 +1554,12 @@
     "95cc15bf8e18",
     "8cad635e1a68",
     "4dfc6ed26f63",
-    "2d7ac666951f"
+    "2d7ac666951f",
+    "9dcbd41cab72",
+    "62ea26dcf0bd",
+    "80874b97cd5e",
+    "60440bd699d1",
+    "7516d8cbe833"
    ]
   },
   "https://www.town.kanda.lg.jp/rss/10/list1.xml": {
@@ -1657,7 +1665,9 @@
     "a6b98071d022",
     "aa76762a37d0",
     "eae1e212a068",
-    "974c1efa0daa"
+    "974c1efa0daa",
+    "cdb0a1c42161",
+    "cea340be3ca0"
    ]
   },
   "https://www.town.yoshitomi.lg.jp/user/feed_out/gyosei_topics.xml": {
@@ -1758,7 +1768,9 @@
     "be5c4d0f2305",
     "45f6378fe9ce",
     "3a17de6b0353",
-    "b977141eb908"
+    "b977141eb908",
+    "b4c29e8a05c3",
+    "a239875aeb90"
    ]
   },
   "https://www.city.miyama.lg.jp/news.html": {
@@ -1916,7 +1928,10 @@
     "c6e34ecb9559",
     "1d9c83540f85",
     "b1bca35ed730",
-    "444ffca1a281"
+    "444ffca1a281",
+    "a657e9d0b67b",
+    "cd98fe7a3d3d",
+    "45f092788e60"
    ]
   },
   "https://www.town.chikujo.fukuoka.jp/": {
@@ -2026,7 +2041,33 @@
     "5b35547132e6",
     "166da8731db8",
     "d7210b8efd06",
-    "1aee9f36609d"
+    "1aee9f36609d",
+    "513c3e6200c2"
+   ]
+  },
+  "https://www.city.okawa.lg.jp/news.rss": {
+   "lastmod": null,
+   "seen": [
+    "e1469caad0a0",
+    "246bf6c12b99",
+    "6bcad19ae242",
+    "9fee508da6df",
+    "b85b343a5c51",
+    "64fb8401a766",
+    "9eead0ffc303",
+    "e98dd7ed96b4",
+    "5b9eb0a7ef9c",
+    "349a07ed9da7",
+    "6aacedcd803f",
+    "964f3d8f6c80",
+    "419c997b47d7",
+    "2a57d7f6b734",
+    "4d6839d1f80e",
+    "38e428b35ebc",
+    "8eefac713970",
+    "f8e8abf6dbb4",
+    "023af0991923",
+    "4a0e0ab39064"
    ]
   }
  }
