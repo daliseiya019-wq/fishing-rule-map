@@ -40,6 +40,7 @@ REQUEST_INTERVAL_SEC = 2
 SEEN_CAP = 3000  # 新着一覧・RSS で「見た」ページを覚えておく件数（1 出典あたり）
 SNIPPET_CHARS = 15  # 見つかった語の前後に付ける文字数（場所が分かる程度にとどめ、転載にしない）
 MAX_SNIPPETS = 2
+DEADLINE = None  # time.monotonic() の値。過ぎたらページを読むのをやめる（--minutes。Actions の時間切れ対策）
 BOILERPLATE_PAGES = 3  # 同じ抜粋がこの数以上のページに出るなら、メニューなど共通部分の文として捨てる
 SKIP_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".zip", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
             ".mp4", ".mp3", ".csv")
@@ -240,7 +241,10 @@ def check_target(target, state, keywords, exclude, backlog_since=None, max_fetch
     ordered = sorted(candidates.values(), key=lambda e: not find_hits(e.hint, keywords, exclude))
     limit = max_fetch or target.get("max_fetch", DEFAULT_MAX_FETCH)
     hits, read_count, empty = [], 0, 0
-    for e in ordered[:limit]:
+    for i, e in enumerate(ordered[:limit]):
+        if DEADLINE and time.monotonic() > DEADLINE:
+            # 時間切れ。残りは読まずに件数だけ報告する（確認位置は進むので、必要なら洗い出しをやり直す）
+            return drop_boilerplate(hits), len(ordered) - i, errors
         if not allowed_by_robots(e.url):
             continue
         try:
@@ -311,7 +315,11 @@ def main():
     parser.add_argument("--backlog-days", type=int, help="過去 N 日に更新されたページも調べる（初回の洗い出し用）")
     parser.add_argument("--max-fetch", type=int, help="1 自治体あたりに読むページ数の上限（洗い出しのときに増やす）")
     parser.add_argument("--only", help="この名前の自治体だけ調べる（--pref と一緒に。動作確認用）")
+    parser.add_argument("--minutes", type=float, help="この分数を過ぎたらページを読むのをやめる（時間切れ対策）")
     args = parser.parse_args()
+    global DEADLINE
+    if args.minutes:
+        DEADLINE = time.monotonic() + args.minutes * 60
     backlog_since = (date.today() - timedelta(days=args.backlog_days)).isoformat() if args.backlog_days else None
 
     prefs = json.loads(PREFS.read_text(encoding="utf-8"))["prefectures"]

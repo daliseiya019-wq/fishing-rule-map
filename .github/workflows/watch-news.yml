@@ -70,7 +70,8 @@ jobs:
         run: |
           mkdir -p out
           opts=()
-          if [ -n "$BACKLOG_DAYS" ]; then opts+=(--backlog-days "$BACKLOG_DAYS" --max-fetch 1500); fi
+          # 洗い出しは 1 自治体 300 件まで。どの都道府県も 4.5 時間で読むのをやめ、残りは件数だけ報告する
+          if [ -n "$BACKLOG_DAYS" ]; then opts+=(--backlog-days "$BACKLOG_DAYS" --max-fetch 300 --minutes 270); else opts+=(--minutes 270); fi
           if [ -n "$ONLY" ]; then opts+=(--only "$ONLY"); fi
           python scripts/watch_news.py --pref "$PREF" --issue-body "out/issue-$PREF.md" "${opts[@]}"
           if [ -f "data/watch-state/$PREF.json" ]; then cp "data/watch-state/$PREF.json" "out/state-$PREF.json"; fi
