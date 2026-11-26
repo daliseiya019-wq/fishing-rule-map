@@ -1,0 +1,76 @@
+{
+ "sources": {
+  "http://www.pref.fukushima.lg.jp/sitemap_index.xml": {
+   "lastmod": "2026-11-26",
+   "seen": []
+  },
+  "https://www.city.iwaki.lg.jp/www/rss/topics.rdf": {
+   "lastmod": null,
+   "seen": [
+    "daa5cdc5e057",
+    "4be6e5094556",
+    "fcc9ca76e689",
+    "1635337d79fb",
+    "0c18eb519463",
+    "47eb581a66d9",
+    "fd86f199e41a"
+   ]
+  },
+  "https://www.city.soma.fukushima.jp/sitemap.xml": {
+   "lastmod": "2026-11-18",
+   "seen": []
+  },
+  "https://www.city.minamisoma.lg.jp/": {
+   "lastmod": null,
+   "seen": [
+    "e5dc2695a07b",
+    "3767157142c4",
+    "f148a3581426",
+    "c95f7a13adb5",
+    "c0f0d0572a27",
+    "ae394378338a",
+    "0f26af968e65",
+    "7342b5d354fa",
+    "36249e8ea855",
+    "774e187ca038",
+    "c917e3a528b4",
+    "d68481a3b4bc",
+    "a7b37e64a7c6",
+    "575383e69ebc",
+    "5663d361e203",
+    "d0f65c60344d",
+    "ea36ed1df611",
+    "b463fd17914d",
+    "2acb919b26c2",
+    "0d64b8d431e0",
+    "22dc79cfa960",
+    "2db5bfe07dad",
+    "1af90940653c",
+    "bf35dc3b89c7",
+    "d2bc04f48847",
+    "0100864047c2",
+    "ebbd7bce34fd",
+    "7493d7d2c7b5",
+    "2eb2669e013b",
+    "b3c41ee4e7e9",
+    "b1567222d6d8"
+   ]
+  },
+  "https://www.tomioka-town.jp/sitemap_index.xml": {
+   "lastmod": "2026-11-26",
+   "seen": []
+  },
+  "https://www.town.okuma.fukushima.jp/sitemap_index.xml": {
+   "lastmod": "2026-11-26",
+   "seen": []
+  },
+  "https://www.town.namie.fukushima.jp/sitemap_index.xml": {
+   "lastmod": "2026-11-26",
+   "seen": []
+  },
+  "https://www.shinchi-town.jp/sitemap_index.xml": {
+   "lastmod": "2026-11-26",
+   "seen": []
+  }
+ }
+}

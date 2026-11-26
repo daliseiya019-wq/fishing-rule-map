@@ -1,0 +1,156 @@
+{
+ "sources": {
+  "http://www.pref.akita.lg.jp/api/sitemap.xml": {
+   "lastmod": "2026-11-25",
+   "seen": [
+    "d1a0d874d12f"
+   ]
+  },
+  "https://www.city.oga.akita.jp/": {
+   "lastmod": null,
+   "seen": [
+    "c3ea06a79948",
+    "0ed63f4731ff",
+    "c81fe5d5c534",
+    "26c58b13c616",
+    "99d8ea41ad04",
+    "0b60c26046cf"
+   ]
+  },
+  "https://www.city.yurihonjo.lg.jp/newslist.html": {
+   "lastmod": null,
+   "seen": [
+    "c3c0db51b2ff",
+    "d7cb337d5bbe",
+    "1cd35ef63263",
+    "566f3d9103bd",
+    "cb0072b56ae4",
+    "8b59acda3cee",
+    "7286a8f662b0",
+    "a5223be539d1",
+    "5f19074b4995",
+    "312b52775e65",
+    "61ae43f19d24",
+    "8df4581057f0",
+    "3348d5e4540c",
+    "e309b22fd715",
+    "6ef34538ccb4",
+    "4f91328bce2e",
+    "a90a393319a9",
+    "45d26529d2d6",
+    "367583fb7c32",
+    "d7387ee56428",
+    "5175e7d4b4c5",
+    "53905542a99c",
+    "642bdf6bcf53",
+    "5bc9f9da9f1b",
+    "b8c1b3cefa98",
+    "86fa19b2928d",
+    "b74f7d5b59ba",
+    "ff427e7fb73a",
+    "e22c05243164",
+    "d7f60dd3a583",
+    "cb296ae3fe00",
+    "d110337728a7",
+    "838f81d89fb7",
+    "e8ea9ba8378e",
+    "6ad59372a569",
+    "8e3dc2545758",
+    "46e78bac9dc3",
+    "6c576fafb2d6",
+    "9026fac9a61f",
+    "441c259489af",
+    "3a03adb2450e",
+    "4b12996200dd",
+    "a5fedba96894",
+    "31a9291b3027",
+    "3cd3c7a1342c",
+    "2cba6146b406",
+    "b410ab604a0b",
+    "a2a5113438ff",
+    "bd9f100afeac",
+    "52e4c04743f3",
+    "fb311504f3ec",
+    "7eb3fce003ad",
+    "f89924d93a43",
+    "ff61419f6849",
+    "586e30fe395c",
+    "f33ab4fa4bc0",
+    "a32707031e28",
+    "fa19344b1491",
+    "86d644a1196e",
+    "9dd7b680b825",
+    "0bf934f56e97",
+    "dbfc48f9dafa",
+    "ea40da3e70a5",
+    "59822f0cfbd1",
+    "e9fefac26daa",
+    "82560c810e95",
+    "fa5db181887e",
+    "d9bab3c38730",
+    "f4b8725bdbbf",
+    "776b29bd4b5d",
+    "5b1cadc87389"
+   ]
+  },
+  "https://www.city.katagami.lg.jp/": {
+   "lastmod": null,
+   "seen": [
+    "cf5417b61000",
+    "f2736e9578c0",
+    "2209cf546e3f",
+    "f2565c9452ae",
+    "1d92e18a560b",
+    "b215d99f7626",
+    "3a9f94c8c93a",
+    "24f32f6edd39",
+    "062afb46a4f3",
+    "04e5ad6716a4",
+    "01ad03513f3d",
+    "3f058afa6ac8",
+    "de4421dea505",
+    "01169ee2b69f",
+    "5af6dcdfd2d9",
+    "bcfb8538f6cc",
+    "60aa446e5646",
+    "439972c894d5",
+    "795bc0fa4385",
+    "5014f0983c08",
+    "609f5210aecf",
+    "b4e53fd7be38",
+    "5a6c7e54908b",
+    "e3eb7cbb46bf",
+    "c5ebf66cb00d",
+    "a0c11594c5e4",
+    "16e1556fbf3b",
+    "82413a0dac54",
+    "8cf0742e287d",
+    "6d494904be72"
+   ]
+  },
+  "https://www.city.nikaho.akita.jp/sitemap.xml": {
+   "lastmod": "2026-10-26",
+   "seen": []
+  },
+  "https://www.town.happo.lg.jp/api/sitemap.xml": {
+   "lastmod": "2026-11-26",
+   "seen": [
+    "807c0b75a307"
+   ]
+  },
+  "https://www.town.hachirogata.akita.jp/": {
+   "lastmod": null,
+   "seen": [
+    "5d457a3075a4",
+    "2af483609585",
+    "a78065451483",
+    "36fdd9ce604a",
+    "968a8076fa96",
+    "e1e741031f42",
+    "00f2e748541b",
+    "e247b686dbfe",
+    "8f484a96d3fd"
+   ]
+  }
+ }
+}
