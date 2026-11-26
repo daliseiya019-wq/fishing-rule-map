@@ -54,5 +54,19 @@ class LocalTest(unittest.TestCase):
         self.assertEqual(self.errors("local", sources), [])
 
 
+class ProhibitedTest(unittest.TestCase):
+    def test_prohibited_needs_no_hours_or_fee_but_others_do(self):
+        for status, expect_errors in (("prohibited", False), ("open", True)):
+            c = vd.Checker()
+            for name in ("hours", "fee"):
+                c.text("s", None, name, required=status != "prohibited")
+            self.assertEqual(bool(c.errors), expect_errors, status)
+
+    def test_prohibited_cannot_use_local_only_sources(self):
+        c = vd.Checker()
+        vd.check_local(c, "spot", "prohibited", [source("notice", url=None)])
+        self.assertTrue(c.errors)
+
+
 if __name__ == "__main__":
     unittest.main()

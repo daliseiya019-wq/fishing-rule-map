@@ -9,7 +9,10 @@
     limited: { label: '決まった日だけ開放', mark: '日' },
     unconfirmed: { label: '今年の開放を確認できず', mark: '？' },
     local: { label: '現地の案内のみ', mark: '現' },
+    prohibited: { label: '釣り禁止・立入禁止（公式）', mark: '禁' },
   };
+  const PROHIBITED_NOTICE = '管理者が公式に釣り禁止・立入禁止と公表している場所です。立ち入らないでください。' +
+    'この地図に禁止と載っていない場所が、釣りをしてよい場所という意味ではありません。';
   const CHECKED_HOW = { page: 'ページ', search: '検索', notice: '現地の掲示・告知', inquiry: '管理者への問い合わせ' };
   // 地図に既定では出さない状態（OK の場所と並べると誤解されるもの）と、表示を切り替えるチェックボックス
   const HIDDEN_BY_DEFAULT = { unconfirmed: 'show-unconfirmed', local: 'show-local' };
@@ -142,13 +145,15 @@
       el('p', { class: 'meta', text: p.port ? `${p.prefecture} ／ ${p.port}` : p.prefecture }),
       statusBadge(p.status),
       statusKey(p.status) === 'local' ? el('p', { class: 'local-note', text: LOCAL_NOTICE }) : null,
+      statusKey(p.status) === 'prohibited' ? el('p', { class: 'prohibited-note', text: PROHIBITED_NOTICE }) : null,
       ...[...expiryAlerts(p.valid_until, today), ...localAlerts(p, today)]
         .map((a) => el('p', { class: 'alert-line', text: `⚠ ${a}` })),
       el('p', { text: p.summary }),
       el('ul', null, p.conditions.map((c) => el('li', { text: c }))),
       el('dl', null, [
-        el('dt', { text: '時間' }), el('dd', { text: p.hours }),
-        el('dt', { text: '料金' }), el('dd', { text: p.fee }),
+        // 禁止の場所には時間・料金が無い
+        ...(p.hours ? [el('dt', { text: '時間' }), el('dd', { text: p.hours })] : []),
+        ...(p.fee ? [el('dt', { text: '料金' }), el('dd', { text: p.fee })] : []),
         el('dt', { text: '地図の位置' }), el('dd', { text: p.position.note }),
       ]),
       el('div', { class: 'sources' }, p.sources.map((s) => renderSource(s, sourceStatus, today))),
@@ -188,8 +193,9 @@
         ...spotDetails(p, sourceStatus, today),
       ]), { maxWidth: 320, maxHeight: 360 });
       const { radius } = precisionOf(p);
+      const color = statusKey(p.status) === 'prohibited' ? '#c62828' : '#5a6460';
       const circle = radius
-        ? L.circle([lat, lng], { radius, color: '#5a6460', weight: 1, dashArray: '4 4', fill: false, interactive: false })
+        ? L.circle([lat, lng], { radius, color, weight: 1, dashArray: '4 4', fill: false, interactive: false })
         : null;
       spots.set(p.id, { feature: f, marker, circle });
     }

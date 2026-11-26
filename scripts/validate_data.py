@@ -16,7 +16,8 @@ SPOTS = ROOT / "data" / "spots.geojson"
 INDEX = ROOT / "data" / "sources.json"
 
 JST = timezone(timedelta(hours=9))
-STATUSES = {"open", "limited", "unconfirmed", "local"}
+STATUSES = {"open", "limited", "unconfirmed", "local", "prohibited"}
+# prohibited=管理者が公式に釣り禁止・立入禁止と公表している場所（時間・料金は無いので省略できる）
 # page=公式ページを開いて確認 / search=検索結果で確認 / notice=現地の掲示・町や漁協の告知 / inquiry=管理者への問い合わせ
 CHECKED_HOW = {"page", "search", "notice", "inquiry"}
 # notice・inquiry はウェブ上の公式発表ではないので、「現地の案内のみ」（local）の場所でだけ使える
@@ -91,8 +92,10 @@ def check_spots(c):
         if spot_id in seen_ids:
             c.error(where, "id が重複しています")
         seen_ids.add(spot_id)
-        for name in ("name", "summary", "hours", "fee"):
+        for name in ("name", "summary"):
             c.text(where, p.get(name), name)
+        for name in ("hours", "fee"):
+            c.text(where, p.get(name), name, required=p.get("status") != "prohibited")
         if p.get("port") is not None:  # 港の外の施設（海づり公園など）は null
             c.text(where, p.get("port"), "port")
         c.enum(where, p.get("prefecture"), "prefecture", PREFECTURES)
@@ -129,6 +132,7 @@ def check_spots(c):
 def check_local(c, where, status, sources):
     hows = {s.get("checked_how") for s in sources}
     if status != "local" and hows & LOCAL_ONLY_HOW:
+        # 禁止の場所も、ウェブ上の公式発表（page / search）があるものだけ載せる
         c.error(where, "checked_how が notice / inquiry の出典は status が local の場所でだけ使えます")
     if status == "local":
         dates = [s.get("checked") for s in sources if isinstance(s.get("checked"), str)]

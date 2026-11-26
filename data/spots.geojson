@@ -3151,6 +3151,269 @@
         ],
         "valid_until": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.728348,
+          35.887363
+        ]
+      },
+      "properties": {
+        "id": "ibaraki-kashima-port-breakwaters-prohibited",
+        "name": "鹿島港 南防波堤・中央防波堤など（港湾施設）",
+        "port": "鹿島港",
+        "prefecture": "茨城県",
+        "status": "prohibited",
+        "summary": "茨城県は、鹿島港では魚釣園以外は釣り禁止で、防波堤などの港湾施設は関係者以外立入禁止と案内している。南防波堤は波をかぶりやすく、侵入した釣り人の転落死亡事故が過去数十件あり、警察などと取締りを行い検挙者も出ている。",
+        "conditions": [
+          "鹿島港で釣りができるのは鹿島港魚釣園だけ（茨城県）",
+          "防波堤・護岸・岸壁などの港湾施設は関係者以外立入禁止（茨城県）",
+          "南防波堤の入口のゲートや柵を越えての侵入は検挙の対象になっている（茨城県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は鹿島港のおおよその場所（神栖市南浜）。禁止の範囲は茨城県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "釣りをされる方へ",
+            "publisher": "茨城県 鹿島港湾事務所",
+            "url": "https://www.pref.ibaraki.jp/doboku/kako/tsuri.html",
+            "published": "2025-11-25",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.013916,
+          38.265533
+        ]
+      },
+      "properties": {
+        "id": "miyagi-sendai-shiogama-port-prohibited",
+        "name": "仙台塩釜港 港内（海の広場を除く）",
+        "port": "仙台塩釜港",
+        "prefecture": "宮城県",
+        "status": "prohibited",
+        "summary": "宮城県は、仙台塩釜港の港内は全面釣り禁止で、釣りができるのはNX仙台港パークの海の広場だけと案内している。ふ頭は荷役作業のため関係者以外立入禁止。",
+        "conditions": [
+          "港内で釣りができるのはNX仙台港パーク 海の広場だけ（宮城県）",
+          "各ふ頭は関係者以外立入禁止（宮城県）",
+          "防波堤・テトラポットには立ち入らない（宮城県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は仙台港のおおよその場所（仙台市宮城野区港）。禁止の範囲は宮城県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "仙台塩釜港内における釣りについて",
+            "publisher": "宮城県 仙台塩釜港湾事務所",
+            "url": "https://www.pref.miyagi.jp/soshiki/sdsgkown/fishing.html",
+            "published": "2025-10-20",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.642288,
+          35.453594
+        ]
+      },
+      "properties": {
+        "id": "kanagawa-yokohama-port-breakwaters-prohibited",
+        "name": "横浜港の防波堤・護岸（海づり施設以外）",
+        "port": "横浜港",
+        "prefecture": "神奈川県",
+        "status": "prohibited",
+        "summary": "横浜市は、横浜港の防波堤・護岸などは立ち入ることを想定した構造ではないとして立入禁止とし、釣りは本牧・大黒・磯子の海づり施設を使うよう案内している。",
+        "conditions": [
+          "防波堤・護岸などの港湾施設は立入禁止（横浜市）",
+          "主な立入禁止の防波堤は横浜市の図（PDF）で確認（横浜市）",
+          "釣りは本牧・大黒・磯子の海づり施設で（横浜市）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は横浜港のおおよその場所（横浜市中区新港）。禁止の範囲は横浜市の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "港湾局からのお願い（港湾施設への立入制限）",
+            "publisher": "横浜市 港湾局",
+            "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/kikikanri/seigen.html",
+            "published": "2025-12-03",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.137207,
+          36.20752
+        ]
+      },
+      "properties": {
+        "id": "fukui-fukui-port-prohibited",
+        "name": "福井港の防波堤・護岸",
+        "port": "福井港",
+        "prefecture": "福井県",
+        "status": "prohibited",
+        "summary": "福井県は、福井港の防波堤・護岸などでの釣りは禁止と案内している。柵が無く、海への転落や津波の際に避難できない危険があるため。",
+        "conditions": [
+          "防波堤・護岸などでの釣りは禁止（福井県）",
+          "立入禁止の看板・鉄柵・擁壁を越えて入らない（福井県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は福井港のおおよその場所（坂井市三国町新保）。禁止の範囲は福井県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "福井港湾事務所",
+            "publisher": "福井県 福井港湾事務所",
+            "url": "https://www.pref.fukui.lg.jp/doc/fu-kouwan/index.html",
+            "published": "2026-11-17",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.071793,
+          35.658981
+        ]
+      },
+      "properties": {
+        "id": "fukui-tsuruga-port-prohibited",
+        "name": "敦賀港の防波堤・岸壁・親水護岸（つり公園以外）",
+        "port": "敦賀港",
+        "prefecture": "福井県",
+        "status": "prohibited",
+        "summary": "福井県は、敦賀港の防波堤・岸壁・親水護岸での釣りはやめるよう求め、釣りはつり公園（鞠山北魚釣り護岸）を使うよう案内している。防波堤や岸壁は柵が無く危険なため。",
+        "conditions": [
+          "防波堤・岸壁・親水護岸での釣りはしない（福井県）",
+          "立入禁止の看板・鉄柵・鍵を越えて入らない（福井県）",
+          "釣りはつり公園（鞠山北魚釣り護岸）で（福井県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は敦賀港のおおよその場所（敦賀市桜町）。範囲は福井県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "嶺南振興局敦賀港湾事務所",
+            "publisher": "福井県 敦賀港湾事務所",
+            "url": "https://www.pref.fukui.lg.jp/doc/tu-kouwan/",
+            "published": "2026-11-25",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.603485,
+          36.611115
+        ]
+      },
+      "properties": {
+        "id": "ishikawa-kanazawa-port-breakwaters-prohibited",
+        "name": "金沢港の防波堤",
+        "port": "金沢港",
+        "prefecture": "石川県",
+        "status": "prohibited",
+        "summary": "石川県は、金沢港の防波堤は転落などの危険があるため立入禁止とし、釣りは親水護岸を使うよう案内している。",
+        "conditions": [
+          "防波堤は立入禁止（石川県）",
+          "親水護岸は自由に利用できる（石川県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置は金沢港のおおよその場所（金沢市大野町）。禁止の範囲は石川県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "お知らせ・お願い（金沢港）",
+            "publisher": "石川県（金沢港の港湾管理）",
+            "url": "https://www.pref.ishikawa.lg.jp/kanazawakouwan/p04a.html",
+            "published": "2021-09-15",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.046402,
+          34.354435
+        ]
+      },
+      "properties": {
+        "id": "kagawa-sunport-takamatsu-prohibited",
+        "name": "サンポート高松の魚釣り禁止区域",
+        "port": "高松港",
+        "prefecture": "香川県",
+        "status": "prohibited",
+        "summary": "香川県は、サンポート高松に船舶の安全確保などのため魚釣りを禁止する区域を設けている。玉藻防波堤は注意報・警報の発令時はゲートが閉鎖される。",
+        "conditions": [
+          "魚釣りの禁止区域がある。範囲は現地の標識で確認（香川県）",
+          "玉藻防波堤は注意報・警報の発令時に閉鎖（香川県）"
+        ],
+        "position": {
+          "precision": "port",
+          "note": "地図の位置はサンポート高松のおおよその場所。禁止区域の範囲は現地の標識と香川県の案内で確認"
+        },
+        "sources": [
+          {
+            "title": "注意事項（サンポート高松）",
+            "publisher": "香川県 高松港管理事務所",
+            "url": "https://www.pref.kagawa.lg.jp/takamatsukokanri/port_takamatsu/kisou2nd3rd.html",
+            "published": "2020-05-25",
+            "checked": "2026-11-26",
+            "checked_how": "page"
+          }
+        ],
+        "valid_until": null
+      }
     }
   ]
 }

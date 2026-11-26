@@ -13,6 +13,8 @@
   --unconfirmed-bg: #eceeed;
   --local: #5b3f8c;
   --local-bg: #eee8f7;
+  --prohibited: #a3261b;
+  --prohibited-bg: #fbe6e3;
   --warn: #a3261b;
   --warn-bg: #fbe6e3;
 }
@@ -33,6 +35,8 @@
     --unconfirmed-bg: #2c3330;
     --local: #c7b3ec;
     --local-bg: #2e2640;
+    --prohibited: #ff9c90;
+    --prohibited-bg: #45211d;
     --warn: #ff9c90;
     --warn-bg: #45211d;
   }
@@ -90,6 +94,8 @@ h2 { font-size: 1.25rem; margin: 32px 0 8px; }
 .status-unconfirmed { color: var(--unconfirmed); background: var(--unconfirmed-bg); }
 .status-local { color: var(--local); background: var(--local-bg); }
 .local-note { color: var(--local); font-size: 0.9rem; }
+.status-prohibited { color: var(--prohibited); background: var(--prohibited-bg); }
+.prohibited-note { color: var(--prohibited); font-size: 0.9rem; font-weight: bold; }
 .badge-warn { color: var(--warn); background: var(--warn-bg); }
 
 /* 地図のマーカー：色だけでなく記号でも状態が分かるようにする */
@@ -111,6 +117,7 @@ h2 { font-size: 1.25rem; margin: 32px 0 8px; }
 .spot-marker.status-limited { background: #b07400; }
 .spot-marker.status-unconfirmed { background: #6b7571; }
 /* 「現地の案内のみ」は公式発表のある場所と見分けがつくよう、色に加えて点線の縁にする */
+.spot-marker.status-prohibited { background: #c62828; border-radius: 4px; } /* 四角にして、色が分からなくても区別できるようにする */
 .spot-marker.status-local { background: #6a4c9c; border-style: dashed; }
 
 .filters { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; }

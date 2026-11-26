@@ -25,7 +25,10 @@ SITEMAP = ROOT / "sitemap.xml"
 PREF_DIR = ROOT / "pref"
 
 STATUS_LABEL = {"open": "OK 常設の釣り場", "limited": "日 決まった日だけ開放", "unconfirmed": "？ 今年の開放を確認できず",
-                "local": "現 現地の案内のみ"}
+                "local": "現 現地の案内のみ", "prohibited": "禁 釣り禁止・立入禁止（公式）"}
+# app.js の PROHIBITED_NOTICE と同じ文
+PROHIBITED_NOTICE = ("管理者が公式に釣り禁止・立入禁止と公表している場所です。立ち入らないでください。"
+                     "この地図に禁止と載っていない場所が、釣りをしてよい場所という意味ではありません。")
 CHECKED_HOW = {"page": "ページ", "search": "検索", "notice": "現地の掲示・告知", "inquiry": "管理者への問い合わせ"}
 # app.js の LOCAL_NOTICE と同じ文
 LOCAL_NOTICE = ("ウェブ上の公式発表はありません。町・漁協の現地の看板や告知、問い合わせに基づく情報です。"
@@ -62,9 +65,11 @@ def render_spot(p):
         f'<p class="meta">{escape(p["prefecture"])}{" ／ " + escape(p["port"]) if p.get("port") else ""}</p>'
         f'<span class="badge status-{status}">{STATUS_LABEL[status]}</span>'
         + (f'<p class="local-note">{escape(LOCAL_NOTICE)}</p>' if status == "local" else "")
+        + (f'<p class="prohibited-note">{escape(PROHIBITED_NOTICE)}</p>' if status == "prohibited" else "")
         + f'<p>{escape(p["summary"])}</p><ul>{conditions}</ul>'
-        f'<dl><dt>時間</dt><dd>{escape(p["hours"])}</dd><dt>料金</dt><dd>{escape(p["fee"])}</dd>'
-        f'<dt>地図の位置</dt><dd>{escape(p["position"]["note"])}</dd></dl>'
+        + "<dl>" + (f'<dt>時間</dt><dd>{escape(p["hours"])}</dd>' if p.get("hours") else "")
+        + (f'<dt>料金</dt><dd>{escape(p["fee"])}</dd>' if p.get("fee") else "")
+        + f'<dt>地図の位置</dt><dd>{escape(p["position"]["note"])}</dd></dl>'
         f'<div class="sources">{sources}</div></li>')
 
 
@@ -102,13 +107,20 @@ class Site:
         return max(dates)
 
 
+def count(site, name, prohibited):
+    """釣り場（prohibited=False）または釣り禁止の場所（True）の数。"""
+    return sum(1 for p in site.spots_of(name) if (p["status"] == "prohibited") == prohibited)
+
+
 def render_coverage(site):
     covered = site.covered()
     covered_names = {p["name"] for p in covered}
     rows = "".join(
         f'<li><a href="pref/{p["slug"]}.html">{escape(p["name"])}</a>'
-        f'<span class="meta">釣り場 {len(site.spots_of(p["name"]))} か所 ／ 公式ルール '
-        f'{len(site.index_by_pref.get(p["name"], {}).get("links", []))} 件</span></li>'
+        f'<span class="meta">釣り場 {count(site, p["name"], False)} か所 ／ 公式ルール '
+        f'{len(site.index_by_pref.get(p["name"], {}).get("links", []))} 件'
+        + (f' ／ 釣り禁止 {count(site, p["name"], True)} か所' if count(site, p["name"], True) else "")
+        + '</span></li>'
         for p in covered)
     missing = "、".join(p["name"] for p in site.prefs if p["name"] not in covered_names)
     return (f'<p>収録済み: {len(covered)} / 47 都道府県</p><ul class="coverage-list">{rows}</ul>'
