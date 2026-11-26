@@ -118,6 +118,8 @@ def discover(site):
     sitemap = fresh_sitemap(origin)
     if sitemap:
         return [{"type": "sitemap", "url": sitemap}], "サイトマップ"
+    if not allowed_by_robots(site):
+        return [], "robots.txt で禁止"
     try:
         raw, content_type = get(site)
     except FETCH_ERRORS as exc:
@@ -131,9 +133,7 @@ def discover(site):
         return [{"type": "feed", "url": news}], "RSS"
     if news and allowed_by_robots(news):
         return [{"type": "list", "url": news}], "新着一覧"
-    if allowed_by_robots(site):
-        return [{"type": "list", "url": site}], "トップページ"
-    return [], "robots.txt で禁止"
+    return [{"type": "list", "url": site}], "トップページ"
 
 
 def build(pref, municipalities, keywords, exclude):
